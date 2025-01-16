@@ -16,7 +16,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: 
+    environment:  dev
  
     steps:
     - name: Checkout
@@ -33,7 +33,7 @@ jobs:
         # The Databricks workspace host URL
         databricks-host: https://adb-2474944416409806.6.azuredatabricks.net/?o=2474944416409806
         # The target environment for the Databricks asset bundle deployment
-        databricks-bundle-env: prod
+        databricks-bundle-env: dev
         # The type of authentication to use (token or oauth)
         authentication-type: oauth
         # Databricks personal access token for authentication

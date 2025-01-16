@@ -1,28 +1,63 @@
 # This is a Databricks asset bundle definition for databricks_ci_cd_test.
 # The Databricks extension requires databricks.yml configuration file.
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
-
+# The name of the bundle. run `databricks bundle schema` to see the full bundle settings schema.
 bundle:
   name: databricks_ci_cd_test
+ 
+variables:
+# Adjust these values to match your Databricks environment
+  service_principal_id:
+    description: The ID of the service principal that should be used to run the job
+    default: XXXX
+  use_case:
+    description: Use-case for the DAB project
+    default: XXX
+  group_name:
+    description: The group name for the DAB project
+    default: XXX
+  compute_policy:
+    description: The compute policy for the DAB project
+    default: XXX
+  # No need to adjust these values
+  is_paused:
+    description: Whether the bundle is paused or not
+    default: UNPAUSED
+  user_tag:
+    description: User tag for the DAB project
+    default: ""
+  resource_postfix:
+    description: Postfix for the resource names such as tables, etc.
+    default: ""
 include:
   # Resources folder contains ML artifact resources for the ml project that defines model and experiment
   # And workflows resources for the ml project including model training -> validation -> deployment,
   # batch inference, data monitoring, metric refresh, alerts and triggering retraining
-  - workflows/*.yml
-  
+  - resources/*.yml
+
+ 
+# Deployment Target specific values for workspace
 targets:
   dev:
-    mode: development
     default: true
     workspace:
-      host: https://adb-2474944416409806.6.azuredatabricks.net
+      host:  https://adb-2474944416409806.6.azuredatabricks.net
+      #/Workspace/Users/luo14938@gmail.com/.bundle/databricks_ci_cd_test/dev/files
+      root_path: /Users/${workspace.current_user.userName}/.bundle/databricks_ci_cd_test/${bundle.target}/files
+    variables:
+      resource_postfix: "dev"
+      user_tag: "[dev]"
+ 
+ 
   prod:
     mode: production
     workspace:
       host: https://adb-2474944416409806.6.azuredatabricks.net
-
-  ## Optionally, there could be 'staging' or 'prod' targets here.
-  #
-  # prod:
-  #   workspace:
-  #     host: https://adb-2474944416409806.6.azuredatabricks.net
+      # If this path results in an error, please make sure you have a recent version of the CLI installed.
+      root_path: /Users/${workspace.current_user.userName}/.bundle/databricks_ci_cd_test/${bundle.target}/files
+    variables:
+      resource_postfix: "prod"
+      user_tag: "[prod]"
+    run_as:
+      # This can run as a specific user or service principal in production.
+      service_principal_name: "dosef84552a0f11018d8708eabd59ebe81d2"
