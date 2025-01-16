@@ -21,7 +21,9 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-
+      
+    - name: List files after checkout
+      run: ls -la
       
     - name: Databricks Asset Bundles Deploy
       uses: lumiastudios/Databricks-Asset-Bundles-Deploy@v1.0.0
@@ -31,12 +33,12 @@ jobs:
         # The Databricks workspace host URL
         databricks-host: https://adb-2474944416409806.6.azuredatabricks.net/?o=2474944416409806
         # The target environment for the Databricks asset bundle deployment
-        databricks-bundle-env: test
+        databricks-bundle-env: dev
         # The type of authentication to use (token or oauth)
-        authentication-type: token
+        authentication-type: oauth
         # Databricks personal access token for authentication
-        databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
+        databricks-client-secret: ${{secrets.DATABRICKS_TOKEN }}
         # Databricks OAuth client ID for authentication
-        databricks-client-id: bb9536ec-d5c6-4790-9be1-2752c47f8161
+        databricks-client-id: ${{secrets.CLIENT_ID }}
        
            
