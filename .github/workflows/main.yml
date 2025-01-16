@@ -35,7 +35,7 @@ jobs:
         # The target environment for the Databricks asset bundle deployment
         databricks-bundle-env: dev
         # The type of authentication to use (token or oauth)
-        authentication-type: token
+        authentication-type: OAuth
         # Databricks personal access token for authentication
         databricks-token: ${{secrets.DATABRICKS_TOKEN }}
         # Databricks OAuth client ID for authentication
