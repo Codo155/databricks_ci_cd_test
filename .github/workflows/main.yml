@@ -42,7 +42,7 @@ jobs:
         databricks-client-id: ${{secrets.CLIENT_ID }}
     
     - name: deploy
-      run: databricks bundles deploy --debug
+      run: databricks bundle deploy --debug
 
        
            
