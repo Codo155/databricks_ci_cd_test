@@ -37,8 +37,8 @@ jobs:
         # The type of authentication to use (token or oauth)
         authentication-type: oauth
         # Databricks personal access token for authentication
-        databricks-token: ${{secrets.DATABRICKS_TOKEN }}
+        databricks-client-secret: ${{secrets.DATABRICKS_TOKEN }}
         # Databricks OAuth client ID for authentication
-        databricks-client-id: bb9536ec-d5c6-4790-9be1-2752c47f8161
+        databricks-client-id: ${{secrets.CLIENT_ID }}
        
            
