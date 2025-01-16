@@ -20,7 +20,10 @@ jobs:
  
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@
+    
+    - name: Remove tmp file
+      run: rm -rf .databricks
       
     - name: List files after checkout
       run: ls -la
