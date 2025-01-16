@@ -4,7 +4,12 @@
 
 bundle:
   name: databricks_ci_cd_test
-
+include:
+  # Resources folder contains ML artifact resources for the ml project that defines model and experiment
+  # And workflows resources for the ml project including model training -> validation -> deployment,
+  # batch inference, data monitoring, metric refresh, alerts and triggering retraining
+  - workflows/*.yml
+  
 targets:
   dev:
     mode: development
