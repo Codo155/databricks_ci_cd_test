@@ -7,9 +7,9 @@ bundle:
  
 variables:
 # Adjust these values to match your Databricks environment
-  service_principal_id:
+  service_principal_id: 
     description: The ID of the service principal that should be used to run the job
-    default: XXXX
+    default: "dosef84552a0f11018d8708eabd59ebe81d2"
   use_case:
     description: Use-case for the DAB project
     default: XXX
@@ -47,6 +47,9 @@ targets:
     variables:
       resource_postfix: "dev"
       user_tag: "[dev]"
+    run_as:
+      # This can run as a specific user or service principal in production.
+      service_principal_name: "dosef84552a0f11018d8708eabd59ebe81d2"
  
  
   prod:
