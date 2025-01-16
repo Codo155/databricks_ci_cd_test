@@ -40,5 +40,9 @@ jobs:
         databricks-client-secret: ${{secrets.DATABRICKS_TOKEN }}
         # Databricks OAuth client ID for authentication
         databricks-client-id: ${{secrets.CLIENT_ID }}
+    
+    - name: deploy
+      run: databricks bundles deploy --debug
+
        
            
