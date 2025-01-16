@@ -1,0 +1,26 @@
+resources:
+  jobs:
+    New_Job_Jan_16_2025_02_52_PM:
+      name: New Job Jan 16, 2025, 02:52 PM
+      tasks:
+        - task_key: teste
+          spark_python_task:
+            python_file: /Workspace/Users/luo14938@gmail.com/.bundle/databricks_ci_cd_test/dev/files/Code/test.py
+          job_cluster_key: Job_cluster
+      job_clusters:
+        - job_cluster_key: Job_cluster
+          new_cluster:
+            spark_version: 15.4.x-scala2.12
+            azure_attributes:
+              first_on_demand: 1
+              availability: ON_DEMAND_AZURE
+              spot_bid_max_price: -1
+            node_type_id: Standard_D4ds_v5
+            spark_env_vars:
+              PYSPARK_PYTHON: /databricks/python3/bin/python3
+            enable_elastic_disk: true
+            data_security_mode: LEGACY_SINGLE_USER_STANDARD
+            runtime_engine: PHOTON
+            num_workers: 8
+      queue:
+        enabled: true
