@@ -27,7 +27,7 @@ jobs:
       uses: lumiastudios/Databricks-Asset-Bundles-Deploy@v1.0.0
       with:
         # The directory containing the Databricks asset bundle configuration
-        working-directory: databricks-bundle
+        working-directory: .
         # The Databricks workspace host URL
         databricks-host: https://adb-2474944416409806.6.azuredatabricks.net/?o=2474944416409806
         # The target environment for the Databricks asset bundle deployment
