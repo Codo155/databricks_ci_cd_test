@@ -1,0 +1,63 @@
+# This workflow validates, deploys, and runs the specified bundle
+# within a production target named "prod".
+name: "Test deployment"
+ 
+# Ensure that only a single job or workflow using the same concurrency group
+# runs at a time.
+concurrency: 1
+ 
+# Trigger this workflow whenever a pull request is pushed to the repo's
+# main branch.
+on:
+  push:
+    branches:
+      - main
+ 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: test
+ 
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+      
+    - name: Databricks Asset Bundles Deploy
+      uses: lumiastudios/Databricks-Asset-Bundles-Deploy@v1.0.0
+      with:
+        # The directory containing the Databricks asset bundle configuration
+        working-directory: ToDO
+        # The Databricks workspace host URL
+        databricks-host: https://adb-2474944416409806.6.azuredatabricks.net/?o=2474944416409806
+        # The target environment for the Databricks asset bundle deployment
+        databricks-bundle-env: test
+        # The type of authentication to use (token or oauth)
+        authentication-type: # default is token
+        # Databricks personal access token for authentication
+        databricks-token: # optional
+        # Databricks OAuth client ID for authentication
+        databricks-client-id: # optional
+        # Databricks OAuth client secret for authentication
+        databricks-client-secret: # optional
+        # Azure Managed Identity or Microsoft Entra ID client ID
+        arm-client-id: # optional
+        # Microsoft Entra ID client secret
+        arm-client-secret: # optional
+        # Microsoft Entra ID tenant ID
+        arm-tenant-id: # optional
+        # Google Cloud credentials for authentication
+        google-credentials: # optional
+              
+    - name: Configure Databricks
+      uses: raiffeisen/adc-apex-actions/apex-configure@main
+      with:
+        host: ${{ vars.DATABRICKS_HOST }}
+        token: ${{ secrets.DATABRICKS_TOKEN }}
+ 
+    - name: Deploy Databricks Bundle
+      run: databricks bundle deploy
+      working-directory: .
+      env:
+        DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+        DATABRICKS_BUNDLE_ENV: prod
