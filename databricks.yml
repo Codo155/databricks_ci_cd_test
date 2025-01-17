@@ -4,31 +4,12 @@
 # The name of the bundle. run `databricks bundle schema` to see the full bundle settings schema.
 bundle:
   name: databricks_ci_cd_test
- 
-variables:
-# Adjust these values to match your Databricks environment
-  service_principal_id: 
-    description: The ID of the service principal that should be used to run the job
-    default: "dosef84552a0f11018d8708eabd59ebe81d2"
-  use_case:
-    description: Use-case for the DAB project
-    default: XXX
-  group_name:
-    description: The group name for the DAB project
-    default: XXX
-  compute_policy:
-    description: The compute policy for the DAB project
-    default: XXX
-  # No need to adjust these values
-  is_paused:
-    description: Whether the bundle is paused or not
-    default: UNPAUSED
-  user_tag:
-    description: User tag for the DAB project
-    default: ""
-  resource_postfix:
-    description: Postfix for the resource names such as tables, etc.
-    default: ""
+
+artifacts: 
+  - path: resources
+    type: directory
+    workflow: true
+
 include:
   # Resources folder contains ML artifact resources for the ml project that defines model and experiment
   # And workflows resources for the ml project including model training -> validation -> deployment,
