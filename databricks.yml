@@ -43,7 +43,7 @@ targets:
     workspace:
       host:  https://adb-2474944416409806.6.azuredatabricks.net
       #/Workspace/Users/luo14938@gmail.com/.bundle/databricks_ci_cd_test/dev/files
-      root_path: /Users/${workspace.current_user.userName}/.bundle/${bundle.name}
+      root_path: /Users/${workspace.current_user.userName}/.bundle/${var.orgunit}/${bundle.target}/${bundle.name}
     variables:
       resource_postfix: "dev"
       user_tag: "[dev]"
@@ -57,7 +57,7 @@ targets:
     workspace:
       host: https://adb-2474944416409806.6.azuredatabricks.net
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
-      root_path: /Users/${workspace.current_user.userName}/.bundle/${bundle.name}
+      root_path: /Users/${workspace.current_user.userName}/.bundle/${var.orgunit}/${bundle.target}/${bundle.name}
     variables:
       resource_postfix: "prod"
       user_tag: "[prod]"
