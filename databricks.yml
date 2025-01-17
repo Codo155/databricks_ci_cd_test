@@ -10,6 +10,8 @@ artifacts:
   notebooks:
     path: Code
     type: directory
+    build: whl
+    
 
   workflows:
     path: resources
