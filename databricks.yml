@@ -7,10 +7,10 @@ bundle:
 
 
 artifacts: 
-  notebooks:
-    path: Code
-    type: directory
-    build: whl
+  # notebooks:
+  #   path: Code
+  #   type: directory
+  #   build: whl
     
 
   workflows:
