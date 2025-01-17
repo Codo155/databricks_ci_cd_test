@@ -4,12 +4,13 @@
 # The name of the bundle. run `databricks bundle schema` to see the full bundle settings schema.
 bundle:
   name: databricks_ci_cd_test
-
-artifacts: 
-  - path: resources
-    type: directory
-    workflow: true
-
+    artifacts: 
+      - path: resources
+        type: directory
+        workflow: true
+      - path: Code
+        type: directory
+        target_path: /Workspace/Notebooks
 include:
   # Resources folder contains ML artifact resources for the ml project that defines model and experiment
   # And workflows resources for the ml project including model training -> validation -> deployment,
