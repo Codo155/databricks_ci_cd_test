@@ -13,7 +13,10 @@ artifacts:
 
   workflows:
     path: resources
-    type: workflows
+    type: directory
+    build: workflow
+  
+
     
 include:
   # Resources folder contains ML artifact resources for the ml project that defines model and experiment
