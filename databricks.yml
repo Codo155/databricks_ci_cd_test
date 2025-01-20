@@ -6,17 +6,17 @@ bundle:
   name: databricks_ci_cd_test
 
 
-artifacts: 
-  # notebooks:
-  #   path: Code
-  #   type: directory
-  #   build: whl
+# artifacts: 
+#   # notebooks:
+#   #   path: Code
+#   #   type: directory
+#   #   build: whl
     
 
-  workflows:
-    path: resources
-    type: directory
-    build: workflow
+#   workflows:
+#     path: resources
+#     type: directory
+#     build: workflow
   
 
     
