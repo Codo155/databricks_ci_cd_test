@@ -35,10 +35,8 @@ targets:
       host:  https://adb-2474944416409806.6.azuredatabricks.net
       #/Workspace/Users/luo14938@gmail.com/.bundle/databricks_ci_cd_test/dev/files
       root_path: /Users/${workspace.current_user.userName}/.bundle/${bundle.target}/${bundle.name}
-    run_as:
-      # This can run as a specific user or service principal in production.
-      service_principal_name: "dosef84552a0f11018d8708eabd59ebe81d2"
- 
+  
+      # This can run as a specific user or service principal in production 
  
   prod:
     mode: production
