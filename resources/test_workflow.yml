@@ -5,7 +5,8 @@ resources:
       tasks:
         - task_key: teste
           spark_python_task:
-            python_file: /Workspace/Users/luo14938@gmail.com/.bundle/databricks_ci_cd_test/dev/files/Code/test.py
+            python_file: ../Code/test.py
+            
           job_cluster_key: Job_cluster
       job_clusters:
         - job_cluster_key: Job_cluster
