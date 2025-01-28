@@ -4,7 +4,6 @@ name: "Test deployment"
  
 # Ensure that only a single job or workflow using the same concurrency group
 # runs at a time.
-concurrency: 1
  
 # Trigger this workflow whenever a pull request is pushed to the repo's
 # main branch.
@@ -16,9 +15,15 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.release.outputs.version }}
+      released: ${{ steps.release.outputs.released }}
+      tag: ${{ steps.release.outputs.tag }}
     environment:  dev
  
     steps:
+
+    
     - name: Checkout
       uses: actions/checkout@v3
     
@@ -27,29 +32,26 @@ jobs:
       
     - name: List files after checkout
       run: ls -la
-
-    - name: Setup | Force correct release branch on workflow sha
-      run: git checkout main
-
-    - name: Action | Semantic Version Release
+      
+    - name: Release
       id: release
-      # Adjust tag with desired version if applicable.
-      uses: python-semantic-release/python-semantic-release@v9.17.0
+      uses: python-semantic-release/python-semantic-release@master
       with:
+        git_committer_name: "GitHub Actions"
+        git_committer_email: ""
         github_token: ${{ secrets.GH_TOKEN }}
-        git_committer_name: "github-actions"
-        git_committer_email: "actions@users.noreply.github.com"
 
-    - name: Publish | Upload package to PyPI
-      uses:  pypa/gh-action-pypi-publish@release/v1
-      if: steps.release.outputs.released == 'true'
+    - name: Check Release
+      run: |
+        echo "Version: ${{ steps.release.outputs.version }}"
+        echo "Tag: ${{ steps.release.outputs.tag }}"
+        echo "Released: ${{ steps.release.outputs.released }}"
 
-    - name: Publish | Upload to GitHub Release Assets
-      uses: python-semantic-release/publish-action@v9.17.0
-      if: steps.release.outputs.released == 'true'
-      with:
-        github_token: ${{ secrets.GH_TOKEN }}
-        tag: ${{ steps.release.outputs.tag }}
+        if [ "${{ steps.release.outputs.released }}" == "false" ]; then
+          echo "No release created"
+          exit 1
+        fi
+          
           
     - name: Databricks Asset Bundles Deploy
       uses: lumiastudios/Databricks-Asset-Bundles-Deploy@v1.0.0
