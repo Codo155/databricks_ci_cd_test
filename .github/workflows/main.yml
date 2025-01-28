@@ -27,7 +27,7 @@ jobs:
         with:
           git_committer_name: "GitHub Actions"
           git_committer_email: ""
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
 
       - name: Check Release
         run: |
