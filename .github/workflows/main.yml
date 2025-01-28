@@ -1,67 +1,62 @@
 # This workflow validates, deploys, and runs the specified bundle
 # within a production target named "prod".
-name: "Test deployment"
- 
-# Ensure that only a single job or workflow using the same concurrency group
-# runs at a time.
- 
-# Trigger this workflow whenever a pull request is pushed to the repo's
-# main branch.
+name: Release
+
 on:
   push:
     branches:
       - main
- 
+
 jobs:
-  deploy:
+  release:
     runs-on: ubuntu-22.04
     outputs:
       version: ${{ steps.release.outputs.version }}
       released: ${{ steps.release.outputs.released }}
       tag: ${{ steps.release.outputs.tag }}
-    environment:  dev
- 
+
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    
-    - name: Checkout
-      uses: actions/checkout@v3
-    
-    - name: Release
-      id: release
-      uses: python-semantic-release/python-semantic-release@master
-      with:
-        git_committer_name: "GitHub Actions"
-        git_committer_email: ""
-        github_token: ${{ secrets.GH_TOKEN }}
+      - name: Release
+        id: release
+        uses: python-semantic-release/python-semantic-release@master
+        with:
+          git_committer_name: "GitHub Actions"
+          git_committer_email: ""
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Check Release
-      run: |
-        echo "Version: ${{ steps.release.outputs.version }}"
-        echo "Tag: ${{ steps.release.outputs.tag }}"
-        echo "Released: ${{ steps.release.outputs.released }}"
+      - name: Check Release
+        run: |
+          echo "Version: ${{ steps.release.outputs.version }}"
+          echo "Tag: ${{ steps.release.outputs.tag }}"
+          echo "Released: ${{ steps.release.outputs.released }}"
 
-        if [ "${{ steps.release.outputs.released }}" == "false" ]; then
-          echo "No release created"
-          exit 1
-        fi
+          if [ "${{ steps.release.outputs.released }}" == "false" ]; then
+            echo "No release created"
+            exit 1
+          fi
+ 
           
           
-    - name: Databricks Asset Bundles Deploy
-      uses: lumiastudios/Databricks-Asset-Bundles-Deploy@v1.0.0
-      with:
-        # The directory containing the Databricks asset bundle configuration
-        working-directory: .
-        # The Databricks workspace host URL
-        databricks-host: https://adb-2474944416409806.6.azuredatabricks.net/?o=2474944416409806
-        # The target environment for the Databricks asset bundle deployment
-        databricks-bundle-env: dev
-        # The type of authentication to use (token or oauth)
-        authentication-type: oauth
-        # Databricks personal access token for authentication
-        databricks-client-secret: ${{secrets.DATABRICKS_TOKEN }}
-        # Databricks OAuth client ID for authentication
-        databricks-client-id: ${{secrets.CLIENT_ID }}
+      - name: Databricks Asset Bundles Deploy
+        uses: lumiastudios/Databricks-Asset-Bundles-Deploy@v1.0.0
+        with:
+          # The directory containing the Databricks asset bundle configuration
+          working-directory: .
+          # The Databricks workspace host URL
+          databricks-host: https://adb-2474944416409806.6.azuredatabricks.net/?o=2474944416409806
+          # The target environment for the Databricks asset bundle deployment
+          databricks-bundle-env: dev
+          # The type of authentication to use (token or oauth)
+          authentication-type: oauth
+          # Databricks personal access token for authentication
+          databricks-client-secret: ${{secrets.DATABRICKS_TOKEN }}
+          # Databricks OAuth client ID for authentication
+          databricks-client-id: ${{secrets.CLIENT_ID }}
 
        
            
