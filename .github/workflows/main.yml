@@ -27,12 +27,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     
-    - name: Remove tmp file
-      run: rm -rf .databricks
-      
-    - name: List files after checkout
-      run: ls -la
-      
     - name: Release
       id: release
       uses: python-semantic-release/python-semantic-release@master
