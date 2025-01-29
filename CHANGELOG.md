@@ -1,6 +1,9 @@
 # CHANGELOG
 
 
+## v0.2.0 (2025-01-29)
+
+
 ## v0.1.0 (2025-01-29)
 
 ### Continuous Integration
@@ -26,6 +29,9 @@
   ([`177d16d`](https://github.com/Codo155/databricks_ci_cd_test/commit/177d16d35fae33d158706064716931cb8f985bec))
 
 ### New
+
+- New feature
+  ([`8a0e63c`](https://github.com/Codo155/databricks_ci_cd_test/commit/8a0e63ccf3b26513d05f5c140d1f465bab68f25c))
 
 - New toml
   ([`2b680f5`](https://github.com/Codo155/databricks_ci_cd_test/commit/2b680f59ec244b6393ae3aec981e098ba1fbe035))
