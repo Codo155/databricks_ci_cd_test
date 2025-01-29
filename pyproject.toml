@@ -7,7 +7,7 @@ logging_use_named_masks = false
 major_on_zero = true
 allow_zero_version = true
 no_git_verify = false
-tag_format = "v{version}"
+tag_format = "md_{version}"
 
 [tool.semantic_release.branches.main]
 match = "(main)"
@@ -16,8 +16,6 @@ prerelease = false
 
 [tool.semantic_release.branches.dev]
 match = "(dev)"
-prerelease_token = "rc"
-prerelease = true
 
 [tool.semantic_release.changelog]
 template_dir = "templates"
@@ -43,8 +41,8 @@ env = "GIT_COMMIT_AUTHOR"
 default = "semantic-release <semantic-release>"
 
 [tool.semantic_release.commit_parser_options]
-allowed_tags = ["build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test"]
-minor_tags = ["feat"]
+allowed_tags = ["build", "chore", "ci", "docs", "feat", "fix", "perf", "style", "refactor", "test","new"]
+minor_tags = ["feat","new"]
 patch_tags = ["fix", "perf"]
 default_bump_level = 0
 
