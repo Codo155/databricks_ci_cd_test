@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.0 (2025-01-30)
+
+### Features
+
+- Ac4ever
+  ([`4725153`](https://github.com/Codo155/databricks_ci_cd_test/commit/472515393814ae53c269e811ce6b79ee1319c620))
+
+
 ## v0.2.0 (2025-01-29)
 
 
