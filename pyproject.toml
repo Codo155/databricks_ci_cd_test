@@ -11,8 +11,7 @@ tag_format = "md_{version}"
 
 [tool.semantic_release.branches.main]
 match = "(main)"
-prerelease_token = "rc"
-prerelease = false
+version_pattern = "md_(?P<version>\d+\.\d+\.\d+)"
 
 [tool.semantic_release.branches.dev]
 match = "(dev)"
