@@ -3,9 +3,11 @@
 name: Release
 
 on:
-  push:
+   pull_request:
     branches:
-      - development
+      - main
+    types:
+      - closed
 
 jobs:
   release:
