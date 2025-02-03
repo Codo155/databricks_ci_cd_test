@@ -1,6 +1,29 @@
 # CHANGELOG
 
 
+## md_2.1.0-rc.2 (2025-02-03)
+
+### Build System
+
+- **Bier**: Final test für Prerelease
+  ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))
+
+Body: Text für den Prerelease
+
+BREAKING CHANGES: None Notice: None
+
+### Features
+
+- **Bier**: Niemand mag Heiniken
+  ([`6f4a8e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/6f4a8e7080bfa7d084781aeb28f4b4181dc1d696))
+
+- **Bier**: Ottakringer added
+  ([`ca70539`](https://github.com/Codo155/databricks_ci_cd_test/commit/ca70539a15ef439faf8dcc13e60c57a6c86e3134))
+
+- **Bier**: Radler ist kein Bier
+  ([`7566e1e`](https://github.com/Codo155/databricks_ci_cd_test/commit/7566e1ed5fe48698f1ef6b6bcc44d21d22438124))
+
+
 ## md_2.1.0-rc.1 (2025-02-03)
 
 ### Build System
