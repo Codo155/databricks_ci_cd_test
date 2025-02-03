@@ -8,14 +8,13 @@ major_on_zero = true
 allow_zero_version = true
 no_git_verify = false
 tag_format = "md_{version}"
+version_pattern ="md_{version}"
 
 [tool.semantic_release.branches.main]
 match = "(main)"
-prerelease_token = "rc"
-prerelease = false
 
-[tool.semantic_release.branches.dev]
-match = "(dev)"
+[tool.semantic_release.branches.development]
+match = "(development)"
 
 [tool.semantic_release.changelog]
 template_dir = "templates"
