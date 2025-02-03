@@ -1,6 +1,22 @@
 # CHANGELOG
 
 
+## v1.0.0 (2025-02-03)
+
+### Build System
+
+- **changelog**: New Changelog.md.j2
+  ([`726b310`](https://github.com/Codo155/databricks_ci_cd_test/commit/726b3104cf0e12cb9a11a77b6634e0d1c9722a78))
+
+Body:
+
+BREAKING CHANGE: New Changelog format for verioning
+
+### BREAKING CHANGES
+
+- **changelog**: New Changelog format for verioning
+
+
 ## v0.3.0 (2025-02-03)
 
 ### Build System
