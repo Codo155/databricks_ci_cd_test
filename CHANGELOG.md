@@ -1,6 +1,24 @@
 # CHANGELOG
 
 
+## md_2.1.0-rc.1 (2025-02-03)
+
+### Build System
+
+- **everywhere**: Tea und Prerelease
+  ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))
+
+BREAKING CHANGES: Test für Prerelease
+
+### Features
+
+- **Lightbringer**: Tea wurde dem Buch hinzugefügt
+  ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34))
+
+- **pyproject**: Test Prerelease Feature
+  ([`c2748cb`](https://github.com/Codo155/databricks_ci_cd_test/commit/c2748cb9bb65df698816065ec2ce6c58dbad12af))
+
+
 ## md_2.0.0 (2025-02-03)
 
 ### Build System
