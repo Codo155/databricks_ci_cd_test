@@ -4,8 +4,8 @@
 
 #}{{
 
-      "## %s (%s)\n" | format(
-        release.version.as_semver_tag(),
+      "## md_%s (%s)\n" | format(
+        release.version.as_semver_tag().replace("v", ""),
         release.tagged_date.strftime("%Y-%m-%d")
       )
 
