@@ -3,7 +3,7 @@ name: Major Release on New Branch
 on:
   create:
     branches:
-      - release/*
+      - 'releases/**'
 
 jobs:
   major-release:
@@ -21,4 +21,4 @@ jobs:
         run: pip install python-semantic-release
 
       - name: Release New Major Version
-        run: semantic-release publish --major
+        run: semantic-release publish
