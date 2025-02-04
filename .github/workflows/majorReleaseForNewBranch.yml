@@ -16,9 +16,15 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: "3.9"
-
+    
       - name: Install Dependencies
         run: pip install python-semantic-release
 
-      - name: Release New Major Version
-        run: semantic-release publish
+      - name: Release
+        id: release
+        uses: python-semantic-release/python-semantic-release@master
+        with:
+          git_committer_name: "GitHub Actions"
+          git_committer_email: "luo14938@gmail.com"
+          github_token: ${{ secrets.GH_TOKEN }}
+          force: "major" 
