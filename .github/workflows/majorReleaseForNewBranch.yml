@@ -23,7 +23,7 @@ jobs:
       - name: Determine if Branch is from Main
         id: check_branch
         run: |
-          BASE_BRANCH=$(git show-branch -a | grep '*' | grep -v `git rev-parse --abbrev-ref HEAD` | head -n 1 | awk '{print $2}')
+          BASE_BRANCH=$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')
           echo "Base Branch: $BASE_BRANCH"
           if [ "$BASE_BRANCH" = "main" ]; then
             echo "from_main=true" >> $GITHUB_ENV
