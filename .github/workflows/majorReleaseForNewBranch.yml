@@ -1,0 +1,36 @@
+name: Major Release on New Branch
+
+on:
+  create:
+    branches:
+      - "*"
+
+jobs:
+  major-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install Dependencies
+        run: pip install python-semantic-release
+
+      - name: Determine if Branch is from Main
+        id: check_branch
+        run: |
+          BASE_BRANCH=$(git show-branch -a | grep '*' | grep -v `git rev-parse --abbrev-ref HEAD` | head -n 1 | awk '{print $2}')
+          echo "Base Branch: $BASE_BRANCH"
+          if [ "$BASE_BRANCH" = "main" ]; then
+            echo "from_main=true" >> $GITHUB_ENV
+          else
+            echo "from_main=false" >> $GITHUB_ENV
+          fi
+
+      - name: Release New Major Version
+        if: env.from_main == 'true'
+        run: semantic-release publish --major
