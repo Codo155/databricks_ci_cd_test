@@ -6,20 +6,21 @@ on:
       - 'releases/**'
 
 jobs:
-  major-release:
-    runs-on: ubuntu-latest
+  release:
+    runs-on: ubuntu-22.04
+    outputs:
+      version: ${{ steps.release.outputs.version }}
+      released: ${{ steps.release.outputs.released }}
+      tag: ${{ steps.release.outputs.tag }}
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
         with:
-          python-version: "3.9"
-    
-      - name: Install Dependencies
-        run: pip install python-semantic-release
+          fetch-depth: 0
 
+      - name: print 
+        run: echo "${{ secrets.GH_TOKEN }}"
       - name: Release
         id: release
         uses: python-semantic-release/python-semantic-release@master
@@ -27,4 +28,14 @@ jobs:
           git_committer_name: "GitHub Actions"
           git_committer_email: "luo14938@gmail.com"
           github_token: ${{ secrets.GH_TOKEN }}
-          force: "major" 
+
+      - name: Check Release
+        run: |
+          echo "Version: ${{ steps.release.outputs.version }}"
+          echo "Tag: ${{ steps.release.outputs.tag }}"
+          echo "Released: ${{ steps.release.outputs.released }}"
+
+          if [ "${{ steps.release.outputs.released }}" == "false" ]; then
+            echo "No release created"
+            exit 1
+          fi
