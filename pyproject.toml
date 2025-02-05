@@ -12,8 +12,6 @@ version_pattern ="md_{version}"
 
 [tool.semantic_release.branches.main]
 match = "(main)"
-prerelease = true
-prerelease_token = "rc" 
 
 [tool.semantic_release.branches.development]
 match = "(development)"
