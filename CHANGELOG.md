@@ -1,6 +1,30 @@
 # CHANGELOG
 
 
+## md_2.1.0-rc.3 (2025-02-05)
+
+### Bug Fixes
+
+- **Bier**: Remove Radler becaue it is not a beer
+  ([`9e45e4f`](https://github.com/Codo155/databricks_ci_cd_test/commit/9e45e4f0f590a15869c13acea2a2a2ab151462ca))
+
+### Features
+
+- **Bier**: Add Wieselburger
+  ([`71e9040`](https://github.com/Codo155/databricks_ci_cd_test/commit/71e9040362f8fd6a7cf3144714f65ef9e170af23))
+
+- **Bier**: Gut Besser Gösser
+  ([`2452cf8`](https://github.com/Codo155/databricks_ci_cd_test/commit/2452cf85e287ae3e936a3c21e7e59999f80e75d0))
+
+### Testing
+
+- **Test**: Bierpong added
+  ([`7b133f6`](https://github.com/Codo155/databricks_ci_cd_test/commit/7b133f685b838cc357014c1a264ef3f09fae67ce))
+
+- **Test**: Weinverkostung hinzugefügt
+  ([`262f98d`](https://github.com/Codo155/databricks_ci_cd_test/commit/262f98daac96b8e2577daec6417a77c4926dc1ba))
+
+
 ## md_2.1.0-rc.2 (2025-02-03)
 
 ### Build System
