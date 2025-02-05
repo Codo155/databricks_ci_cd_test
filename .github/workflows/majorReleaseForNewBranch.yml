@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: print 
-        run: echo "${{ secrets.GH_TOKEN }}"
+        run: echo "${GITHUB_REF}"
       - name: Release
         id: release
         uses: python-semantic-release/python-semantic-release@master
@@ -45,5 +45,5 @@ jobs:
         id: merge
         with:
           github_token: ${{ github.token }}
-          source: ${GITHUB_REF#refs/heads/}
+          source: ${GITHUB_REF}
           target: 'main'
