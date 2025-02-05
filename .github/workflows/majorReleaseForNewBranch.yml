@@ -18,8 +18,18 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
 
-      - name: print 
+      - name: print step output
+        run: echo "${{ steps.extract_branch.outputs.branch }}"
+
+      - name: print GITHUB_HEAD_REF
+        run: echo "${GITHUB_HEAD_REF}"
+        
+      - name: print GITHUB_REF
         run: echo "${GITHUB_REF}"
       - name: Release
         id: release
@@ -45,5 +55,5 @@ jobs:
         id: merge
         with:
           github_token: ${{ github.token }}
-          source: ${GITHUB_REF}
+          source: ${{ steps.extract_branch.outputs.branch }}
           target: 'main'
