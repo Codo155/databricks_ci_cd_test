@@ -18,6 +18,10 @@ prerelease_token = "rc"
 [tool.semantic_release.branches.development]
 match = "(development)"
 
+[tool.semantic_release.branches.releases]
+match = "(releases/**)"
+prerelease = false
+
 [tool.semantic_release.changelog]
 template_dir = "templates"
 changelog_file = "CHANGELOG.md"
