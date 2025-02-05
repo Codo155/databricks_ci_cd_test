@@ -1,6 +1,24 @@
 # CHANGELOG
 
 
+## md_11.1.0 (2025-02-05)
+
+### Features
+
+- **Code**: Martha Wayne
+  ([`698a975`](https://github.com/Codo155/databricks_ci_cd_test/commit/698a975139c1b8deb780fa974c3fa85133397890))
+
+Batman is coming
+
+- **Code/Batman**: Add Martha Wayne
+  ([`ee0a30b`](https://github.com/Codo155/databricks_ci_cd_test/commit/ee0a30b3d422b07ec2dfb51244ffc6a05fb63208))
+
+### Testing
+
+- **test**: Kingscup
+  ([`e490ac7`](https://github.com/Codo155/databricks_ci_cd_test/commit/e490ac7cda17c7540f1f3facfbae6ba00222310f))
+
+
 ## md_11.0.0 (2025-02-05)
 
 
