@@ -1,9 +1,10 @@
 name: Major Release on New Branch
 
 on:
-  create:
+  push:
     branches:
-      -'releases/**'
+      - 'releases/**'
+      
 jobs:
   release:
     runs-on: ubuntu-22.04
