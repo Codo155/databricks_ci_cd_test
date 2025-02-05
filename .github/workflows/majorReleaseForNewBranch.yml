@@ -3,8 +3,7 @@ name: Major Release on New Branch
 on:
   create:
     branches:
-      - 'releases/**'
-
+        - releases/
 jobs:
   release:
     runs-on: ubuntu-22.04
