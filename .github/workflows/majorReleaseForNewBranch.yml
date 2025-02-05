@@ -40,3 +40,9 @@ jobs:
             echo "No release created"
             exit 1
           fi
+      - name: Merge release -> main
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          target_branch: main
+          github_token:  ${{ secrets.GH_TOKEN }}
