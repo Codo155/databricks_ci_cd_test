@@ -1,6 +1,24 @@
 # CHANGELOG
 
 
+## md_5.0.0 (2025-02-05)
+
+### Continuous Integration
+
+- **pyproject**: No prerelease on main
+  ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e))
+
+### Features
+
+- **Bier**: Egger added
+  ([`2306a0b`](https://github.com/Codo155/databricks_ci_cd_test/commit/2306a0b65a639567d674b0a06124155725ea107f))
+
+Egger Bier - kennt das wer?
+
+- **Bier**: Egger added
+  ([`71577d5`](https://github.com/Codo155/databricks_ci_cd_test/commit/71577d5c9d214de0fcccb79a4d2ef144a2eedf86))
+
+
 ## md_2.1.0-rc.3 (2025-02-05)
 
 ### Bug Fixes
