@@ -11,42 +11,10 @@ on:
       - closed
 
 jobs:
+
   release:
     runs-on: ubuntu-22.04
-    outputs:
-      version: ${{ steps.release.outputs.version }}
-      released: ${{ steps.release.outputs.released }}
-      tag: ${{ steps.release.outputs.tag }}
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: print 
-        run: echo "${{ secrets.GH_TOKEN }}"
-      - name: Release
-        id: release
-        uses: python-semantic-release/python-semantic-release@master
-        with:
-          git_committer_name: "GitHub Actions"
-          git_committer_email: "luo14938@gmail.com"
-          github_token: ${{ secrets.GH_TOKEN }}
-
-      - name: Check Release
-        run: |
-          echo "Version: ${{ steps.release.outputs.version }}"
-          echo "Tag: ${{ steps.release.outputs.tag }}"
-          echo "Released: ${{ steps.release.outputs.released }}"
-
-          if [ "${{ steps.release.outputs.released }}" == "false" ]; then
-            echo "No release created"
-            exit 1
-          fi
- 
-          
-          
       - name: Databricks Asset Bundles Deploy
         uses: lumiastudios/Databricks-Asset-Bundles-Deploy@v1.0.0
         with:
@@ -62,6 +30,40 @@ jobs:
           databricks-client-secret: ${{secrets.DATABRICKS_TOKEN }}
           # Databricks OAuth client ID for authentication
           databricks-client-id: ${{secrets.CLIENT_ID }}
+      
+  version:
+    needs:  release
+    runs-on: ubuntu-22.04
+    outputs:
+      version: ${{ steps.release.outputs.version }}
+      released: ${{ steps.release.outputs.released }}
+      tag: ${{ steps.release.outputs.tag }}
+    steps:   
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: print 
+        run: echo "${{ secrets.GH_TOKEN }}"
+      - name: Release
+        id: release
+        uses: python-semantic-release/python-semantic-release@master
+        with:
+          git_committer_name: "GitHub Actions"
+          git_committer_email: "luo14938@gmail.com"
+          github_token: ${{ secrets.GH_TOKEN }}
+
+      - name: Check Release     
+        run: |
+          echo "Version: ${{ steps.release.outputs.version }}"
+          echo "Tag: ${{ steps.release.outputs.tag }}"
+          echo "Released: ${{ steps.release.outputs.released }}"
+
+          if [ "${{ steps.release.outputs.released }}" == "false" ]; then
+            echo "No release created"
+          fi
+      
 
        
            
