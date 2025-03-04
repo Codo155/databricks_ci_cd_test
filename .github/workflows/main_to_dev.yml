@@ -1,9 +1,10 @@
 name: Merge 'main' to 'development' 
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Merge 'main' to 'development'", "Release","Major Release on releases/* branches"]
     branches:
-      - main
+      - 'main'
       
 jobs:
   merge:
@@ -14,5 +15,5 @@ jobs:
         id: merge
         with:
           github_token: ${{ github.token }}
-          source: 'main'
+          source: 'main'   
           target: 'development'
