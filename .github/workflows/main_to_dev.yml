@@ -1,4 +1,4 @@
-name: Major Release on releases/* branches 
+name: Merge 'main' to 'development' 
 
 on:
   push:
