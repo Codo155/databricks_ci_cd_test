@@ -50,10 +50,18 @@ jobs:
             echo "No release created"
             exit 1
           fi
-      - name: merge
+      - name: merge release to main 
         uses: mtanzi/action-automerge@v1
         id: merge
         with:
           github_token: ${{ github.token }}
           source: ${{ steps.extract_branch.outputs.branch }}
           target: 'main'
+
+      - name: merge main to development
+        uses: mtanzi/action-automerge@v1
+        id: mainToDevelopment
+        with:
+          github_token: ${{ github.token }}
+          source: 'main'
+          target: 'development'

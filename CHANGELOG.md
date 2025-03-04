@@ -1,23 +1,7 @@
 # CHANGELOG
 
 
-## md_11.3.0 (2025-03-04)
-
-### Features
-
-- Add Ant Man
-  ([`341faf8`](https://github.com/Codo155/databricks_ci_cd_test/commit/341faf81adfba8f1601fcc69d75d597932b7bf44))
-
-- Add Thor - God of Thunder
-  ([`e9b2975`](https://github.com/Codo155/databricks_ci_cd_test/commit/e9b2975a88753395eb0649e3155f4520cdf27596))
-
-- Add Thor and Ant Man
-  ([`2ffd3b1`](https://github.com/Codo155/databricks_ci_cd_test/commit/2ffd3b107cda04767032a20b8f5d5ee59d70e820))
-
-Marvel5
-
-
-## md_11.2.0 (2025-03-04)
+## md_12.0.0 (2025-03-04)
 
 ### Features
 
