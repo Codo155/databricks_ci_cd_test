@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## md_11.2.0 (2025-03-04)
+
+### Features
+
+- Add Augustiner
+  ([`1532276`](https://github.com/Codo155/databricks_ci_cd_test/commit/1532276f2d2a21caae29fa79222314bdab8d9adb))
+
+
 ## md_11.1.0 (2025-02-05)
 
 ### Features
