@@ -1,6 +1,17 @@
 # CHANGELOG
 
 
+## md_15.0.0 (2025-03-04)
+
+
+## md_14.0.0 (2025-03-04)
+
+### Continuous Integration
+
+- Auto merge into dev after major release
+  ([`cb19336`](https://github.com/Codo155/databricks_ci_cd_test/commit/cb19336f612ee0246062bfb76279ed075585b472))
+
+
 ## md_12.0.0 (2025-03-04)
 
 ### Features
