@@ -2,7 +2,7 @@ name: Merge 'main' to 'development'
 
 on:
   workflow_run:
-    workflows: ["Merge 'main' to 'development'", "Release","Major Release on releases/* branches"]
+    workflows: ["Release","Major Release on releases/* branches"]
     branches:
       - 'main'
       
