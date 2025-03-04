@@ -5,6 +5,7 @@ on:
     workflows: ["Release","Major Release on releases/* branches"]
     branches:
       - 'main'
+      - 'releases/**'
       
 jobs:
   merge:
