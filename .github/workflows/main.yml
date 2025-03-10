@@ -20,21 +20,15 @@ jobs:
         with:
           fetch-depth: 0
           
-      -  name: Databricks Asset Bundles Deploy
-         uses: lumiastudios/Databricks-Asset-Bundles-Deploy@v1.0.0
-         with:
-          # The directory containing the Databricks asset bundle configuration
-          working-directory: .
-          # The Databricks workspace host URL
-          databricks-host: https://adb-2474944416409806.6.azuredatabricks.net/?o=2474944416409806
-          # The target environment for the Databricks asset bundle deployment
-          databricks-bundle-env: dev
-          # The type of authentication to use (token or oauth)
-          authentication-type: oauth
-          # Databricks personal access token for authentication
-          databricks-client-secret: ${{secrets.DATABRICKS_TOKEN }}
-          # Databricks OAuth client ID for authentication
-          databricks-client-id: ${{secrets.CLIENT_ID }}
+      - name: install-databricks-cli
+        uses: microsoft/install-databricks-cli@v1.0.0
+
+      - name: Deploy Databricks Bundle
+        run: |
+          databricks bundle deploy --target staging
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ env.DATABRICKS_TOKEN_SP }}
       
   version:
     needs:  release
