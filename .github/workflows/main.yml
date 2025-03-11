@@ -20,8 +20,16 @@ jobs:
         with:
           fetch-depth: 0
           
-      - name: install-databricks-cli
-        uses: microsoft/install-databricks-cli@v1.0.0
+      - name: Install Databricks CLI and Create Config File
+        run: |
+          # Install Databricks CLI
+          curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
+
+          # Verify installation
+          databricks --version
+
+        
+        shell: bash
 
       - name: Deploy Databricks Bundle
         run: |
