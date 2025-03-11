@@ -33,7 +33,7 @@ jobs:
 
       - name: Deploy Databricks Bundle
         run: |
-          databricks bundle deploy --target staging
+          databricks bundle deploy --target dev
         env:
           DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
           DATABRICKS_TOKEN: ${{ env.DATABRICKS_TOKEN_SP }}
