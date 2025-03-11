@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## md_18.0.1 (2025-03-11)
+
+### Bug Fixes
+
+- Kein Schnitzel
+  ([`87e7eef`](https://github.com/Codo155/databricks_ci_cd_test/commit/87e7eef83fd9bbc3584a9aa3be6d1f5bb59f456a))
+
+
 ## md_18.0.0 (2025-03-06)
 
 
