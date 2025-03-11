@@ -27,43 +27,14 @@ jobs:
 
           # Verify installation
           databricks --version
-
-          # Create Databricks config file
-          file="$HOME/.databrickscfg"
-
-          # If exists, remove it
-          if [ -f "$file" ] ; then
-              rm "$file"
-          fi
-
-          # Define the profile
-          echo "[YOUR_WORKSPACE_PROFILE]" >> $HOME/.databrickscfg
-          echo "host = ${{ secrets.CLIENT_ID}}" >> $HOME/.databrickscfg
-          echo "token = ${{secrets.DATABRICKS_TOKEN  }}" >> $HOME/.databrickscfg
-
-          # Show the file (for debugging, remove in production)
-          cat $HOME/.databrickscfg
-
-          # Check profiles
-          databricks auth profiles
-
-          # Export token
-          DATABRICKS_TOKEN_SP=$(curl --request POST \
-            --url "https://adb-8413004091577872.12.azuredatabricks.net//oidc/v1/token" \
-            --user "${{ secrets.SP_CLIENT_ID }}:${{ secrets.SP_CLIENT_SECRET }}" \
-            --data 'grant_type=client_credentials&scope=all-apis' | jq -r '.access_token'
-          )
-
-          # Set environment variable
-          echo "DATABRICKS_TOKEN_SP=$DATABRICKS_TOKEN_SP" >> $GITHUB_ENV
         shell: bash
 
       - name: Deploy Databricks Bundle
         run: |
           databricks bundle deploy --target dev
         env:
-          DATABRICKS_HOST: ${{ secrets.CLIENT_ID}}
-          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN  }}
+          DATABRICKS_CLIENT_ID: ${{ secrets.CLIENT_ID}}
+          DATABRICKS_CLIENT_SECRET: ${{secrets.DATABRICKS_TOKEN}}
       
   version:
     needs:  release
