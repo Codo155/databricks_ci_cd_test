@@ -38,8 +38,8 @@ jobs:
 
           # Define the profile
           echo "[YOUR_WORKSPACE_PROFILE]" >> $HOME/.databrickscfg
-          echo "host = ${{ secrets.DATABRICKS_HOST }}" >> $HOME/.databrickscfg
-          echo "token = ${{ secrets.DATABRICKS_TOKEN }}" >> $HOME/.databrickscfg
+          echo "host = ${{ secrets.CLIENT_ID}}" >> $HOME/.databrickscfg
+          echo "token = ${{secrets.DATABRICKS_TOKEN  }}" >> $HOME/.databrickscfg
 
           # Show the file (for debugging, remove in production)
           cat $HOME/.databrickscfg
@@ -62,8 +62,8 @@ jobs:
         run: |
           databricks bundle deploy --target dev
         env:
-          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
-          DATABRICKS_TOKEN: ${{ env.DATABRICKS_TOKEN_SP }}
+          DATABRICKS_HOST: ${{ secrets.CLIENT_ID}}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN  }}
       
   version:
     needs:  release
@@ -78,8 +78,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: print 
-        run: echo "${{ secrets.GH_TOKEN }}"
       - name: Release
         id: release
         uses: python-semantic-release/python-semantic-release@master
