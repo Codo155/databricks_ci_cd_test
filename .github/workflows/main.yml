@@ -3,15 +3,11 @@
 name: Release
 
 on:
-   pull_request:
+   push:
     branches:
       - main
-      - development
-    types:
-      - closed
 
 jobs:
-
   release:
     runs-on: ubuntu-22.04
     steps:
