@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## md_19.2.0 (2025-04-20)
+
+### Features
+
+- Add Cubblestone
+  ([`41e04db`](https://github.com/Codo155/databricks_ci_cd_test/commit/41e04db738bcae741bdbd5296a7fa88d9a038d1d))
+
+
 ## md_19.1.0 (2025-04-20)
 
 
