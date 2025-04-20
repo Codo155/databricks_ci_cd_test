@@ -1,13 +1,27 @@
 # CHANGELOG
 
 
+
+## md_19.0.0 (2025-04-16)
+=======
 ## md_18.0.1 (2025-03-11)
+
 
 ### Bug Fixes
 
 - Kein Schnitzel
   ([`87e7eef`](https://github.com/Codo155/databricks_ci_cd_test/commit/87e7eef83fd9bbc3584a9aa3be6d1f5bb59f456a))
 
+
+### Continuous Integration
+
+- No version on development
+  ([`78c1ce0`](https://github.com/Codo155/databricks_ci_cd_test/commit/78c1ce03228603c62d34b8ed160881fad25931c5))
+
+- Replace pull requ with push
+  ([`7cf58c5`](https://github.com/Codo155/databricks_ci_cd_test/commit/7cf58c51522db992ad903052e668fb44d9f35d32))
+
+=======
 
 ## md_18.0.0 (2025-03-06)
 
@@ -208,15 +222,6 @@ Body:
 
 BREAKING CHANGE: New Changelog format for verioning
 
-### BREAKING CHANGES
-
-- **changelog**: New Changelog format for verioning
-
-
-## md_0.3.0 (2025-02-03)
-
-### Build System
-
 - **pyproject.toml**: Update toml
   ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))
 
@@ -249,6 +254,10 @@ added naoe
   ([`f7a6bc1`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7a6bc1d199b84a120e59fe12e6577afb8985afc))
 
 Teil 1 der Lichtbringer Serie
+
+### BREAKING CHANGES
+
+- **changelog**: New Changelog format for verioning
 
 
 ## md_0.2.0 (2025-01-29)
