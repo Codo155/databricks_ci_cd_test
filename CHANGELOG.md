@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## md_19.3.0 (2025-04-20)
+
+### Features
+
+- Add Wood
+  ([`22eb8d3`](https://github.com/Codo155/databricks_ci_cd_test/commit/22eb8d3d0c2e2b5f01a46d9c10d99d833880395f))
+
+
 ## md_19.2.0 (2025-04-20)
 
 ### Features
