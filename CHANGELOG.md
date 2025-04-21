@@ -1,6 +1,22 @@
 # CHANGELOG
 
 
+## md_20.2.0 (2025-04-21)
+
+### Bug Fixes
+
+- **pyproject.toml**: Delete parser options
+  ([`839dd19`](https://github.com/Codo155/databricks_ci_cd_test/commit/839dd19170799f7b5ac02b84bcee96463a4700bc))
+
+### Features
+
+- Add sand.py
+  ([`1ca9dfe`](https://github.com/Codo155/databricks_ci_cd_test/commit/1ca9dfe48f7a413dde144e48daedf22d4e5646dd))
+
+- Gravel
+  ([`de30637`](https://github.com/Codo155/databricks_ci_cd_test/commit/de30637e8985668ca288b1046c468b4789e90f63))
+
+
 ## md_20.1.0 (2025-04-21)
 
 ### Features
@@ -16,14 +32,6 @@
 
 
 ## md_19.2.0 (2025-04-20)
-
-### Check
-
-- Check new feature
-  ([`07e2797`](https://github.com/Codo155/databricks_ci_cd_test/commit/07e2797ea1417c17c35fcca9f4aa53f6e5889374))
-
-- Cubblestone
-  ([`9c2b5dc`](https://github.com/Codo155/databricks_ci_cd_test/commit/9c2b5dcebb982dd1677edc7c93aa65fcffbb74ed))
 
 ### Features
 
@@ -141,11 +149,6 @@ Batman is coming
 - **Code/Batman**: Add Martha Wayne
   ([`ee0a30b`](https://github.com/Codo155/databricks_ci_cd_test/commit/ee0a30b3d422b07ec2dfb51244ffc6a05fb63208))
 
-### Testing
-
-- **test**: Kingscup
-  ([`e490ac7`](https://github.com/Codo155/databricks_ci_cd_test/commit/e490ac7cda17c7540f1f3facfbae6ba00222310f))
-
 
 ## md_11.0.0 (2025-02-05)
 
@@ -185,14 +188,6 @@ Egger Bier - kennt das wer?
 
 - **Bier**: Gut Besser Gösser
   ([`2452cf8`](https://github.com/Codo155/databricks_ci_cd_test/commit/2452cf85e287ae3e936a3c21e7e59999f80e75d0))
-
-### Testing
-
-- **Test**: Bierpong added
-  ([`7b133f6`](https://github.com/Codo155/databricks_ci_cd_test/commit/7b133f685b838cc357014c1a264ef3f09fae67ce))
-
-- **Test**: Weinverkostung hinzugefügt
-  ([`262f98d`](https://github.com/Codo155/databricks_ci_cd_test/commit/262f98daac96b8e2577daec6417a77c4926dc1ba))
 
 
 ## md_2.1.0-rc.2 (2025-02-03)
@@ -332,11 +327,3 @@ Teil 1 der Lichtbringer Serie
 
 - Toml update
   ([`177d16d`](https://github.com/Codo155/databricks_ci_cd_test/commit/177d16d35fae33d158706064716931cb8f985bec))
-
-### New
-
-- New feature
-  ([`8a0e63c`](https://github.com/Codo155/databricks_ci_cd_test/commit/8a0e63ccf3b26513d05f5c140d1f465bab68f25c))
-
-- New toml
-  ([`2b680f5`](https://github.com/Codo155/databricks_ci_cd_test/commit/2b680f59ec244b6393ae3aec981e098ba1fbe035))
