@@ -1,6 +1,25 @@
 # CHANGELOG
 
 
+## md_20.0.0 (2025-04-21)
+
+
+## md_19.3.0 (2025-04-20)
+
+### Features
+
+- Add Wood
+  ([`22eb8d3`](https://github.com/Codo155/databricks_ci_cd_test/commit/22eb8d3d0c2e2b5f01a46d9c10d99d833880395f))
+
+
+## md_19.2.0 (2025-04-20)
+
+### Features
+
+- Add Cubblestone
+  ([`41e04db`](https://github.com/Codo155/databricks_ci_cd_test/commit/41e04db738bcae741bdbd5296a7fa88d9a038d1d))
+
+
 ## md_19.1.0 (2025-04-20)
 
 
