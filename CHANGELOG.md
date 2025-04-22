@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## md_20.4.0 (2025-04-22)
+
+### Features
+
+- Add Spider
+  ([`2c3a074`](https://github.com/Codo155/databricks_ci_cd_test/commit/2c3a07473a40e82c07441a1901ca5ac55ff3b427))
+
+- Added Spider and Enderdragon
+  ([`872ddef`](https://github.com/Codo155/databricks_ci_cd_test/commit/872ddeff55f53216c03d482013a5ec2e60faa2eb))
+
+Speider und Enderdrache
+
+
 ## md_20.3.0 (2025-04-22)
 
 ### Features
