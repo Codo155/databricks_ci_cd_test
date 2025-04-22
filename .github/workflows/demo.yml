@@ -1,0 +1,16 @@
+name: Demo
+
+on:
+   push:
+    branches:
+      - development
+
+jobs:
+  Test:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: print
+      run: |
+            echo "Version: ${{ secrets.CLIENT_ID }}"
+            echo "Hello"
+      
