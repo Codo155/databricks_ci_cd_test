@@ -1,6 +1,20 @@
 # CHANGELOG
 
 
+## md_20.3.0 (2025-04-22)
+
+### Features
+
+- Add Creeper weil ich einer bin
+  ([`859e7b9`](https://github.com/Codo155/databricks_ci_cd_test/commit/859e7b94d0a3d835f8f434e1d82bf2769437c079))
+
+- Enderman added
+  ([`035be6a`](https://github.com/Codo155/databricks_ci_cd_test/commit/035be6aad7e3fd381d37767dbf459d2c6f801d2e))
+
+- **Minecraft/zombie.py**: Add Zombie weil Ostern
+  ([`885e625`](https://github.com/Codo155/databricks_ci_cd_test/commit/885e625e1b5874e66a663a1eea16611b878102d0))
+
+
 ## md_20.2.0 (2025-04-21)
 
 ### Bug Fixes
