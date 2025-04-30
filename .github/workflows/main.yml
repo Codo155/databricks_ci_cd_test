@@ -28,7 +28,7 @@ jobs:
       - name: Deploy Databricks Bundle
         shell: pwsh
         run: |
-          $env:BUNDLE_VAR_run_as=dosef84552a0f11018d8708eabd59ebe81d2
+          $env:BUNDLE_VAR_run_as= "dosef84552a0f11018d8708eabd59ebe81d2"
           databricks bundle validate
           databricks bundle deploy --target dev
         env:
