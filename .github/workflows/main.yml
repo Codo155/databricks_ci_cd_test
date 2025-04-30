@@ -27,7 +27,8 @@ jobs:
 
       - name: Deploy Databricks Bundle
         run: |
-          "set BUNDLE_VAR_run_as=dosef84552a0f11018d8708eabd59ebe81d2" && "databricks bundle validate"
+          $ENV:BUNDLE_VAR_run_as=dosef84552a0f11018d8708eabd59ebe81d2
+          databricks bundle validate
           databricks bundle deploy --target dev
         env:
           DATABRICKS_CLIENT_ID: ${{ secrets.CLIENT_ID}}
