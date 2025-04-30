@@ -27,11 +27,12 @@ jobs:
 
       - name: Deploy Databricks Bundle
         run: |
-          "set BUNDLE_VAR_run_as=dosef84552a0f11018d8708eabd59ebe81d2" && "set BUNDLE_VAR_host= https://adb-2474944416409806.6.azuredatabricks.net" && "databricks bundle validate"
+          "set BUNDLE_VAR_run_as=dosef84552a0f11018d8708eabd59ebe81d2" && "databricks bundle validate"
           databricks bundle deploy --target dev
         env:
           DATABRICKS_CLIENT_ID: ${{ secrets.CLIENT_ID}}
           DATABRICKS_CLIENT_SECRET: ${{secrets.DATABRICKS_TOKEN}}
+          DATABRICKS_HOST: https://adb-2474944416409806.6.azuredatabricks.net
       
   version:
     needs:  release

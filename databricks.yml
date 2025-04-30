@@ -32,16 +32,16 @@ targets:
   dev:
     default: true
     workspace:
-      host:  ${var.host}
       #/Workspace/Users/luo14938@gmail.com/.bundle/databricks_ci_cd_test/dev/files
       root_path: /Users/${workspace.current_user.userName}/.bundle/${bundle.target}/${bundle.name}
-  
-      # This can run as a specific user or service principal in production 
+    run_as:
+      # This can run as a specific user or service principal in production.
+      # service_principal_name: "dosef84552a0f11018d8708eabd59ebe81d2"
+      service_principal_name: ${var.run_as}
  
   prod:
     mode: production
     workspace:
-      host: https://adb-2474944416409806.6.azuredatabricks.net
       # If this path results in an error, please make sure you have a recent version of the CLI installed.
       root_path: /Users/${workspace.current_user.userName}/.bundle/${bundle.target}/${bundle.name}
     run_as:
