@@ -8,7 +8,7 @@ bundle:
 variables:
   run_as:
     description: SPN for running the workflows
-    default: 1234-567890-abcde123
+    default: 4fb95390-dac2-40fd-ba57-a43b93216de4
 
 # artifacts: 
 #   # notebooks:

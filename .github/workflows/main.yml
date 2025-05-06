@@ -31,7 +31,7 @@ jobs:
           databricks bundle validate --output json
           databricks bundle deploy --target dev
         env:
-          BUNDLE_VAR_run_as : "dosef84552a0f11018d8708eabd59ebe81d2"
+          BUNDLE_VAR_run_as : "bb9536ec-d5c6-4790-9be1-2752c47f8161"
           DATABRICKS_CLIENT_ID: ${{ secrets.CLIENT_ID}}
           DATABRICKS_CLIENT_SECRET: ${{secrets.DATABRICKS_TOKEN}}
           DATABRICKS_HOST: https://adb-2474944416409806.6.azuredatabricks.net
