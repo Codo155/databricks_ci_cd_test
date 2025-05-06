@@ -37,7 +37,7 @@ targets:
     run_as:
       # This can run as a specific user or service principal in production.
       # service_principal_name: "dosef84552a0f11018d8708eabd59ebe81d2"
-      service_principal_name: ${var.BUNDLE_VAR_run_as}
+      service_principal_name: ${var.run_as}
  
   prod:
     mode: production
@@ -47,4 +47,4 @@ targets:
     run_as:
       # This can run as a specific user or service principal in production.
       # service_principal_name: "dosef84552a0f11018d8708eabd59ebe81d2"
-      service_principal_name: ${var.BUNDLE_VAR_run_as}
+      service_principal_name: ${var.run_as}
