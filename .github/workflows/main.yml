@@ -29,7 +29,7 @@ jobs:
         shell: pwsh
         run: |
           databricks bundle validate --output json
-          # databricks bundle deploy --target dev
+          databricks bundle deploy --target dev
         env:
           BUNDLE_VAR_run_as : "dosef84552a0f11018d8708eabd59ebe81d2"
           DATABRICKS_CLIENT_ID: ${{ secrets.CLIENT_ID}}
