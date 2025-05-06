@@ -5,6 +5,10 @@
 bundle:
   name: databricks_ci_cd_test
 
+variables:
+  run_as:
+    description: SPN for running the workflows
+    default: 1234-567890-abcde123
 
 # artifacts: 
 #   # notebooks:
