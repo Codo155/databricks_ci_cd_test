@@ -28,10 +28,10 @@ jobs:
       - name: Deploy Databricks Bundle
         shell: pwsh
         run: |
-          $env:BUNDLE_VAR_run_as= "dosef84552a0f11018d8708eabd59ebe81d2"
           databricks bundle validate --output json
           databricks bundle deploy --target dev
         env:
+          BUNDLE_VAR_run_as : "dosef84552a0f11018d8708eabd59ebe81d2"
           DATABRICKS_CLIENT_ID: ${{ secrets.CLIENT_ID}}
           DATABRICKS_CLIENT_SECRET: ${{secrets.DATABRICKS_TOKEN}}
           DATABRICKS_HOST: https://adb-2474944416409806.6.azuredatabricks.net
