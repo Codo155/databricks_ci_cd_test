@@ -35,7 +35,7 @@ jobs:
           BUNDLE_VAR_host: https://adb-2474944416409806.6.azuredatabricks.net
           DATABRICKS_CLIENT_ID: ${{ secrets.CLIENT_ID}}
           DATABRICKS_CLIENT_SECRET: ${{secrets.DATABRICKS_TOKEN}}
-          # DATABRICKS_HOST: https://adb-2474944416409806.6.azuredatabricks.net
+          DATABRICKS_HOST: https://adb-2474944416409806.6.azuredatabricks.net
       
   version:
     needs:  release
