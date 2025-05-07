@@ -42,7 +42,7 @@ targets:
   dev:
     default: true
     workspace:
-      host: ${var.host}
+      # host: ${var.host}
       #/Workspace/Users/luo14938@gmail.com/.bundle/databricks_ci_cd_test/dev/files
       root_path: ${var.root_path}
     run_as:
