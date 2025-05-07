@@ -9,6 +9,10 @@ variables:
   run_as:
     description: SPN for running the workflows
     default: 4fb95390-dac2-40fd-ba57-a43b93216de4
+  host:
+    description: Host - where to deploy 
+    default:  sdfdsf
+  # root_path: where to deploy 
 
 # artifacts: 
 #   # notebooks:
@@ -36,6 +40,7 @@ targets:
   dev:
     default: true
     workspace:
+      host: ${var.host}
       #/Workspace/Users/luo14938@gmail.com/.bundle/databricks_ci_cd_test/dev/files
       root_path: /Users/${workspace.current_user.userName}/.bundle/${bundle.target}/${bundle.name}
     run_as:
