@@ -12,7 +12,9 @@ variables:
   host:
     description: Host - where to deploy 
     default:  sdfdsf
-  # root_path: where to deploy 
+  root_path:
+    description: Host - where to deploy 
+    default:  Workspace/default
 
 # artifacts: 
 #   # notebooks:
@@ -42,7 +44,7 @@ targets:
     workspace:
       # host: ${var.host}
       #/Workspace/Users/luo14938@gmail.com/.bundle/databricks_ci_cd_test/dev/files
-      root_path: /Users/${workspace.current_user.userName}/.bundle/${bundle.target}/${bundle.name}
+      root_path: ${var.root_path}
     run_as:
       # This can run as a specific user or service principal in production.
       # service_principal_name: "dosef84552a0f11018d8708eabd59ebe81d2"
