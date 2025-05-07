@@ -12,7 +12,9 @@ variables:
   host:
     description: Host - where to deploy 
     default:  sdfdsf
-  # root_path: where to deploy 
+  root_path:
+    description: Host - where to deploy 
+    default:  Workspace/default
 
 # artifacts: 
 #   # notebooks:
