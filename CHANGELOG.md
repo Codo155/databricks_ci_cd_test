@@ -1,4 +1,19 @@
+![Accenture](https://github.com/Codo155/databricks_ci_cd_test/templates/logo.png)
+
 # CHANGELOG
+
+
+## md_20.4.1 (2025-05-22)
+
+### Bug Fixes
+
+- Proper message
+  ([`16e40be`](https://github.com/Codo155/databricks_ci_cd_test/commit/16e40be1fb76f2aa6a9d27df647632a7a3970b03))
+
+### Continuous Integration
+
+- Using var for databricks.yml
+  ([`ecaf006`](https://github.com/Codo155/databricks_ci_cd_test/commit/ecaf006b381e5db3dc89e4f562357f0fdda59cf6))
 
 
 ## md_20.4.0 (2025-04-22)
