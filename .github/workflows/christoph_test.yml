@@ -36,7 +36,6 @@ jobs:
           DATABRICKS_HOST: https://adb-2474944416409806.6.azuredatabricks.net
       
   version:
-    needs:  release
     runs-on: ubuntu-22.04
     outputs:
       version: ${{ steps.release.outputs.version }}
