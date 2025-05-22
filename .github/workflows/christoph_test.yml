@@ -1,6 +1,6 @@
 # This workflow validates, deploys, and runs the specified bundle
 # within a production target named "prod".
-name: Release
+name: christoph_test
 
 on:
    workflow_dispatch:
