@@ -1,6 +1,14 @@
-![Accenture](https://github.com/Codo155/databricks_ci_cd_test/templates/logo.png)
+![Accenture](https://github.com/Codo155/databricks_ci_cd_test/blob/main/templates/logo.png)
 
 # CHANGELOG
+
+
+## md_20.4.2 (2025-05-22)
+
+### Bug Fixes
+
+- Picture should work now
+  ([`69f66a3`](https://github.com/Codo155/databricks_ci_cd_test/commit/69f66a3f84f5d532569a56650355f3ac8b0aa9ea))
 
 
 ## md_20.4.1 (2025-05-22)
