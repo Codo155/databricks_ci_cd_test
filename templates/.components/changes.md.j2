@@ -46,17 +46,18 @@ EXAMPLE:
   {{ group_table.columns.append((type_ | title, commit_descriptions | unique)) | default("", true) }}
 {% endfor %}
 
-{# Render table#}
+{# Render table headers #}
 | {% for column in group_table.columns %}{{ column[0] }} |{% endfor %}
 | {% for _ in group_table.columns %}--- |{% endfor %}
 
-{# Determine max number of rows needed #}
-{% set max_rows = group_table.columns | map(attribute=1) | map('length') | max %}
+{# Convert commit lists to actual lists and find max rows #}
+{% set column_commits = group_table.columns | map(attribute=1) | map('list') | list %}
+{% set max_rows = column_commits | map('length') | max %}
 
 {# Render each row of commits #}
 {% for i in range(max_rows) %}
-| {% for column in group_table.columns %}
-  {{ column[1][i] if i < column[1] | length else "" }} |
+| {% for commits in column_commits %}
+  {{ commits[i] if i < commits | length else "" }} |
 {% endfor %}
 {% endfor %}
 {#
