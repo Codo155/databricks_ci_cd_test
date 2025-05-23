@@ -46,7 +46,7 @@ EXAMPLE:
   {{ group_table.columns.append((type_ | title, commit_descriptions | unique)) | default("", true) }}
 {% endfor %}
 
-{# Convert commit group tuples into a dict: { group_name: [commit1, commit2, ...] } #}
+{# Convert commit group tuples into a dictionary: { group_name: [commit1, commit2, ...] } #}
 {% set groups_dict = dict() %}
 {% for type_, commits in commit_objects if type_ != "unknown" %}
   {% set ns = namespace(commits=commits) %}
@@ -63,18 +63,21 @@ EXAMPLE:
   {% set _ = groups_dict.update({ (type_ | title): commit_descriptions | list }) %}
 {% endfor %}
 
-{# Get group names and list of lists of descriptions #}
+{# Extract list of group names and their values manually #}
 {% set group_names = groups_dict.keys() | list %}
-{% set group_values = group_names | map('attribute', groups_dict) | map('list') | list %}
+{% set group_values = [] %}
+{% for name in group_names %}
+  {% set _ = group_values.append(groups_dict[name]) %}
+{% endfor %}
 
-{# Get the maximum number of rows needed for the table #}
+{# Find the maximum number of rows we need in the table #}
 {% set max_rows = group_values | map('length') | list | max %}
 
 {# Render table header #}
 | {% for name in group_names %}{{ name }} |{% endfor %}
 | {% for _ in group_names %}--- |{% endfor %}
 
-{# Render each row of commits #}
+{# Render each row of the table #}
 {% for i in range(0, max_rows) %}
 | {% for name in group_names %}
   {{ groups_dict[name][i] if i < (groups_dict[name] | length) else "" }} |
