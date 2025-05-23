@@ -46,10 +46,7 @@ EXAMPLE:
   {{ group_table.columns.append((type_ | title, commit_descriptions | unique)) | default("", true) }}
 {% endfor %}
 
-{# Render Markdown table header #}
-{{ "\n" }}
-{{ "### Changes\n" }}
-{{ "\n" }}
+{# Render table #}
 | {% for column in group_table.columns %}{{ column[0] }} |{% endfor %}
 | {% for _ in group_table.columns %}---|{% endfor %}
 
