@@ -48,7 +48,7 @@ EXAMPLE:
 {% endfor %}
 
 {% if group_names | length > 0 %}
-### Changes - Header?
+### Changes - Head
 
 | {{ group_names | join(" | ") }} |
 | {{ group_names | map("regex_replace", ".*", "---") | join(" | ") }} |
