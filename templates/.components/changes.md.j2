@@ -46,18 +46,38 @@ EXAMPLE:
   {{ group_table.columns.append((type_ | title, commit_descriptions | unique)) | default("", true) }}
 {% endfor %}
 
-{# Render table headers #}
-| {% for column in group_table.columns %}{{ column[0] }} |{% endfor %}
-| {% for _ in group_table.columns %}--- |{% endfor %}
+{# Convert commit group tuples into a dict: { group_name: [commit1, commit2, ...] } #}
+{% set groups_dict = dict() %}
+{% for type_, commits in commit_objects if type_ != "unknown" %}
+  {% set ns = namespace(commits=commits) %}
+  {{ apply_alphabetical_ordering_by_descriptions(ns) | default("", true) }}
+  {% set commit_descriptions = [] %}
+  {% for commit in ns.commits %}
+    {% set description = format_commit_summary_line(commit) %}
+    {% if commit.descriptions | length > 1 %}
+      {% set description = description ~ "<br><br>" ~ (commit.descriptions[1:] | join("<br><br>")) %}
+    {% endif %}
+    {% set description = description | autofit_text_width(max_line_width, hanging_indent) %}
+    {{ commit_descriptions.append(description) | default("", true) }}
+  {% endfor %}
+  {% set _ = groups_dict.update({ (type_ | title): commit_descriptions | list }) %}
+{% endfor %}
 
-{# Convert commit lists to actual lists and find max rows #}
-{% set column_commits = group_table.columns | map(attribute=1) | map('list') | list %}
-{% set max_rows = column_commits | map('length') | max %}
+{# Get group names and list of lists of descriptions #}
+{% set group_names = groups_dict.keys() | list %}
+{% set group_values = group_names | map('attribute', groups_dict) | map('list') | list %}
+
+{# Get the maximum number of rows needed for the table #}
+{% set max_rows = group_values | map('length') | list | max %}
+
+{# Render table header #}
+| {% for name in group_names %}{{ name }} |{% endfor %}
+| {% for _ in group_names %}--- |{% endfor %}
 
 {# Render each row of commits #}
-{% for i in range(max_rows) %}
-| {% for commits in column_commits %}
-  {{ commits[i] if i < commits | length else "" }} |
+{% for i in range(0, max_rows) %}
+| {% for name in group_names %}
+  {{ groups_dict[name][i] if i < (groups_dict[name] | length) else "" }} |
 {% endfor %}
 {% endfor %}
 {#
