@@ -46,13 +46,18 @@ EXAMPLE:
   {{ group_table.columns.append((type_ | title, commit_descriptions | unique)) | default("", true) }}
 {% endfor %}
 
-{# Render table #}
+{# Render table headers #}
 | {% for column in group_table.columns %}{{ column[0] }} |{% endfor %}
-| {% for _ in group_table.columns %}---|{% endfor %}
+| {% for _ in group_table.columns %}--- |{% endfor %}
 
-{# Render single row with commits per group #}
+{# Determine max number of rows needed #}
+{% set max_rows = group_table.columns | map(attribute=1) | map('length') | max %}
+
+{# Render each row of commits #}
+{% for i in range(max_rows) %}
 | {% for column in group_table.columns %}
-  {{ column[1] | join("<br><br>") }} |
+  {{ column[1][i] if i < column[1] | length else "" }} |
+{% endfor %}
 {% endfor %}
 {#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
