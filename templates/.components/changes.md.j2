@@ -27,47 +27,40 @@ EXAMPLE:
 
 #}{%  set max_line_width = max_line_width | default(100)
 %}{%  set hanging_indent = hanging_indent | default(2)
-%}{% set groups = [] %}
+%}{# Step 1: Filter out unknown types and prepare a dictionary of type => formatted commit descriptions #}
+{% set types_dict = namespace(data={}) %}
 {% for type_, commits in commit_objects if type_ != "unknown" %}
   {% set ns = namespace(commits=commits) %}
   {{ apply_alphabetical_ordering_by_descriptions(ns) | default("", true) }}
-  {% set formatted_commits = [] %}
+
+  {% set descriptions = [] %}
   {% for commit in ns.commits %}
-    {% set description = format_commit_summary_line(commit) %}
-    {% if commit.descriptions | length > 1 %}
-      {% set description = description ~ "<br><br>" ~ commit.descriptions[1:] | join("<br><br>") %}
-    {% endif %}
-    {% set description = description | autofit_text_width(max_line_width, hanging_indent) %}
-    {{ formatted_commits.append(description) | default("", true) }}
+    {% set line = format_commit_summary_line(commit) %}
+    {% set link = "[`" ~ commit.commit[:7] ~ "`](https://github.com/YOUR_ORG/YOUR_REPO/commit/" ~ commit.commit ~ ")" %}
+    {% set desc = line ~ " " ~ link %}
+    {% set _ = descriptions.append(desc) %}
   {% endfor %}
-  {{ groups.append((type_ | title, formatted_commits | unique)) | default("", true) }}
+  {% set _ = types_dict.data.update({ (type_ | title): descriptions }) %}
 {% endfor %}
 
-{% if groups | length > 0 %}
-### Changes
+{# Step 2: Determine the max number of rows needed #}
+{% set max_rows = types_dict.data.values() | map('length') | max %}
 
-| {%- for group in groups -%} {{ group[0] }} |{%- endfor %}
+{# Step 3: Build the header row #}
+| {% for col in types_dict.data.keys() %}{{ col }} |{% endfor %}
+| {% for col in types_dict.data.keys() %}---|{% endfor %}
 
-| {%- for group in groups -%} --- |{%- endfor %}
+{# Step 4: Build table rows #}
+{% for i in range(max_rows) %}
+| {% for col in types_dict.data.keys() %}
+  {% if types_dict.data[col] | length > i %}
+    {{ types_dict.data[col][i] }}
+  {% else %}
+    
+  {% endif %} |
+{% endfor %}
+{% endfor %}
 
-| {%- for group in groups -%}
-  {{ group[1] | join("<br><br>") }} |
-{%- endfor %}
-{% endif %}
-
-{# Handle BREAKING CHANGES #}
-{% set breaking_commits = commit_objects | map(attribute="1.0") %}
-{% set breaking_commits = breaking_commits | rejectattr("error", "defined") | selectattr("breaking_descriptions.0") | list %}
-
-{% if breaking_commits | length > 0 %}
-  {% set brk_ns = namespace(commits=breaking_commits) %}
-  {{ apply_alphabetical_ordering_by_brk_descriptions(brk_ns) | default("", true) }}
-
-  {% set brking_descriptions = [] %}
-  {% for commit in brk_ns.commits %}
-    {% set full_description = "- " ~ format_breaking_changes_description(commit).split("\n\n") | join("\n\n- ") %}
-    {{ brking_descriptions.append(full_description | autofit_text_width(max_line_width, hanging_indent)) | default("", true) }}
-  {% endfor %}
 {#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
       # commit_objects is a list of tuples [("Features", [ParsedCommit(), ...]), ("Bug Fixes", [ParsedCommit(), ...])]
