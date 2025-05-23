@@ -27,33 +27,41 @@ EXAMPLE:
 
 #}{%  set max_line_width = max_line_width | default(100)
 %}{%  set hanging_indent = hanging_indent | default(2)
-%}{# Build a dictionary to map group types (e.g. Features) to formatted commit strings #}
-{% set group_table = namespace(columns=[]) %}
+%}{% set group_map = dict() %}
+{% set group_names = [] %}
 
-{# Gather commit descriptions grouped by type #}
+{# Collect and format commits per group #}
 {% for type_, commits in commit_objects if type_ != "unknown" %}
   {% set ns = namespace(commits=commits) %}
   {{ apply_alphabetical_ordering_by_descriptions(ns) | default("", true) }}
-  {% set commit_descriptions = [] %}
+  {% set formatted_commits = [] %}
   {% for commit in ns.commits %}
     {% set description = format_commit_summary_line(commit) %}
     {% if commit.descriptions | length > 1 %}
       {% set description = description ~ "<br><br>" ~ commit.descriptions[1:] | join("<br><br>") %}
     {% endif %}
     {% set description = description | autofit_text_width(max_line_width, hanging_indent) %}
-    {{ commit_descriptions.append(description) | default("", true) }}
+    {{ formatted_commits.append(description) | default("", true) }}
   {% endfor %}
-  {{ group_table.columns.append((type_ | title, commit_descriptions | unique)) | default("", true) }}
+  {% set _ = group_map.update({(type_ | title): formatted_commits}) %}
+  {% set _ = group_names.append(type_ | title) %}
 {% endfor %}
 
-{# Render table #}
-| {% for column in group_table.columns %}{{ column[0] }} |{% endfor %}
-| {% for _ in group_table.columns %}---|{% endfor %}
+{% if group_names | length > 0 %}
+### Changes
 
-{# Render single row with commits per group #}
-| {% for column in group_table.columns %}
-  {{ column[1] | join("<br><br>") }} |
+| {{ group_names | join(" | ") }} |
+| {{ group_names | map("regex_replace", ".*", "---") | join(" | ") }} |
+
+{# Calculate the max number of rows we need #}
+{% set row_count = group_map.values() | map("length") | max %}
+
+{# Print each row of the table #}
+{% for i in range(row_count) %}
+| {%- for name in group_names -%}
+  {{ group_map[name][i] if group_map[name] | length > i else "" }} |{%- endfor %}
 {% endfor %}
+{% endif %}
 {#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
       # commit_objects is a list of tuples [("Features", [ParsedCommit(), ...]), ("Bug Fixes", [ParsedCommit(), ...])]
