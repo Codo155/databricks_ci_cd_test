@@ -27,40 +27,33 @@ EXAMPLE:
 
 #}{%  set max_line_width = max_line_width | default(100)
 %}{%  set hanging_indent = hanging_indent | default(2)
-%}{# Step 1: Filter out unknown types and prepare a dictionary of type => formatted commit descriptions #}
-{% set types_dict = namespace(data={}) %}
+%}{# Build a dictionary to map group types (e.g. Features) to formatted commit strings #}
+{% set group_table = namespace(columns=[]) %}
+
+{# Gather commit descriptions grouped by type #}
 {% for type_, commits in commit_objects if type_ != "unknown" %}
   {% set ns = namespace(commits=commits) %}
   {{ apply_alphabetical_ordering_by_descriptions(ns) | default("", true) }}
-
-  {% set descriptions = [] %}
+  {% set commit_descriptions = [] %}
   {% for commit in ns.commits %}
-    {% set line = format_commit_summary_line(commit) %}
-    {% set link = "[`" ~ commit.commit[:7] ~ "`](https://github.com/YOUR_ORG/YOUR_REPO/commit/" ~ commit.commit ~ ")" %}
-    {% set desc = line ~ " " ~ link %}
-    {% set _ = descriptions.append(desc) %}
+    {% set description = format_commit_summary_line(commit) %}
+    {% if commit.descriptions | length > 1 %}
+      {% set description = description ~ "<br><br>" ~ commit.descriptions[1:] | join("<br><br>") %}
+    {% endif %}
+    {% set description = description | autofit_text_width(max_line_width, hanging_indent) %}
+    {{ commit_descriptions.append(description) | default("", true) }}
   {% endfor %}
-  {% set _ = types_dict.data.update({ (type_ | title): descriptions }) %}
+  {{ group_table.columns.append((type_ | title, commit_descriptions | unique)) | default("", true) }}
 {% endfor %}
 
-{# Step 2: Determine the max number of rows needed #}
-{% set max_rows = types_dict.data.values() | map('length') | max %}
+{# Render table #}
+| {% for column in group_table.columns %}{{ column[0] }} |{% endfor %}
+| {% for _ in group_table.columns %}---|{% endfor %}
 
-{# Step 3: Build the header row #}
-| {% for col in types_dict.data.keys() %}{{ col }} |{% endfor %}
-| {% for col in types_dict.data.keys() %}---|{% endfor %}
-
-{# Step 4: Build table rows #}
-{% for i in range(max_rows) %}
-| {% for col in types_dict.data.keys() %}
-  {% if types_dict.data[col] | length > i %}
-    {{ types_dict.data[col][i] }}
-  {% else %}
-    
-  {% endif %} |
+{# Render single row with commits per group #}
+| {% for column in group_table.columns %}
+  {{ column[1] | join("<br><br>") }} |
 {% endfor %}
-{% endfor %}
-
 {#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
       # commit_objects is a list of tuples [("Features", [ParsedCommit(), ...]), ("Bug Fixes", [ParsedCommit(), ...])]
