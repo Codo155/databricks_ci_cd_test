@@ -50,10 +50,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+        
+      - name: Install python-semantic-release
+        run: pip install python-semantic-release==9.5.1
 
       - name: Release
         id: release
-        uses: python-semantic-release/python-semantic-release@v9.5.1
+        uses: python-semantic-release/python-semantic-release@master
         with:
           git_committer_name: "GitHub Actions"
           git_committer_email: "luo14938@gmail.com"
