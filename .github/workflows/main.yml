@@ -54,7 +54,7 @@ jobs:
 
       - name: Release
         id: release
-        uses: python-semantic-release/python-semantic-release@v24.2.5
+        uses: python-semantic-release/python-semantic-release@master
         with:
           git_committer_name: "GitHub Actions"
           git_committer_email: "luo14938@gmail.com"
