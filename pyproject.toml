@@ -20,8 +20,8 @@ match = "(development)"
 match = "^releases\\.*"
 prerelease = false
 
-[tool.semantic_release.changelog]
-template_dir = "templates"
+#[tool.semantic_release.changelog]
+#template_dir = "templates"
 
 [tool.semantic_release.changelog.default_templates]
 changelog_file = "CHANGELOG.md"
