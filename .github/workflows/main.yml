@@ -37,9 +37,9 @@ jobs:
           DATABRICKS_CLIENT_ID: ${{ secrets.CLIENT_ID}}
           DATABRICKS_CLIENT_SECRET: ${{secrets.DATABRICKS_TOKEN}}
           DATABRICKS_HOST: https://adb-2474944416409806.6.azuredatabricks.net
-
+      
   version:
-    needs: release
+    needs:  release
     runs-on: ubuntu-22.04
     outputs:
       version: ${{ steps.release.outputs.version }}
@@ -50,7 +50,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
 
       - name: Release
         id: release
@@ -60,46 +59,15 @@ jobs:
           git_committer_email: "luo14938@gmail.com"
           github_token: ${{ secrets.GH_TOKEN }}
 
-      - name: Commit and Push Changelog
-        if: steps.release.outputs.released == 'true'
+      - name: Check Release     
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "luo14938@gmail.com"
-          git pull origin main
-          git add CHANGELOG.md pyproject.toml
-          git commit -m "chore(release): update changelog for ${{ steps.release.outputs.version }}"
-          git push origin main
-      
-  # version:
-  #   needs:  release
-  #   runs-on: ubuntu-22.04
-  #   outputs:
-  #     version: ${{ steps.release.outputs.version }}
-  #     released: ${{ steps.release.outputs.released }}
-  #     tag: ${{ steps.release.outputs.tag }}
-  #   steps:   
-  #     - name: Checkout
-  #       uses: actions/checkout@v4
-  #       with:
-  #         fetch-depth: 0
+          echo "Version: ${{ steps.release.outputs.version }}"
+          echo "Tag: ${{ steps.release.outputs.tag }}"
+          echo "Released: ${{ steps.release.outputs.released }}"
 
-  #     - name: Release
-  #       id: release
-  #       uses: python-semantic-release/python-semantic-release@master
-  #       with:
-  #         git_committer_name: "GitHub Actions"
-  #         git_committer_email: "luo14938@gmail.com"
-  #         github_token: ${{ secrets.GH_TOKEN }}
-
-  #     - name: Check Release     
-  #       run: |
-  #         echo "Version: ${{ steps.release.outputs.version }}"
-  #         echo "Tag: ${{ steps.release.outputs.tag }}"
-  #         echo "Released: ${{ steps.release.outputs.released }}"
-
-  #         if [ "${{ steps.release.outputs.released }}" == "false" ]; then
-  #           echo "No release created"
-  #         fi
+          if [ "${{ steps.release.outputs.released }}" == "false" ]; then
+            echo "No release created"
+          fi
       
 
        
