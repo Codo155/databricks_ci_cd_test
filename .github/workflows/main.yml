@@ -47,14 +47,14 @@ jobs:
       tag: ${{ steps.release.outputs.tag }}
     steps:   
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
 
       - name: Release
         id: release
-        uses: python-semantic-release/python-semantic-release@master
+        uses: python-semantic-release/python-semantic-release@v9.8.1
         with:
           git_committer_name: "GitHub Actions"
           git_committer_email: "luo14938@gmail.com"
