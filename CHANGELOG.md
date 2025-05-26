@@ -3,6 +3,67 @@
 # CHANGELOG
 
 
+## md_20.5.1 (2025-05-23)
+
+
+
+
+
+  
+  
+  
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+  
+
+  
+  
+  
+  
+    
+    
+    
+    
+  
+  
+
+
+
+| Bug Fixes |Code Style |
+| ---|---|
+
+
+| 
+  Does this msg work?
+  ([`9733a6b`](https://github.com/Codo155/databricks_ci_cd_test/commit/9733a6b282653f2d3cec9fec45872b68218d1d34))&lt;br&gt;&lt;br&gt;First version
+  ([`e5fd24d`](https://github.com/Codo155/databricks_ci_cd_test/commit/e5fd24d9fda976c1de2d5ef1670b396ad6f94c16))&lt;br&gt;&lt;br&gt;Rollback
+  ([`71eb56a`](https://github.com/Codo155/databricks_ci_cd_test/commit/71eb56aa8989d09b7c2001244a37d4d7b82d6ca3))&lt;br&gt;&lt;br&gt;Spaghetti
+  ([`43046a7`](https://github.com/Codo155/databricks_ci_cd_test/commit/43046a7f359f4ff55e4fe36a5d61ff23a399c989)) |
+
+  Wrong commit msg
+  ([`ca2ecbe`](https://github.com/Codo155/databricks_ci_cd_test/commit/ca2ecbe73d894dd77c95bbde9bc391b971f96c52)) |
+
+
+
 ## md_20.5.0 (2025-05-23)
 
 
