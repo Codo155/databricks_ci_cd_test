@@ -13,53 +13,25 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
-      - name: Install Databricks CLI and Create Config File
-        run: |
-          # Install Databricks CLI
-          curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
-          # Verify installation
-          databricks --version
-        shell: bash
 
-      - name: Deploy Databricks Bundle
-        shell: pwsh
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12
+
+      - name: Install python-semantic-release
         run: |
-          databricks bundle validate --output json
-          databricks bundle deploy --target dev
+          pip install python-semantic-release
+
+      - name: Generate changelog
+        run: semantic-release changelog
         env:
-          BUNDLE_VAR_run_as : "bb9536ec-d5c6-4790-9be1-2752c47f8161"
-          BUNDLE_VAR_host: https://adb-2474944416409806.6.azuredatabricks.net
-          BUNDLE_VAR_root_path: /Workspace/Deployment/
-          DATABRICKS_CLIENT_ID: ${{ secrets.CLIENT_ID}}
-          DATABRICKS_CLIENT_SECRET: ${{secrets.DATABRICKS_TOKEN}}
-          DATABRICKS_HOST: https://adb-2474944416409806.6.azuredatabricks.net
-      
-  version:
-    runs-on: ubuntu-22.04
-    outputs:
-      version: ${{ steps.release.outputs.version }}
-      released: ${{ steps.release.outputs.released }}
-      tag: ${{ steps.release.outputs.tag }}
-    steps:   
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name: Release
-        id: release
-        uses: python-semantic-release/python-semantic-release@master
-        with:
-          git_committer_name: "GitHub Actions"
-          git_committer_email: "christoph.schatz@accenture.com"
-          github_token: ${{ secrets.GH_TOKEN }}
-
-      - name: Check Release     
+      - name: Commit changelog
         run: |
-          echo "Version: ${{ steps.release.outputs.version }}"
-          echo "Tag: ${{ steps.release.outputs.tag }}"
-          echo "Released: ${{ steps.release.outputs.released }}"
-          if [ "${{ steps.release.outputs.released }}" == "false" ]; then
-            echo "No release created"
-          fi
+          git config user.name "GitHub Actions"
+          git config user.email "luo14938@gmail.com"
+          git add CHANGELOG.md
+          git commit -m "Update changelog [skip ci]" || echo "Nothing to commit"
+          git push origin main
