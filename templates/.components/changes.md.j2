@@ -38,7 +38,7 @@ EXAMPLE:
   {% for commit in ns.commits %}
     {% set description = format_commit_summary_line(commit) %}
     {% if commit.descriptions | length > 1 %}
-      {% set description = description ~ "<br><br>" ~ commit.descriptions[1:] | join("<br><br>") %}
+      {% set description = description ~ "<br />" ~ commit.descriptions[1:] | join("<br />") %}
     {% endif %}
     {% set description = description | autofit_text_width(max_line_width, hanging_indent) %}
     {{ commit_descriptions.append(description) | default("", true) }}
@@ -52,7 +52,7 @@ EXAMPLE:
 
 {# Render single row with commits per group #}
 | {% for column in group_table.columns %}
-  {{ column[1] | join("<br><br>") }} |
+  {{ column[1] | join("<br />") }} |
 {% endfor %}
 {#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
