@@ -58,6 +58,8 @@ jobs:
           git_committer_name: "GitHub Actions"
           git_committer_email: "luo14938@gmail.com"
           github_token: ${{ secrets.GH_TOKEN }}
+          changelog: true
+          push: true
 
       - name: Check Release     
         run: |
