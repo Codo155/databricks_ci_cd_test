@@ -56,7 +56,7 @@ jobs:
         uses: python-semantic-release/python-semantic-release@master
         with:
           git_committer_name: "GitHub Actions"
-          git_committer_email: "christoph.schatz@accenture.com"
+          git_committer_email: "luo14938@gmail.com"
           github_token: ${{ secrets.GH_TOKEN }}
 
       - name: Check Release     
