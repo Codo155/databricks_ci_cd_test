@@ -1,8 +1,8 @@
 name: Demo
 
 on:
-   workflow_dispatch:
-     branches:
+   push:
+    branches:
       - development
 
 jobs:
