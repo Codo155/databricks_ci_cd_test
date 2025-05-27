@@ -25,37 +25,43 @@ EXAMPLE:
 - **scope**: this breaking change has a scope to identify the part of the code that
   this breaking change applies to for better context.
 
-#}{%  set max_line_width = max_line_width | default(100)
-%}{%  set hanging_indent = hanging_indent | default(2)
-%}{#
-#}{%  for type_, commits in commit_objects if type_ != "unknown"
-%}{#    PREPROCESS COMMITS (order by description & format description line)
-#}{%    set ns = namespace(commits=commits)
-%}{{    apply_alphabetical_ordering_by_descriptions(ns) | default("", true)
-}}{#
-#}{%    set commit_descriptions = []
-%}{#
-#}{%    for commit in ns.commits
-%}{#      # Update the first line with reference links and if commit description
-          # has more than one line, add the rest of the lines
-          # NOTE: This is specifically to make sure to not hide contents
-          # of squash commits (until parse support is added)
-#}{%      set description = "- %s" | format(format_commit_summary_line(commit))
-%}{%      if commit.descriptions | length > 1
-%}{%        set description = "%s\n\n%s" | format(
-              description, commit.descriptions[1:] | join("\n\n")
-            )
-%}{%      endif
-%}{%      set description = description | autofit_text_width(max_line_width, hanging_indent)
-%}{{      commit_descriptions.append(description) | default("", true)
-}}{%    endfor
-%}{#
-   #    # PRINT SECTION (header & commits)
-#}{{    "\n"
-}}{{    "### %s\n" | format(type_ | title)
-}}{{    "\n"
-}}{{    "%s\n" | format(commit_descriptions | unique | join("\n\n"))
-}}{%  endfor
+#}{# Collect all unique types for table headers #}
+{% set all_types = commit_objects | map(attribute=0) | reject("equalto", "unknown") | list %}
+{% set all_types = all_types | unique %}
+{# Prepare a dictionary with type as key and list of formatted commit messages as value #}
+{% set type_commits = dict() %}
+{% for type_, commits in commit_objects if type_ != "unknown" %}
+  {% set ns = namespace(commits=commits) %}
+  {{ apply_alphabetical_ordering_by_descriptions(ns) | default("", true) }}
+  {% set commit_descriptions = [] %}
+  {% for commit in ns.commits %}
+    {% set description = format_commit_summary_line(commit) %}
+    {% if commit.descriptions | length > 1 %}
+      {% set description = description ~ "\n" ~ (commit.descriptions[1:] | join("\n")) %}
+    {% endif %}
+    {% set _ = commit_descriptions.append(description) %}
+  {% endfor %}
+  {% set _ = type_commits.update({type_: commit_descriptions}) %}
+{% endfor %}
+
+{# Determine the maximum number of commits in any category for table row count #}
+{% set max_commits = all_types | map('extract', type_commits) | map('length') | max %}
+
+| {%- for type_ in all_types -%} {{ type_ | title }} {%- if not loop.last %} | {%- endif -%}{% endfor %} |
+|{%- for _ in all_types -%} --- {%- if not loop.last %}|{%- endif -%}{% endfor %}|
+
+{# Print each row, one commit per cell, empty if no commit for that row in that type #}
+{% for i in range(max_commits) %}
+|{%- for type_ in all_types -%}
+  {%- set commits = type_commits[type_] -%}
+  {%- if i < commits | length -%}
+    {{ commits[i] | replace('\n', '<br>') }}
+  {%- else -%}
+    
+  {%- endif -%}
+  {%- if not loop.last %} | {%- endif -%}
+{%- endfor -%}|
+{% endfor 
 %}{#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
       # commit_objects is a list of tuples [("Features", [ParsedCommit(), ...]), ("Bug Fixes", [ParsedCommit(), ...])]
