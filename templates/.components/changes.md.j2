@@ -25,7 +25,10 @@ EXAMPLE:
 - **scope**: this breaking change has a scope to identify the part of the code that
   this breaking change applies to for better context.
 
-#}{# Collect all unique types for table headers #}
+#}{%  set max_line_width = max_line_width | default(100)
+%}{%  set hanging_indent = hanging_indent | default(2)
+%}
+{# Collect all unique types for table headers #}
 {% set all_types = commit_objects | map(attribute=0) | reject("equalto", "unknown") | list %}
 {% set all_types = all_types | unique %}
 {# Prepare a dictionary with type as key and list of formatted commit messages as value #}
