@@ -49,8 +49,13 @@ EXAMPLE:
   {% endif %}
 {% endfor %}
 
-{# Determine the maximum number of commits in any category for table row count #}
-{% set max_commits = all_types | map('extract', type_commits) | map('length') | max %}
+{# Bestimme die maximale Commit-Anzahl pro Typ #}
+{% set max_commits = 0 %}
+{% for type_ in all_types %}
+  {% if type_commits[type_] | length > max_commits %}
+    {% set max_commits = type_commits[type_] | length %}
+  {% endif %}
+{% endfor %}
 
 | {%- for type_ in all_types -%} {{ type_ | title }} {%- if not loop.last %} | {%- endif -%}{% endfor %} |
 |{%- for _ in all_types -%} --- {%- if not loop.last %}|{%- endif -%}{% endfor %}|
@@ -66,8 +71,7 @@ EXAMPLE:
   {%- endif -%}
   {%- if not loop.last %} | {%- endif -%}
 {%- endfor -%}|
-{% endfor 
-%}{#
+{% endfor %}{#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
       # commit_objects is a list of tuples [("Features", [ParsedCommit(), ...]), ("Bug Fixes", [ParsedCommit(), ...])]
       # HOW: Filter out breaking change commits that have no breaking descriptions
