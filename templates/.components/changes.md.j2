@@ -53,8 +53,9 @@ EXAMPLE:
 %}{%      endif
 %}{%      set description = description | autofit_text_width(max_line_width, hanging_indent)
 %}{{      commit_descriptions.append(description) | default("", true)
-}}{%      set _ = type_commits.update({type_: commit_descriptions}) 
-%}{%    endfor
+}}{%    endfor
+%}{%    set _ = type_commits.update({type_: commit_descriptions}) 
+%}{%  endfor
 
 %}{# Bestimme die maximale Commit-Anzahl pro Typ #}
 {% set max_commits = 0 %}
