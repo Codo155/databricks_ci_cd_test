@@ -44,7 +44,10 @@ jobs:
     outputs:
       version: ${{steps.release.outputs.version}}
       released: ${{steps.release.outputs.released}}
-      tag: ${{steps.release.outputs.tag }}
+      tag: ${{steps.release.outputs.tag}}
+    permissions:
+      contents: write
+      id-token: write
     steps:   
       - name: Checkout
         uses: actions/checkout@v4
