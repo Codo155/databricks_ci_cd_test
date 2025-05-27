@@ -51,10 +51,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Release
+      - name: Semantic Release
         id: release
-        uses: python-semantic-release/python-semantic-release@master
-        with:
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "action@github.com"
+          semantic-release publish -D commit_author="github-actions <action@github.com>"
+        env:
           git_committer_name: "GitHub Actions"
           git_committer_email: "luo14938@gmail.com"
           github_token: ${{ secrets.GH_TOKEN }}
