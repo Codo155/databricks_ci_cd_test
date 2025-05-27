@@ -26,12 +26,6 @@ jobs:
       - name: Generate changelog
         run: semantic-release changelog
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Commit changelog
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "luo14938@gmail.com"
-          git add CHANGELOG.md
-          git commit -m "Update changelog [skip ci]" || echo "Nothing to commit"
-          git push origin main
+          git_committer_name: "GitHub Actions"
+          git_committer_email: "luo14938@gmail.com"
+          GH_TOKEN: ${{secrets.GH_TOKEN}}
