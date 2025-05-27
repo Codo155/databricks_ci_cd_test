@@ -43,6 +43,11 @@ EXAMPLE:
   {% endfor %}
   {% set _ = type_commits.update({type_: commit_descriptions}) %}
 {% endfor %}
+{% for type_ in all_types %}
+  {% if type_commits[type_] is not defined %}
+    {% set _ = type_commits.update({type_: []}) %}
+  {% endif %}
+{% endfor %}
 
 {# Determine the maximum number of commits in any category for table row count #}
 {% set max_commits = all_types | map('extract', type_commits) | map('length') | max %}
