@@ -39,7 +39,7 @@ jobs:
           DATABRICKS_HOST: https://adb-2474944416409806.6.azuredatabricks.net
       
   version:
-    needs:  release
+    needs: release
     runs-on: ubuntu-22.04
     outputs:
       version: ${{steps.release.outputs.version}}
@@ -51,9 +51,9 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Semantic Releas
+      - name: Semantic Release
         id: release
-        uses: python-semantic-release/python-semantic-release@master
+        uses: python-semantic-release/python-semantic-release@master -vv
         with:
           git_committer_name: "GitHub Actions"
           git_committer_email: "luo14938@gmail.com"
@@ -61,11 +61,11 @@ jobs:
 
       - name: Check Release     
         run: |
-          echo "Version: ${{ steps.release.outputs.version }}"
-          echo "Tag: ${{ steps.release.outputs.tag }}"
-          echo "Released: ${{ steps.release.outputs.released }}"
+          echo "Version: ${{steps.release.outputs.version}}"
+          echo "Tag: ${{steps.release.outputs.tag }}"
+          echo "Released: ${{steps.release.outputs.released}}"
 
-          if [ "${{ steps.release.outputs.released }}" == "false" ]; then
+          if [ "${{steps.release.outputs.released}}" == "false" ]; then
             echo "No release created"
           fi
       
