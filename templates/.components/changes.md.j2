@@ -65,8 +65,8 @@ EXAMPLE:
 #}
 | {% for type in all_types %} {{ type }} | {% endfor %} 
 | {% for type in all_types %} --| {% endfor %}
-| {% for type in all_types %} {{ var.most_lines }} | {% endfor %} 
-| {% for desc in all_descritptions %} {{ desc }} | {% endfor %} 
+| {% for type in all_types %} {{ all_descritptions | length }} | {% endfor %} 
+| {% for type in all_types %} {{ all_descritptions[0][0]}} | {% endfor %} 
   {%  for i in range(var.most_lines)
 %}{%    set row = []
 %}{%    for j in range(all_descritptions | length)
