@@ -61,8 +61,10 @@ EXAMPLE:
 %}{#
   #   # PRINT SECTION (header & commits)
 #}
-| {% for type in all_types %} {{ type }} | {% endfor %}
+| {% for type in all_types %} {{ type }} | {% endfor %} 
 | {% for type in all_types %} --| {% endfor %}
+| {% for type in all_types %} {{ most_lines }} | {% endfor %} 
+| {% for desc in all_decritptions %} {{ desc }} | {% endfor %} 
   {%  for i in range(most_lines)
 %}{%    set row = []
 %}{%    for j in all_types | length
