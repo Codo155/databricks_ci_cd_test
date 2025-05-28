@@ -56,11 +56,11 @@ EXAMPLE:
 %}{%        set var.most_lines = commit_descriptions | length
 %}{%      endif
 %}{%    endfor
-%}{{var.most_lines}}
-{%      set all_types.append(type_)
-%}{%    set all_decritptions.append(commit_descriptions) | default("", true)
-%}{%  endfor
-%}{{var.most_lines}}{#
+%}{{    var.most_lines
+}}{{      set all_types.append(type_)
+}}{{    set all_decritptions.append(commit_descriptions) | default("", true)
+}}{%  endfor
+%}{{  var.most_lines}}{#
   #   # PRINT SECTION (header & commits)
 #}
 | {% for type in all_types %} {{ type }} | {% endfor %} 
