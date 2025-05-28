@@ -63,8 +63,8 @@ EXAMPLE:
 }}{%  for i in range(most_lines)
 %}{%    set row = []
 %}{%    for type_, commit_descriptions in commit_types.items()
-%}{%      set row.append(commit_descriptions[i] | default(" ", true))
-%}{%    endfor
+%}{{      row.append(commit_descriptions[i] | default(" ", true))
+}}{%    endfor
 %}{{    "| %s |\n" | format(row | join(" | "))
 }}{%  endfor
 %}{#
