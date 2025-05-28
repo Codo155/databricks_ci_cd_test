@@ -69,7 +69,7 @@ EXAMPLE:
 %}{%    for j in range(all_descritptions | length)
 %}{{      var.row.append(all_descritptions[j][i] | default(" ", true) | replace("\n", " "))
 }}{%    endfor
-%}|    {% for commit in var.row %} {{ var.row }} | {% endfor %}
+%}
 |    {% for commit in var.row %} {{ commit }} | {% endfor %}
 {%  endfor
 %}{#
