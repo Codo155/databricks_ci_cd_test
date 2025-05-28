@@ -60,14 +60,15 @@ EXAMPLE:
 }}{%  endfor
 %}{#
   #   # PRINT SECTION (header & commits)
-#}{{  "\n"
-}}{{  "| %s |\n" | format(all_types | join(" | "))
-}}{%  for i in range(most_lines)
+#}{{ "\n"}}
+| {% for type in all_types %} {{ type }} | {% endfor %}
+| {% for type in all_types %} --| {% endfor %}
+  {%  for i in range(most_lines)
 %}{%    set row = []
 %}{%    for j in all_types | length
 %}{{      row.append(all_decritptions[j][i] | default(" ", true))
 }}{%    endfor
-%}{{    "| %s |\n" | format(row | join(" | "))
+%}{{    "|%s|\n" | format(row | join("|"))
 }}{%  endfor
 %}{#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
