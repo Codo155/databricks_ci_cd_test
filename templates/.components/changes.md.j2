@@ -60,7 +60,7 @@ EXAMPLE:
 }}{%  endfor
 %}{#
   #   # PRINT SECTION (header & commits)
-#}{{ "\n"}}
+#}
 | {% for type in all_types %} {{ type }} | {% endfor %}
 | {% for type in all_types %} --| {% endfor %}
   {%  for i in range(most_lines)
@@ -68,8 +68,8 @@ EXAMPLE:
 %}{%    for j in all_types | length
 %}{{      row.append(all_decritptions[j][i] | default(" ", true))
 }}{%    endfor
-%}{{    "|%s|\n" | format(row | join("|"))
-}}{%  endfor
+%}|    {% for commit in row %} {{ commit }} | {% endfor %}
+{%  endfor
 %}{#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
       # commit_objects is a list of tuples [("Features", [ParsedCommit(), ...]), ("Bug Fixes", [ParsedCommit(), ...])]
