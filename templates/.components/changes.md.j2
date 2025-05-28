@@ -67,6 +67,7 @@ EXAMPLE:
 | {% for type in all_types %} --| {% endfor %}
 | {% for type in all_types %} {{ var.most_lines }} | {% endfor %} 
 | {% for desc in all_decritptions %} {{ desc }} | {% endfor %} 
+{%set dict = %}
   {%  for i in range(var.most_lines)
 %}{%    set row = []
 %}{%    for j in all_types | length
