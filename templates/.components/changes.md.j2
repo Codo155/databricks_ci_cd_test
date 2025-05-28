@@ -28,7 +28,7 @@ EXAMPLE:
 #}{%  set max_line_width = max_line_width | default(100)
 %}{%  set hanging_indent = hanging_indent | default(2)
 %}{%  set all_types = []
-%}{%  set all_decritptions = []
+%}{%  set all_descritptions = []
 %}{%  set var = namespace()
 %}{%  set var.most_lines = 0
 %}{#
@@ -58,7 +58,7 @@ EXAMPLE:
 %}{%    endfor
 %}{{    var.most_lines
 }}{{    all_types.append(type_)
-}}{{    all_decritptions.append(commit_descriptions) | default("", true)
+}}{{    all_descritptions.append(commit_descriptions) | default("", true)
 }}{%  endfor
 %}{{  var.most_lines}}{#
   #   # PRINT SECTION (header & commits)
@@ -66,12 +66,11 @@ EXAMPLE:
 | {% for type in all_types %} {{ type }} | {% endfor %} 
 | {% for type in all_types %} --| {% endfor %}
 | {% for type in all_types %} {{ var.most_lines }} | {% endfor %} 
-| {% for desc in all_decritptions %} {{ desc }} | {% endfor %} 
+| {% for desc in all_descritptions %} {{ desc }} | {% endfor %} 
   {%  for i in range(var.most_lines)
-  {%set dict = %}
 %}{%    set row = []
-%}{%    for j in all_types | length
-%}{{      row.append(all_decritptions[j][i] | default(" ", true))
+%}{%    for j in range(all_descritptions | length)
+%}{{      row.append(all_descritptions[j][i] | default(" ", true))
 }}{%    endfor
 %}|    {% for commit in row %} {{ commit }} | {% endfor %}
 {%  endfor
