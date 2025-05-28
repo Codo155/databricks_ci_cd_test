@@ -62,8 +62,8 @@ EXAMPLE:
 %}{#
   #   # PRINT SECTION (header & commits)
 #}
-| {% for type in all_types %} {{ type }} | {% endfor %} 
-| {% for type in all_types %} --| {% endfor %}
+|{% for type in all_types %} {{ type }} | {% endfor %} 
+|{% for type in all_types %} --| {% endfor %}
   {%  for i in range(var.most_lines)
 %}{%    set var.row = []
 %}{%    for j in range(all_descritptions | length)
@@ -71,8 +71,7 @@ EXAMPLE:
 %}{%        set _ = var.row.append(all_descritptions[j][i] | replace("\n", " "))
 %}{%      endif
 %}{%    endfor
-%}
-|    {% for commit in var.row %} {{ commit }} | {% endfor %}
+%}|{% for commit in var.row %} {{ commit }} | {% endfor %}
 {%  endfor
 %}{#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
