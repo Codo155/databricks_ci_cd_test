@@ -57,8 +57,8 @@ EXAMPLE:
 %}{%      endif
 %}{%    endfor
 %}{{    var.most_lines
-}}{{      set all_types.append(type_)
-}}{{    set all_decritptions.append(commit_descriptions) | default("", true)
+}}{{    all_types.append(type_)
+}}{{    all_decritptions.append(commit_descriptions) | default("", true)
 }}{%  endfor
 %}{{  var.most_lines}}{#
   #   # PRINT SECTION (header & commits)
