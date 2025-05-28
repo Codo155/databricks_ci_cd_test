@@ -52,6 +52,7 @@ EXAMPLE:
 %}{{      commit_descriptions.append(description) | default("", true)
 }}{%      if commit_descriptions | length > most_lines
 %}{%        set most_lines = commit_descriptions | length
+%}{%      endif
 %}{%    endfor
 %}{%    set commit_types[type_] = commit_descriptions
 %}{%  endfor
