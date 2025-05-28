@@ -62,7 +62,8 @@ EXAMPLE:
 %}{#
   #   # PRINT SECTION (header & commits)
 #}
-|{% for type in all_types %} {{ type }} | {% endfor %} 
+{% if all_types | length > 0%}
+|{% for type in all_types %} ###{{type}} | {% endfor %} 
 |{% for type in all_types %} --| {% endfor %}
   {%  for i in range(var.most_lines)
 %}{%    set var.row = []
@@ -73,7 +74,7 @@ EXAMPLE:
 %}{%    endfor
 %}|{% for commit in var.row %} {{ commit }} | {% endfor %}
 {%  endfor
-%}{#
+%}{%endif%}{#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
       # commit_objects is a list of tuples [("Features", [ParsedCommit(), ...]), ("Bug Fixes", [ParsedCommit(), ...])]
       # HOW: Filter out breaking change commits that have no breaking descriptions
