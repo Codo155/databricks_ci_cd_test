@@ -47,7 +47,7 @@ EXAMPLE:
 #}{%      set description = "- %s" | format(format_commit_summary_line(commit))
 %}{%      if commit.descriptions | length > 1
 %}{%        set description = "%s\n\n%s" | format(
-              description, commit.descriptions[1:] | join("\n\n")
+              description, commit.descriptions[1:]
             )
 %}{%      endif
 %}{%      set description = description | autofit_text_width(max_line_width, hanging_indent)
@@ -56,11 +56,10 @@ EXAMPLE:
 %}{%        set var.most_lines = commit_descriptions | length
 %}{%      endif
 %}{%    endfor
-%}{{    var.most_lines
-}}{{    all_types.append(type_)
-}}{{    all_descritptions.append(commit_descriptions) | default("", true)
+%}{{    all_types.append(type_)
+}}{{    all_descritptions.append(commit_descriptions)
 }}{%  endfor
-%}{{  var.most_lines}}{#
+%}{#
   #   # PRINT SECTION (header & commits)
 #}
 | {% for type in all_types %} {{ type }} | {% endfor %} 
