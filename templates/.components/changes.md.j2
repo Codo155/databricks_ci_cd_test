@@ -63,7 +63,7 @@ EXAMPLE:
   #   # PRINT SECTION (header & commits)
 #}
 {% if all_types | length > 0%}
-|{% for type in all_types %} {{type}} | {% endfor %} 
+|{% for type in all_types %} {{###type}} | {% endfor %} 
 |{% for type in all_types %} --| {% endfor %}
   {%  for i in range(var.most_lines)
 %}{%    set var.row = []
