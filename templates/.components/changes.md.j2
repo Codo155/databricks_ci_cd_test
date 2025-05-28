@@ -27,7 +27,8 @@ EXAMPLE:
 
 #}{%  set max_line_width = max_line_width | default(100)
 %}{%  set hanging_indent = hanging_indent | default(2)
-%}{%  set commit_types = {}
+%}{%  set all_types = []
+%}{%  set all_decritptions = []
 %}{%  set most_lines = 0
 %}{#
 #}{%  for type_, commits in commit_objects if type_ != "unknown"
@@ -54,16 +55,17 @@ EXAMPLE:
 %}{%        set most_lines = commit_descriptions | length
 %}{%      endif
 %}{%    endfor
-%}{%    set x=commit_types.__setitem__(type_, commit_descriptions)
-%}{%  endfor
+%}{{    all_types.append(type_)
+}}{{    all_decritptions.append(commit_descriptions) | default("", true)
+}}{%  endfor
 %}{#
   #   # PRINT SECTION (header & commits)
 #}{{  "\n"
-}}{{  "| %s |\n" | format(commit_types.keys() | list | join(" | "))
+}}{{  "| %s |\n" | format(all_types | join(" | "))
 }}{%  for i in range(most_lines)
 %}{%    set row = []
-%}{%    for type_, commit_descriptions in commit_types.items()
-%}{{      row.append(commit_descriptions[i] | default(" ", true))
+%}{%    for j in all_types | length
+%}{{      row.append(all_decritptions[j][i] | default(" ", true))
 }}{%    endfor
 %}{{    "| %s |\n" | format(row | join(" | "))
 }}{%  endfor
