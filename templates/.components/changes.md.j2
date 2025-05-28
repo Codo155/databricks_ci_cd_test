@@ -54,12 +54,12 @@ EXAMPLE:
 }}{%      if commit_descriptions | length > most_lines
 %}{%        set most_lines = commit_descriptions | length
 %}{%      endif
+%}{%    endfor
 %}{{most_lines}}
-{%    endfor
-%}{{    all_types.append(type_)
+{{    all_types.append(type_)
 }}{{    all_decritptions.append(commit_descriptions) | default("", true)
 }}{%  endfor
-%}{#
+%}{{most_lines}}{#
   #   # PRINT SECTION (header & commits)
 #}
 | {% for type in all_types %} {{ type }} | {% endfor %} 
