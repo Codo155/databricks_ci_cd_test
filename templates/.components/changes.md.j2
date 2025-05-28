@@ -72,8 +72,7 @@ EXAMPLE:
 %}{%    for j in range(all_descritptions | length)
 %}{{      row.append(all_descritptions[j][i] | default(" ", true))
 }}{%    endfor
-%}|    {% for commit in row %} {{ row }} | {% endfor %}
-|    {% for commit in row %} {{ commit }} | {% endfor %}
+%}|    {% for commit in row %} {{ row | replace("\n", "") }} | {% endfor %}
 {%  endfor
 %}{#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
