@@ -3,628 +3,294 @@
 # CHANGELOG
 
 
+## md_21.5.0 (2025-05-28)
+None
+| bug fixes |
+
+
 ## md_21.4.0 (2025-05-27)
+None
+| features |
 
 
 ## md_21.3.1 (2025-05-27)
-
-### Bug Fixes
-
-- Endfor
-  ([`f1dda0e`](https://github.com/Codo155/databricks_ci_cd_test/commit/f1dda0ecb476472b3bebf44391c23c08c3829d8d))
-
-### Features
-
-- Back to first version
-  ([`4d1cf8b`](https://github.com/Codo155/databricks_ci_cd_test/commit/4d1cf8b121870bf9e080c2f9c424d27067c5cb00))
+NoneNone
+| bug fixes | features |
 
 
 ## md_21.3.0 (2025-05-27)
-
-### Bug Fixes
-
-- Back to old loop
-  ([`3504bb0`](https://github.com/Codo155/databricks_ci_cd_test/commit/3504bb033d99ee57bb0a73757a89b5629cc9a6ab))
-
-- Create empty values
-  ([`9391466`](https://github.com/Codo155/databricks_ci_cd_test/commit/9391466311474b906cd2199773d162da25a9c379))
-
-- Line_width
-  ([`6c240f2`](https://github.com/Codo155/databricks_ci_cd_test/commit/6c240f21ea30544245c100b36f208278b8ae0550))
-
-### Features
-
-- Loop update
-  ([`198e446`](https://github.com/Codo155/databricks_ci_cd_test/commit/198e44664c5b2ef636f92b1dc06143ff24805bbe))
+NoneNone
+| bug fixes | features |
 
 
 ## md_21.2.1 (2025-05-27)
-
-### Features
-
-- Update sturcture
-  ([`0d99082`](https://github.com/Codo155/databricks_ci_cd_test/commit/0d99082f499ee29d5f2df8fe7a77642429b63658))
+None
+| features |
 
 
 ## md_21.2.0 (2025-05-27)
-
-### Bug Fixes
-
-- Force
-  ([`01089e3`](https://github.com/Codo155/databricks_ci_cd_test/commit/01089e387f2fc41df85d4ef182398f79e24e8f74))
-
-- Force lock
-  ([`8da4bf4`](https://github.com/Codo155/databricks_ci_cd_test/commit/8da4bf4f44c64a2a8faceb3d3d0e0318c2f761d3))
-
-- Locks
-  ([`d31b293`](https://github.com/Codo155/databricks_ci_cd_test/commit/d31b293e1b017f66dbb44ec48cfd779b3542ec8e))
-
-- No databricks
-  ([`f374773`](https://github.com/Codo155/databricks_ci_cd_test/commit/f374773423aca17f7925b81b6fcd3d24d1309008))
-
-- Old version
-  ([`134ad9e`](https://github.com/Codo155/databricks_ci_cd_test/commit/134ad9eabc13a7fb1c3ebc34897c0e2b3e1b5e2a))
-
-- Remove node_modules
-  ([`54a357a`](https://github.com/Codo155/databricks_ci_cd_test/commit/54a357a5c7db711e7da2122921c50c999e5f1a36))
-
-### Features
-
-- Added config
-  ([`eebbb22`](https://github.com/Codo155/databricks_ci_cd_test/commit/eebbb22f0fbf250ede8bd3b2e9feca25239a7080))
-
-- Old
-  ([`68170aa`](https://github.com/Codo155/databricks_ci_cd_test/commit/68170aa4280127721577906a2bacfc3fba05cb6e))
-
-- Pack to inital
-  ([`f554967`](https://github.com/Codo155/databricks_ci_cd_test/commit/f5549677754728b3f924285b95151c18ad070892))
+NoneNone
+| bug fixes | features |
 
 
 ## md_21.1.1 (2025-05-27)
-
-### Bug Fixes
-
-- Permissions
-  ([`21e5325`](https://github.com/Codo155/databricks_ci_cd_test/commit/21e53259f52fec9bb9b5735e640a29d100f91f54))
+None
+| bug fixes |
 
 
 ## md_21.1.0 (2025-05-27)
-
-### Features
-
-- Maybe feat
-  ([`b307a83`](https://github.com/Codo155/databricks_ci_cd_test/commit/b307a8359b39e08270db072777e333bda3958b59))
+None
+| features |
 
 
 ## md_21.0.6 (2025-05-27)
-
-### Bug Fixes
-
-- Nope
-  ([`37bbca1`](https://github.com/Codo155/databricks_ci_cd_test/commit/37bbca165344a94a95dc49e65e24900a8cf540ce))
-
-- Very verbose
-  ([`4b3fc99`](https://github.com/Codo155/databricks_ci_cd_test/commit/4b3fc995cc84d3dfb15516e6fb5bb3bfe4457b76))
+None
+| bug fixes |
 
 
 ## md_21.0.5 (2025-05-27)
-
-### Bug Fixes
-
-- Different run
-  ([`07b9cbe`](https://github.com/Codo155/databricks_ci_cd_test/commit/07b9cbe61615d2720bd7b7b2b3101db8b15ac5be))
-
-- Nope
-  ([`7c664f9`](https://github.com/Codo155/databricks_ci_cd_test/commit/7c664f90b15c035d0514705f92190b18ebff8c91))
+None
+| bug fixes |
 
 
 ## md_21.0.4 (2025-05-27)
-
-### Bug Fixes
-
-- Test workflow
-  ([`bb547ae`](https://github.com/Codo155/databricks_ci_cd_test/commit/bb547ae7ff7a18edeaf261a70e0de654aa61d936))
+None
+| bug fixes |
 
 
 ## md_21.0.3 (2025-05-27)
-
-### Bug Fixes
-
-- Whitespaces in workflow
-  ([`01e5370`](https://github.com/Codo155/databricks_ci_cd_test/commit/01e5370c1097966c64632ac41889e95ef667d311))
+None
+| bug fixes |
 
 
 ## md_21.0.2 (2025-05-26)
-
-### Bug Fixes
-
-- Diff version
-  ([`a886a0c`](https://github.com/Codo155/databricks_ci_cd_test/commit/a886a0c4f9b8da4ab111c6f4d2f75a31f03547de))
-
-- Different version
-  ([`57fc482`](https://github.com/Codo155/databricks_ci_cd_test/commit/57fc4823ddd284efb45fa071afd0f7c659e3cbb9))
-
-- No version
-  ([`e62e30f`](https://github.com/Codo155/databricks_ci_cd_test/commit/e62e30f13ed1f781b3b7827c88f2a3b69e7bd9a7))
+None
+| bug fixes |
 
 
 ## md_21.0.1 (2025-05-26)
-
-### Bug Fixes
-
-- No warnings
-  ([`0f86b73`](https://github.com/Codo155/databricks_ci_cd_test/commit/0f86b733684b14661bb84348a82d9a815535c798))
+None
+| bug fixes |
 
 
 ## md_20.7.11 (2025-05-26)
-
-### Bug Fixes
-
-- Square 1
-  ([`9808a79`](https://github.com/Codo155/databricks_ci_cd_test/commit/9808a795db6ee50b2155e78e7485440a8a506275))
+None
+| bug fixes |
 
 
 ## md_20.7.10 (2025-05-26)
-
-### Bug Fixes
-
-- Better?
-  ([`7da38e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/7da38e77df020fe7238f82661b4232fe7cc7063d))
-
-- Chatgpt probably lying
-  ([`86afb6b`](https://github.com/Codo155/databricks_ci_cd_test/commit/86afb6baf6b41c45b8dd10b6509502def7b3670b))
+None
+| bug fixes |
 
 
 ## md_20.7.9 (2025-05-26)
-
-### Bug Fixes
-
-- Change
-  ([`64728ef`](https://github.com/Codo155/databricks_ci_cd_test/commit/64728ef5ff28e4c94ea4349c65bb64e55ae09caf))
+None
+| bug fixes |
 
 
 ## md_20.7.8 (2025-05-26)
-
-### Bug Fixes
-
-- Warnings
-  ([`f7f07d4`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7f07d4dcb4d39b292aac2a805cfdbf05db3e9ba))
-
-### Continuous Integration
-
-- Change test worfklow
-  ([`7610bef`](https://github.com/Codo155/databricks_ci_cd_test/commit/7610bef96d7603861d3459b8833ef18797dbfd6a))
+NoneNone
+| bug fixes | continuous integration |
 
 
 ## md_20.7.7 (2025-05-26)
-
-### Bug Fixes
-
-- Does it still not create?
-  ([`483e26e`](https://github.com/Codo155/databricks_ci_cd_test/commit/483e26e8f15309550a09b084e4d49758737fe680))
+None
+| bug fixes |
 
 
 ## md_20.7.6 (2025-05-26)
-
-### Bug Fixes
-
-- New version workflow
-  ([`df41e49`](https://github.com/Codo155/databricks_ci_cd_test/commit/df41e495ac258a6a4d5e25174ae88d341ce3ab91))
-
-- Newest version
-  ([`df804ff`](https://github.com/Codo155/databricks_ci_cd_test/commit/df804ffe9e0dc1f5bbfcfa0a35e9a5b8c99ae4b9))
-
-- Nothing works
-  ([`76fc0b9`](https://github.com/Codo155/databricks_ci_cd_test/commit/76fc0b99f0c215ea5f904330bd6a528441e95a4a))
-
-- Version back to master
-  ([`bedd3fe`](https://github.com/Codo155/databricks_ci_cd_test/commit/bedd3fee70b76743e2245aa5acbd5330b7a8c903))
+None
+| bug fixes |
 
 
 ## md_20.7.5 (2025-05-26)
-
-### Bug Fixes
-
-- Maybe v3?
-  ([`e101896`](https://github.com/Codo155/databricks_ci_cd_test/commit/e1018963822ab1e11fa9eb9fdc8719077efa2311))
+None
+| bug fixes |
 
 
 ## md_20.7.4 (2025-05-26)
-
-### Bug Fixes
-
-- Whyyyyyyyyyyyyyyyy
-  ([`2db5169`](https://github.com/Codo155/databricks_ci_cd_test/commit/2db5169b0e3bd568f5860eb4f60d44880fd5e662))
+None
+| bug fixes |
 
 
 ## md_20.7.3 (2025-05-26)
-
-### Bug Fixes
-
-- Praxing
-  ([`006bc74`](https://github.com/Codo155/databricks_ci_cd_test/commit/006bc7487ae6afd3c88b733f09d184619c7587a5))
+None
+| bug fixes |
 
 
 ## md_20.7.2 (2025-05-26)
-
-### Bug Fixes
-
-- Rollback more
-  ([`b04629d`](https://github.com/Codo155/databricks_ci_cd_test/commit/b04629df06c3f1f3db63d4008e9f67d77a1e87e8))
+None
+| bug fixes |
 
 
 ## md_20.7.1 (2025-05-26)
-
-### Bug Fixes
-
-- Rollback again
-  ([`0b4605c`](https://github.com/Codo155/databricks_ci_cd_test/commit/0b4605c25d28dc1116d6f884cd7a2eb365e8623d))
-
-### Refactoring
-
-- Back to first version
-  ([`7185568`](https://github.com/Codo155/databricks_ci_cd_test/commit/7185568ef13289deeacab082628d91c1c62cbdab))
+NoneNone
+| bug fixes | refactoring |
 
 
 ## md_20.7.0 (2025-05-26)
-
-### Features
-
-- Verbose output not possible
-  ([`f243867`](https://github.com/Codo155/databricks_ci_cd_test/commit/f24386755cddc45905e6e45a3b5da7fb571b262f))
+None
+| features |
 
 
 ## md_20.6.0 (2025-05-26)
-
-### Bug Fixes
-
-- Another one
-  ([`e6a7015`](https://github.com/Codo155/databricks_ci_cd_test/commit/e6a70158c845da91e2dbc8e069409573e7bcc85d))
-
-- Commit msg
-  ([`e575f92`](https://github.com/Codo155/databricks_ci_cd_test/commit/e575f921c1a30c35dc1cb339f9d2c017bd5f81a1))
-
-- Fixus the 9th
-  ([`f828f7e`](https://github.com/Codo155/databricks_ci_cd_test/commit/f828f7eccaf68243313a71ba84e27760626818a1))
-
-- Full traceback
-  ([`bcbbe13`](https://github.com/Codo155/databricks_ci_cd_test/commit/bcbbe131f9587d9b3d03aef8d10d8c11ebbd3d73))
-
-- Last_working
-  ([`f9eff0e`](https://github.com/Codo155/databricks_ci_cd_test/commit/f9eff0e140b685090de0ca5aa735fece37a1bd88))
-
-- One more time
-  ([`d0160a3`](https://github.com/Codo155/databricks_ci_cd_test/commit/d0160a3ea2f024aa418da3506d4ff326a0ad9fe4))
-
-### Code Style
-
-- Try and improve tables
-  ([`b0a9177`](https://github.com/Codo155/databricks_ci_cd_test/commit/b0a9177dc50397c8dbba93f789621dc5569b66fe))
-
-### Features
-
-- Possible length fix
-  ([`bd8e816`](https://github.com/Codo155/databricks_ci_cd_test/commit/bd8e81695f8f2a136ac3bacf992cdafe30d7635d))
+NoneNoneNone
+| bug fixes | code style | features |
 
 
 ## md_20.5.1 (2025-05-23)
-
-### Bug Fixes
-
-- Does this msg work?
-  ([`9733a6b`](https://github.com/Codo155/databricks_ci_cd_test/commit/9733a6b282653f2d3cec9fec45872b68218d1d34))
-
-- First version
-  ([`e5fd24d`](https://github.com/Codo155/databricks_ci_cd_test/commit/e5fd24d9fda976c1de2d5ef1670b396ad6f94c16))
-
-- Rollback
-  ([`71eb56a`](https://github.com/Codo155/databricks_ci_cd_test/commit/71eb56aa8989d09b7c2001244a37d4d7b82d6ca3))
-
-- Spaghetti
-  ([`43046a7`](https://github.com/Codo155/databricks_ci_cd_test/commit/43046a7f359f4ff55e4fe36a5d61ff23a399c989))
-
-### Code Style
-
-- Wrong commit msg
-  ([`ca2ecbe`](https://github.com/Codo155/databricks_ci_cd_test/commit/ca2ecbe73d894dd77c95bbde9bc391b971f96c52))
+NoneNone
+| bug fixes | code style |
 
 
 ## md_20.5.0 (2025-05-23)
-
-### Features
-
-- Why no work
-  ([`ce0dbb9`](https://github.com/Codo155/databricks_ci_cd_test/commit/ce0dbb9dd69b97088ebfbab62cb863299a5525e6))
+None
+| features |
 
 
 ## md_20.4.2 (2025-05-22)
-
-### Bug Fixes
-
-- Picture should work now
-  ([`69f66a3`](https://github.com/Codo155/databricks_ci_cd_test/commit/69f66a3f84f5d532569a56650355f3ac8b0aa9ea))
+None
+| bug fixes |
 
 
 ## md_20.4.1 (2025-05-22)
-
-### Bug Fixes
-
-- Proper message
-  ([`16e40be`](https://github.com/Codo155/databricks_ci_cd_test/commit/16e40be1fb76f2aa6a9d27df647632a7a3970b03))
-
-### Continuous Integration
-
-- Using var for databricks.yml
-  ([`ecaf006`](https://github.com/Codo155/databricks_ci_cd_test/commit/ecaf006b381e5db3dc89e4f562357f0fdda59cf6))
+NoneNone
+| bug fixes | continuous integration |
 
 
 ## md_20.4.0 (2025-04-22)
-
-### Features
-
-- Add Spider
-  ([`2c3a074`](https://github.com/Codo155/databricks_ci_cd_test/commit/2c3a07473a40e82c07441a1901ca5ac55ff3b427))
-
-- Added Spider and Enderdragon
-  ([`872ddef`](https://github.com/Codo155/databricks_ci_cd_test/commit/872ddeff55f53216c03d482013a5ec2e60faa2eb))
-
-Speider und Enderdrache
+None
+| features |
 
 
 ## md_20.3.0 (2025-04-22)
-
-### Features
-
-- Add Creeper weil ich einer bin
-  ([`859e7b9`](https://github.com/Codo155/databricks_ci_cd_test/commit/859e7b94d0a3d835f8f434e1d82bf2769437c079))
-
-- Enderman added
-  ([`035be6a`](https://github.com/Codo155/databricks_ci_cd_test/commit/035be6aad7e3fd381d37767dbf459d2c6f801d2e))
-
-- **Minecraft/zombie.py**: Add Zombie weil Ostern
-  ([`885e625`](https://github.com/Codo155/databricks_ci_cd_test/commit/885e625e1b5874e66a663a1eea16611b878102d0))
+None
+| features |
 
 
 ## md_20.2.0 (2025-04-21)
-
-### Bug Fixes
-
-- **pyproject.toml**: Delete parser options
-  ([`839dd19`](https://github.com/Codo155/databricks_ci_cd_test/commit/839dd19170799f7b5ac02b84bcee96463a4700bc))
-
-### Features
-
-- Add sand.py
-  ([`1ca9dfe`](https://github.com/Codo155/databricks_ci_cd_test/commit/1ca9dfe48f7a413dde144e48daedf22d4e5646dd))
-
-- Gravel
-  ([`de30637`](https://github.com/Codo155/databricks_ci_cd_test/commit/de30637e8985668ca288b1046c468b4789e90f63))
+NoneNone
+| bug fixes | features |
 
 
 ## md_20.1.0 (2025-04-21)
-
-### Features
-
-- Add iron.py
-  ([`5a61635`](https://github.com/Codo155/databricks_ci_cd_test/commit/5a61635a83221c582d142b4df44dcbaf7a73290b))
+None
+| features |
 
 
 ## md_20.0.0 (2025-04-21)
 
+|  |
+
 
 ## md_19.3.0 (2025-04-20)
 
+|  |
+
 
 ## md_19.2.0 (2025-04-20)
-
-### Features
-
-- Add Cubblestone
-  ([`41e04db`](https://github.com/Codo155/databricks_ci_cd_test/commit/41e04db738bcae741bdbd5296a7fa88d9a038d1d))
-
-- Add Wood
-  ([`22eb8d3`](https://github.com/Codo155/databricks_ci_cd_test/commit/22eb8d3d0c2e2b5f01a46d9c10d99d833880395f))
-
-- Water
-  ([`bd79461`](https://github.com/Codo155/databricks_ci_cd_test/commit/bd7946159315c53cad37f70cacf0ed242c50e84e))
+None
+| features |
 
 
 ## md_19.1.0 (2025-04-20)
 
+|  |
+
 
 ## md_18.0.1 (2025-03-11)
-
-### Features
-
-- Stone in minecraft
-  ([`0ff3cbc`](https://github.com/Codo155/databricks_ci_cd_test/commit/0ff3cbcad673db577aad3c1a1b3d569e1c79ca87))
+None
+| features |
 
 
 ## md_19.0.0 (2025-04-16)
-
-### Bug Fixes
-
-- Kein Schnitzel
-  ([`87e7eef`](https://github.com/Codo155/databricks_ci_cd_test/commit/87e7eef83fd9bbc3584a9aa3be6d1f5bb59f456a))
-
-### Continuous Integration
-
-- No version on development
-  ([`78c1ce0`](https://github.com/Codo155/databricks_ci_cd_test/commit/78c1ce03228603c62d34b8ed160881fad25931c5))
-
-- Replace pull requ with push
-  ([`7cf58c5`](https://github.com/Codo155/databricks_ci_cd_test/commit/7cf58c51522db992ad903052e668fb44d9f35d32))
+NoneNone
+| bug fixes | continuous integration |
 
 
 ## md_18.0.0 (2025-03-06)
 
+|  |
+
 
 ## md_16.1.0 (2025-03-06)
-
-### Features
-
-- Adanotherbeer Merge Message
-  ([`0571d30`](https://github.com/Codo155/databricks_ci_cd_test/commit/0571d3049e774ba791e007dc5d998e4f230a3e71))
-
-Development
-
-- Addbeer
-  ([`8f2a8e5`](https://github.com/Codo155/databricks_ci_cd_test/commit/8f2a8e5a33326701b234118a5c8965df4b1788b1))
+None
+| features |
 
 
 ## md_16.0.0 (2025-03-06)
 
+|  |
+
 
 ## md_15.1.0 (2025-03-06)
-
-### Features
-
-- Add Spiderman
-  ([`fa54036`](https://github.com/Codo155/databricks_ci_cd_test/commit/fa54036cf0329f17f915dede0fea06074538035a))
+None
+| features |
 
 
 ## md_15.0.0 (2025-03-04)
 
+|  |
+
 
 ## md_14.0.0 (2025-03-04)
-
-### Continuous Integration
-
-- Auto merge into dev after major release
-  ([`cb19336`](https://github.com/Codo155/databricks_ci_cd_test/commit/cb19336f612ee0246062bfb76279ed075585b472))
+None
+| continuous integration |
 
 
 ## md_12.0.0 (2025-03-04)
 
+|  |
+
 
 ## md_11.3.0 (2025-03-04)
-
-### Features
-
-- Add Ant Man
-  ([`341faf8`](https://github.com/Codo155/databricks_ci_cd_test/commit/341faf81adfba8f1601fcc69d75d597932b7bf44))
-
-- Add Thor - God of Thunder
-  ([`e9b2975`](https://github.com/Codo155/databricks_ci_cd_test/commit/e9b2975a88753395eb0649e3155f4520cdf27596))
-
-- Add Thor and Ant Man
-  ([`2ffd3b1`](https://github.com/Codo155/databricks_ci_cd_test/commit/2ffd3b107cda04767032a20b8f5d5ee59d70e820))
-
-Marvel5
+None
+| features |
 
 
 ## md_11.2.0 (2025-03-04)
-
-### Features
-
-- Add Augustiner
-  ([`1532276`](https://github.com/Codo155/databricks_ci_cd_test/commit/1532276f2d2a21caae29fa79222314bdab8d9adb))
+None
+| features |
 
 
 ## md_11.1.0 (2025-02-05)
-
-### Features
-
-- **Code**: Martha Wayne
-  ([`698a975`](https://github.com/Codo155/databricks_ci_cd_test/commit/698a975139c1b8deb780fa974c3fa85133397890))
-
-Batman is coming
-
-- **Code/Batman**: Add Martha Wayne
-  ([`ee0a30b`](https://github.com/Codo155/databricks_ci_cd_test/commit/ee0a30b3d422b07ec2dfb51244ffc6a05fb63208))
+None
+| features |
 
 
 ## md_11.0.0 (2025-02-05)
 
+|  |
+
 
 ## md_10.0.0 (2025-02-05)
 
+|  |
+
 
 ## md_9.0.0 (2025-02-05)
-
-### Continuous Integration
-
-- **pyproject**: No prerelease on main
-  ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e))
-
-### Features
-
-- **Bier**: Egger added
-  ([`2306a0b`](https://github.com/Codo155/databricks_ci_cd_test/commit/2306a0b65a639567d674b0a06124155725ea107f))
-
-Egger Bier - kennt das wer?
-
-- **Bier**: Egger added
-  ([`71577d5`](https://github.com/Codo155/databricks_ci_cd_test/commit/71577d5c9d214de0fcccb79a4d2ef144a2eedf86))
+NoneNone
+| continuous integration | features |
 
 
 ## md_2.1.0-rc.3 (2025-02-05)
-
-### Bug Fixes
-
-- **Bier**: Remove Radler becaue it is not a beer
-  ([`9e45e4f`](https://github.com/Codo155/databricks_ci_cd_test/commit/9e45e4f0f590a15869c13acea2a2a2ab151462ca))
-
-### Features
-
-- **Bier**: Add Wieselburger
-  ([`71e9040`](https://github.com/Codo155/databricks_ci_cd_test/commit/71e9040362f8fd6a7cf3144714f65ef9e170af23))
-
-- **Bier**: Gut Besser Gösser
-  ([`2452cf8`](https://github.com/Codo155/databricks_ci_cd_test/commit/2452cf85e287ae3e936a3c21e7e59999f80e75d0))
+NoneNone
+| bug fixes | features |
 
 
 ## md_2.1.0-rc.2 (2025-02-03)
-
-### Build System
-
-- **Bier**: Final test für Prerelease
-  ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))
-
-Body: Text für den Prerelease
-
-BREAKING CHANGES: None Notice: None
-
-### Features
-
-- **Bier**: Niemand mag Heiniken
-  ([`6f4a8e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/6f4a8e7080bfa7d084781aeb28f4b4181dc1d696))
-
-- **Bier**: Ottakringer added
-  ([`ca70539`](https://github.com/Codo155/databricks_ci_cd_test/commit/ca70539a15ef439faf8dcc13e60c57a6c86e3134))
-
-- **Bier**: Radler ist kein Bier
-  ([`7566e1e`](https://github.com/Codo155/databricks_ci_cd_test/commit/7566e1ed5fe48698f1ef6b6bcc44d21d22438124))
+NoneNone
+| build system | features |
 
 
 ## md_2.1.0-rc.1 (2025-02-03)
-
-### Build System
-
-- **everywhere**: Tea und Prerelease
-  ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))
-
-BREAKING CHANGES: Test für Prerelease
-
-### Features
-
-- **Lightbringer**: Tea wurde dem Buch hinzugefügt
-  ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34))
-
-- **pyproject**: Test Prerelease Feature
-  ([`c2748cb`](https://github.com/Codo155/databricks_ci_cd_test/commit/c2748cb9bb65df698816065ec2ce6c58dbad12af))
+NoneNone
+| build system | features |
 
 
 ## md_2.0.0 (2025-02-03)
-
-### Build System
-
-- **j2**: Title
-  ([`50ad2dd`](https://github.com/Codo155/databricks_ci_cd_test/commit/50ad2ddede33841a10500f24afe7ff1352f293c1))
-
-Body: Boddy Messsage
-
-BREAKING CHANGE: text für Breaking change
+None
+| build system |
 
 ### BREAKING CHANGES
 
@@ -632,15 +298,8 @@ BREAKING CHANGE: text für Breaking change
 
 
 ## md_1.0.0 (2025-02-03)
-
-### Build System
-
-- **changelog**: New Changelog.md.j2
-  ([`726b310`](https://github.com/Codo155/databricks_ci_cd_test/commit/726b3104cf0e12cb9a11a77b6634e0d1c9722a78))
-
-Body:
-
-BREAKING CHANGE: New Changelog format for verioning
+None
+| build system |
 
 ### BREAKING CHANGES
 
@@ -648,66 +307,15 @@ BREAKING CHANGE: New Changelog format for verioning
 
 
 ## md_0.3.0 (2025-02-03)
-
-### Build System
-
-- **pyproject.toml**: Update toml
-  ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))
-
-Body for message
-
-Footer Notice: Notice for changelog
-
-### Features
-
-- Ac4ever
-  ([`4725153`](https://github.com/Codo155/databricks_ci_cd_test/commit/472515393814ae53c269e811ce6b79ee1319c620))
-
-- Add Yasuke
-  ([`273b927`](https://github.com/Codo155/databricks_ci_cd_test/commit/273b9277d67dac991f39ad8085cc577fd2ca7f78))
-
-- Add Yasuke
-  ([`27a9437`](https://github.com/Codo155/databricks_ci_cd_test/commit/27a943780ffcb038cfa4d20759d8ca70e33e7098))
-
-- Add Yasuke
-  ([`109f645`](https://github.com/Codo155/databricks_ci_cd_test/commit/109f645b24779b5d43ca38092c38d4cfcb9a11dc))
-
-feat: add Yasuke
-
-- Added Naoe
-  ([`6b25b7f`](https://github.com/Codo155/databricks_ci_cd_test/commit/6b25b7f4d6289ed5fef249f0782f4f0bd05d8d9f))
-
-added naoe
-
-- Schwarzes Prisma
-  ([`f7a6bc1`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7a6bc1d199b84a120e59fe12e6577afb8985afc))
-
-Teil 1 der Lichtbringer Serie
+NoneNone
+| build system | features |
 
 
 ## md_0.2.0 (2025-01-29)
 
+|  |
+
 
 ## md_0.1.0 (2025-01-29)
-
-### Continuous Integration
-
-- Dev branch
-  ([`22ec31a`](https://github.com/Codo155/databricks_ci_cd_test/commit/22ec31a2301de4b9ab23df5d7de58fdf5bda7a8a))
-
-- Main.yml update
-  ([`b0cc740`](https://github.com/Codo155/databricks_ci_cd_test/commit/b0cc74077494dff393d475478362a3c13599234b))
-
-- Update github token
-  ([`4fb429c`](https://github.com/Codo155/databricks_ci_cd_test/commit/4fb429cb3f04cf5bab36da0bba51cf204a3948d4))
-
-- Update main.yml
-  ([`66a4d6e`](https://github.com/Codo155/databricks_ci_cd_test/commit/66a4d6e30f944dbfea9a0fd2fb9df481e5c58a96))
-
-### Features
-
-- Hi, ich weine
-  ([`0f95cf3`](https://github.com/Codo155/databricks_ci_cd_test/commit/0f95cf3b789ac2a260e30e121bd66c53ed439a7d))
-
-- Toml update
-  ([`177d16d`](https://github.com/Codo155/databricks_ci_cd_test/commit/177d16d35fae33d158706064716931cb8f985bec))
+NoneNone
+| continuous integration | features |
