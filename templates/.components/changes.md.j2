@@ -65,13 +65,12 @@ EXAMPLE:
 | {% for type in all_types %} {{ type }} | {% endfor %} 
 | {% for type in all_types %} --| {% endfor %}
 | {% for desc in all_descritptions %} {{ desc }} | {% endfor %} 
-| {% for type in all_types %} {{ all_descritptions | length }} | {% endfor %} 
-| {% for type in all_types %} {{ all_descritptions[0][0]}} | {% endfor %} 
   {%  for i in range(var.most_lines)
 %}{%    set row = []
 %}{%    for j in range(all_descritptions | length)
 %}{{      row.append(all_descritptions[j][i] | default(" ", true))
-}}{%    endfor
+}}| {% for type in all_types %} {{ row }} | {% endfor %} 
+{%    endfor
 %}|    {% for commit in row %} {{ row | replace("\n", "") }} | {% endfor %}
 {%  endfor
 %}{#
