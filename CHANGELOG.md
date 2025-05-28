@@ -3,7 +3,7 @@
 # CHANGELOG
 
 
-## md_21.6.4 (2025-05-28)
+## md_21.6.5 (2025-05-28)
 
 |  
 | 
@@ -11,6 +11,19 @@
 |  
 |  
   
+
+## md_21.6.4 (2025-05-28)
+NoneNone
+|  bug fixes |  
+|  --| 
+|  [&#39;- No \\n\n  ([`10de597`](https://github.com/Codo155/databricks_ci_cd_test/commit/10de597875a9dacbe5f57932bd1a2e308de63924))&#39;] |  
+|  1 |  
+|  - No \n
+  ([`10de597`](https://github.com/Codo155/databricks_ci_cd_test/commit/10de597875a9dacbe5f57932bd1a2e308de63924)) |  
+  None|     [&#39;- No \\n\n  ([`10de597`](https://github.com/Codo155/databricks_ci_cd_test/commit/10de597875a9dacbe5f57932bd1a2e308de63924))&#39;] | 
+|     - No \n
+  ([`10de597`](https://github.com/Codo155/databricks_ci_cd_test/commit/10de597875a9dacbe5f57932bd1a2e308de63924)) | 
+
 
 ## md_21.6.3 (2025-05-28)
 NoneNone
@@ -670,18 +683,17 @@ NoneNoneNoneNone
 NoneNone
 |  features |  
 |  --| 
-|  [&#39;- Add Spider\n  ([`2c3a074`](https://github.com/Codo155/databricks_ci_cd_test/commit/2c3a07473a40e82c07441a1901ca5ac55ff3b427))&#39;, &#34;- Added Spider and Enderdragon\n  ([`872ddef`](https://github.com/Codo155/databricks_ci_cd_test/commit/872ddeff55f53216c03d482013a5ec2e60faa2eb))\n\n[&#39;Speider und Enderdrache&#39;]&#34;] |  
+|  [&#39;- Add Spider\n  ([`2c3a074`](https://github.com/Codo155/databricks_ci_cd_test/commit/2c3a07473a40e82c07441a1901ca5ac55ff3b427))&#39;, &#34;- Added Spider and Enderdragon\n  ([`872ddef`](https://github.com/Codo155/databricks_ci_cd_test/commit/872ddeff55f53216c03d482013a5ec2e60faa2eb))\n  [&#39;Speider und Enderdrache&#39;]&#34;] |  
 |  1 |  
 |  - Add Spider
   ([`2c3a074`](https://github.com/Codo155/databricks_ci_cd_test/commit/2c3a07473a40e82c07441a1901ca5ac55ff3b427)) |  
   None|     [&#39;- Add Spider\n  ([`2c3a074`](https://github.com/Codo155/databricks_ci_cd_test/commit/2c3a07473a40e82c07441a1901ca5ac55ff3b427))&#39;] | 
 |     - Add Spider
   ([`2c3a074`](https://github.com/Codo155/databricks_ci_cd_test/commit/2c3a07473a40e82c07441a1901ca5ac55ff3b427)) | 
-None|     [&#34;- Added Spider and Enderdragon\n  ([`872ddef`](https://github.com/Codo155/databricks_ci_cd_test/commit/872ddeff55f53216c03d482013a5ec2e60faa2eb))\n\n[&#39;Speider und Enderdrache&#39;]&#34;] | 
+None|     [&#34;- Added Spider and Enderdragon\n  ([`872ddef`](https://github.com/Codo155/databricks_ci_cd_test/commit/872ddeff55f53216c03d482013a5ec2e60faa2eb))\n  [&#39;Speider und Enderdrache&#39;]&#34;] | 
 |     - Added Spider and Enderdragon
   ([`872ddef`](https://github.com/Codo155/databricks_ci_cd_test/commit/872ddeff55f53216c03d482013a5ec2e60faa2eb))
-
-[&#39;Speider und Enderdrache&#39;] | 
+  [&#39;Speider und Enderdrache&#39;] | 
 
 
 ## md_20.3.0 (2025-04-22)
@@ -824,17 +836,15 @@ NoneNone|     [&#39; &#39;, &#39;- Replace pull requ with push\n  ([`7cf58c5`](h
 NoneNone
 |  features |  
 |  --| 
-|  [&#34;- Adanotherbeer Merge Message\n  ([`0571d30`](https://github.com/Codo155/databricks_ci_cd_test/commit/0571d3049e774ba791e007dc5d998e4f230a3e71))\n\n[&#39;Development&#39;]&#34;, &#39;- Addbeer\n  ([`8f2a8e5`](https://github.com/Codo155/databricks_ci_cd_test/commit/8f2a8e5a33326701b234118a5c8965df4b1788b1))&#39;] |  
+|  [&#34;- Adanotherbeer Merge Message\n  ([`0571d30`](https://github.com/Codo155/databricks_ci_cd_test/commit/0571d3049e774ba791e007dc5d998e4f230a3e71))\n  [&#39;Development&#39;]&#34;, &#39;- Addbeer\n  ([`8f2a8e5`](https://github.com/Codo155/databricks_ci_cd_test/commit/8f2a8e5a33326701b234118a5c8965df4b1788b1))&#39;] |  
 |  1 |  
 |  - Adanotherbeer Merge Message
   ([`0571d30`](https://github.com/Codo155/databricks_ci_cd_test/commit/0571d3049e774ba791e007dc5d998e4f230a3e71))
-
-[&#39;Development&#39;] |  
-  None|     [&#34;- Adanotherbeer Merge Message\n  ([`0571d30`](https://github.com/Codo155/databricks_ci_cd_test/commit/0571d3049e774ba791e007dc5d998e4f230a3e71))\n\n[&#39;Development&#39;]&#34;] | 
+  [&#39;Development&#39;] |  
+  None|     [&#34;- Adanotherbeer Merge Message\n  ([`0571d30`](https://github.com/Codo155/databricks_ci_cd_test/commit/0571d3049e774ba791e007dc5d998e4f230a3e71))\n  [&#39;Development&#39;]&#34;] | 
 |     - Adanotherbeer Merge Message
   ([`0571d30`](https://github.com/Codo155/databricks_ci_cd_test/commit/0571d3049e774ba791e007dc5d998e4f230a3e71))
-
-[&#39;Development&#39;] | 
+  [&#39;Development&#39;] | 
 None|     [&#39;- Addbeer\n  ([`8f2a8e5`](https://github.com/Codo155/databricks_ci_cd_test/commit/8f2a8e5a33326701b234118a5c8965df4b1788b1))&#39;] | 
 |     - Addbeer
   ([`8f2a8e5`](https://github.com/Codo155/databricks_ci_cd_test/commit/8f2a8e5a33326701b234118a5c8965df4b1788b1)) | 
@@ -897,7 +907,7 @@ NoneNone
 NoneNone
 |  features |  
 |  --| 
-|  [&#39;- Add Ant Man\n  ([`341faf8`](https://github.com/Codo155/databricks_ci_cd_test/commit/341faf81adfba8f1601fcc69d75d597932b7bf44))&#39;, &#39;- Add Thor - God of Thunder\n  ([`e9b2975`](https://github.com/Codo155/databricks_ci_cd_test/commit/e9b2975a88753395eb0649e3155f4520cdf27596))&#39;, &#34;- Add Thor and Ant Man\n  ([`2ffd3b1`](https://github.com/Codo155/databricks_ci_cd_test/commit/2ffd3b107cda04767032a20b8f5d5ee59d70e820))\n\n[&#39;Marvel5&#39;]&#34;] |  
+|  [&#39;- Add Ant Man\n  ([`341faf8`](https://github.com/Codo155/databricks_ci_cd_test/commit/341faf81adfba8f1601fcc69d75d597932b7bf44))&#39;, &#39;- Add Thor - God of Thunder\n  ([`e9b2975`](https://github.com/Codo155/databricks_ci_cd_test/commit/e9b2975a88753395eb0649e3155f4520cdf27596))&#39;, &#34;- Add Thor and Ant Man\n  ([`2ffd3b1`](https://github.com/Codo155/databricks_ci_cd_test/commit/2ffd3b107cda04767032a20b8f5d5ee59d70e820))\n  [&#39;Marvel5&#39;]&#34;] |  
 |  1 |  
 |  - Add Ant Man
   ([`341faf8`](https://github.com/Codo155/databricks_ci_cd_test/commit/341faf81adfba8f1601fcc69d75d597932b7bf44)) |  
@@ -907,11 +917,10 @@ NoneNone
 None|     [&#39;- Add Thor - God of Thunder\n  ([`e9b2975`](https://github.com/Codo155/databricks_ci_cd_test/commit/e9b2975a88753395eb0649e3155f4520cdf27596))&#39;] | 
 |     - Add Thor - God of Thunder
   ([`e9b2975`](https://github.com/Codo155/databricks_ci_cd_test/commit/e9b2975a88753395eb0649e3155f4520cdf27596)) | 
-None|     [&#34;- Add Thor and Ant Man\n  ([`2ffd3b1`](https://github.com/Codo155/databricks_ci_cd_test/commit/2ffd3b107cda04767032a20b8f5d5ee59d70e820))\n\n[&#39;Marvel5&#39;]&#34;] | 
+None|     [&#34;- Add Thor and Ant Man\n  ([`2ffd3b1`](https://github.com/Codo155/databricks_ci_cd_test/commit/2ffd3b107cda04767032a20b8f5d5ee59d70e820))\n  [&#39;Marvel5&#39;]&#34;] | 
 |     - Add Thor and Ant Man
   ([`2ffd3b1`](https://github.com/Codo155/databricks_ci_cd_test/commit/2ffd3b107cda04767032a20b8f5d5ee59d70e820))
-
-[&#39;Marvel5&#39;] | 
+  [&#39;Marvel5&#39;] | 
 
 
 ## md_11.2.0 (2025-03-04)
@@ -931,17 +940,15 @@ NoneNone
 NoneNone
 |  features |  
 |  --| 
-|  [&#34;- **Code**: Martha Wayne\n  ([`698a975`](https://github.com/Codo155/databricks_ci_cd_test/commit/698a975139c1b8deb780fa974c3fa85133397890))\n\n[&#39;Batman is coming&#39;]&#34;, &#39;- **Code/Batman**: Add Martha Wayne\n  ([`ee0a30b`](https://github.com/Codo155/databricks_ci_cd_test/commit/ee0a30b3d422b07ec2dfb51244ffc6a05fb63208))&#39;] |  
+|  [&#34;- **Code**: Martha Wayne\n  ([`698a975`](https://github.com/Codo155/databricks_ci_cd_test/commit/698a975139c1b8deb780fa974c3fa85133397890))\n  [&#39;Batman is coming&#39;]&#34;, &#39;- **Code/Batman**: Add Martha Wayne\n  ([`ee0a30b`](https://github.com/Codo155/databricks_ci_cd_test/commit/ee0a30b3d422b07ec2dfb51244ffc6a05fb63208))&#39;] |  
 |  1 |  
 |  - **Code**: Martha Wayne
   ([`698a975`](https://github.com/Codo155/databricks_ci_cd_test/commit/698a975139c1b8deb780fa974c3fa85133397890))
-
-[&#39;Batman is coming&#39;] |  
-  None|     [&#34;- **Code**: Martha Wayne\n  ([`698a975`](https://github.com/Codo155/databricks_ci_cd_test/commit/698a975139c1b8deb780fa974c3fa85133397890))\n\n[&#39;Batman is coming&#39;]&#34;] | 
+  [&#39;Batman is coming&#39;] |  
+  None|     [&#34;- **Code**: Martha Wayne\n  ([`698a975`](https://github.com/Codo155/databricks_ci_cd_test/commit/698a975139c1b8deb780fa974c3fa85133397890))\n  [&#39;Batman is coming&#39;]&#34;] | 
 |     - **Code**: Martha Wayne
   ([`698a975`](https://github.com/Codo155/databricks_ci_cd_test/commit/698a975139c1b8deb780fa974c3fa85133397890))
-
-[&#39;Batman is coming&#39;] | 
+  [&#39;Batman is coming&#39;] | 
 None|     [&#39;- **Code/Batman**: Add Martha Wayne\n  ([`ee0a30b`](https://github.com/Codo155/databricks_ci_cd_test/commit/ee0a30b3d422b07ec2dfb51244ffc6a05fb63208))&#39;] | 
 |     - **Code/Batman**: Add Martha Wayne
   ([`ee0a30b`](https://github.com/Codo155/databricks_ci_cd_test/commit/ee0a30b3d422b07ec2dfb51244ffc6a05fb63208)) | 
@@ -969,17 +976,16 @@ None|     [&#39;- **Code/Batman**: Add Martha Wayne\n  ([`ee0a30b`](https://gith
 NoneNoneNoneNone
 |  continuous integration |  features |  
 |  --|  --| 
-|  [&#39;- **pyproject**: No prerelease on main\n  ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e))&#39;] |  [&#34;- **Bier**: Egger added\n  ([`2306a0b`](https://github.com/Codo155/databricks_ci_cd_test/commit/2306a0b65a639567d674b0a06124155725ea107f))\n\n[&#39;Egger Bier - kennt das wer?&#39;]&#34;, &#39;- **Bier**: Egger added\n  ([`71577d5`](https://github.com/Codo155/databricks_ci_cd_test/commit/71577d5c9d214de0fcccb79a4d2ef144a2eedf86))&#39;] |  
+|  [&#39;- **pyproject**: No prerelease on main\n  ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e))&#39;] |  [&#34;- **Bier**: Egger added\n  ([`2306a0b`](https://github.com/Codo155/databricks_ci_cd_test/commit/2306a0b65a639567d674b0a06124155725ea107f))\n  [&#39;Egger Bier - kennt das wer?&#39;]&#34;, &#39;- **Bier**: Egger added\n  ([`71577d5`](https://github.com/Codo155/databricks_ci_cd_test/commit/71577d5c9d214de0fcccb79a4d2ef144a2eedf86))&#39;] |  
 |  2 |  2 |  
 |  - **pyproject**: No prerelease on main
   ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e)) |  - **pyproject**: No prerelease on main
   ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e)) |  
-  NoneNone|     [&#39;- **pyproject**: No prerelease on main\n  ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e))&#39;, &#34;- **Bier**: Egger added\n  ([`2306a0b`](https://github.com/Codo155/databricks_ci_cd_test/commit/2306a0b65a639567d674b0a06124155725ea107f))\n\n[&#39;Egger Bier - kennt das wer?&#39;]&#34;] |  [&#39;- **pyproject**: No prerelease on main\n  ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e))&#39;, &#34;- **Bier**: Egger added\n  ([`2306a0b`](https://github.com/Codo155/databricks_ci_cd_test/commit/2306a0b65a639567d674b0a06124155725ea107f))\n\n[&#39;Egger Bier - kennt das wer?&#39;]&#34;] | 
+  NoneNone|     [&#39;- **pyproject**: No prerelease on main\n  ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e))&#39;, &#34;- **Bier**: Egger added\n  ([`2306a0b`](https://github.com/Codo155/databricks_ci_cd_test/commit/2306a0b65a639567d674b0a06124155725ea107f))\n  [&#39;Egger Bier - kennt das wer?&#39;]&#34;] |  [&#39;- **pyproject**: No prerelease on main\n  ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e))&#39;, &#34;- **Bier**: Egger added\n  ([`2306a0b`](https://github.com/Codo155/databricks_ci_cd_test/commit/2306a0b65a639567d674b0a06124155725ea107f))\n  [&#39;Egger Bier - kennt das wer?&#39;]&#34;] | 
 |     - **pyproject**: No prerelease on main
   ([`022b071`](https://github.com/Codo155/databricks_ci_cd_test/commit/022b07127bf9caad47891acf67705b617961c02e)) |  - **Bier**: Egger added
   ([`2306a0b`](https://github.com/Codo155/databricks_ci_cd_test/commit/2306a0b65a639567d674b0a06124155725ea107f))
-
-[&#39;Egger Bier - kennt das wer?&#39;] | 
+  [&#39;Egger Bier - kennt das wer?&#39;] | 
 NoneNone|     [&#39; &#39;, &#39;- **Bier**: Egger added\n  ([`71577d5`](https://github.com/Codo155/databricks_ci_cd_test/commit/71577d5c9d214de0fcccb79a4d2ef144a2eedf86))&#39;] |  [&#39; &#39;, &#39;- **Bier**: Egger added\n  ([`71577d5`](https://github.com/Codo155/databricks_ci_cd_test/commit/71577d5c9d214de0fcccb79a4d2ef144a2eedf86))&#39;] | 
 |       |  - **Bier**: Egger added
   ([`71577d5`](https://github.com/Codo155/databricks_ci_cd_test/commit/71577d5c9d214de0fcccb79a4d2ef144a2eedf86)) | 
@@ -1007,20 +1013,17 @@ NoneNone|     [&#39; &#39;, &#39;- **Bier**: Gut Besser Gösser\n  ([`2452cf8`](
 NoneNoneNoneNone
 |  build system |  features |  
 |  --|  --| 
-|  [&#34;- **Bier**: Final test für Prerelease\n  ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))\n\n[&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;]&#34;] |  [&#39;- **Bier**: Niemand mag Heiniken\n  ([`6f4a8e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/6f4a8e7080bfa7d084781aeb28f4b4181dc1d696))&#39;, &#39;- **Bier**: Ottakringer added\n  ([`ca70539`](https://github.com/Codo155/databricks_ci_cd_test/commit/ca70539a15ef439faf8dcc13e60c57a6c86e3134))&#39;, &#39;- **Bier**: Radler ist kein Bier\n  ([`7566e1e`](https://github.com/Codo155/databricks_ci_cd_test/commit/7566e1ed5fe48698f1ef6b6bcc44d21d22438124))&#39;] |  
+|  [&#34;- **Bier**: Final test für Prerelease\n  ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))\n  [&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;]&#34;] |  [&#39;- **Bier**: Niemand mag Heiniken\n  ([`6f4a8e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/6f4a8e7080bfa7d084781aeb28f4b4181dc1d696))&#39;, &#39;- **Bier**: Ottakringer added\n  ([`ca70539`](https://github.com/Codo155/databricks_ci_cd_test/commit/ca70539a15ef439faf8dcc13e60c57a6c86e3134))&#39;, &#39;- **Bier**: Radler ist kein Bier\n  ([`7566e1e`](https://github.com/Codo155/databricks_ci_cd_test/commit/7566e1ed5fe48698f1ef6b6bcc44d21d22438124))&#39;] |  
 |  2 |  2 |  
 |  - **Bier**: Final test für Prerelease
   ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))
-
-[&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;] |  - **Bier**: Final test für Prerelease
+  [&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;] |  - **Bier**: Final test für Prerelease
   ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))
-
-[&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;] |  
-  NoneNone|     [&#34;- **Bier**: Final test für Prerelease\n  ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))\n\n[&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;]&#34;, &#39;- **Bier**: Niemand mag Heiniken\n  ([`6f4a8e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/6f4a8e7080bfa7d084781aeb28f4b4181dc1d696))&#39;] |  [&#34;- **Bier**: Final test für Prerelease\n  ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))\n\n[&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;]&#34;, &#39;- **Bier**: Niemand mag Heiniken\n  ([`6f4a8e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/6f4a8e7080bfa7d084781aeb28f4b4181dc1d696))&#39;] | 
+  [&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;] |  
+  NoneNone|     [&#34;- **Bier**: Final test für Prerelease\n  ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))\n  [&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;]&#34;, &#39;- **Bier**: Niemand mag Heiniken\n  ([`6f4a8e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/6f4a8e7080bfa7d084781aeb28f4b4181dc1d696))&#39;] |  [&#34;- **Bier**: Final test für Prerelease\n  ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))\n  [&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;]&#34;, &#39;- **Bier**: Niemand mag Heiniken\n  ([`6f4a8e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/6f4a8e7080bfa7d084781aeb28f4b4181dc1d696))&#39;] | 
 |     - **Bier**: Final test für Prerelease
   ([`6213e36`](https://github.com/Codo155/databricks_ci_cd_test/commit/6213e366088aff435ff45a8402feb35df19269da))
-
-[&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;] |  - **Bier**: Niemand mag Heiniken
+  [&#39;Body: Text für den Prerelease&#39;, &#39;BREAKING CHANGES: None Notice: None&#39;] |  - **Bier**: Niemand mag Heiniken
   ([`6f4a8e7`](https://github.com/Codo155/databricks_ci_cd_test/commit/6f4a8e7080bfa7d084781aeb28f4b4181dc1d696)) | 
 NoneNone|     [&#39; &#39;, &#39;- **Bier**: Ottakringer added\n  ([`ca70539`](https://github.com/Codo155/databricks_ci_cd_test/commit/ca70539a15ef439faf8dcc13e60c57a6c86e3134))&#39;] |  [&#39; &#39;, &#39;- **Bier**: Ottakringer added\n  ([`ca70539`](https://github.com/Codo155/databricks_ci_cd_test/commit/ca70539a15ef439faf8dcc13e60c57a6c86e3134))&#39;] | 
 |       |  - **Bier**: Ottakringer added
@@ -1034,20 +1037,17 @@ NoneNone|     [&#39; &#39;, &#39;- **Bier**: Radler ist kein Bier\n  ([`7566e1e`
 NoneNoneNoneNone
 |  build system |  features |  
 |  --|  --| 
-|  [&#34;- **everywhere**: Tea und Prerelease\n  ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))\n\n[&#39;BREAKING CHANGES: Test für Prerelease&#39;]&#34;] |  [&#39;- **Lightbringer**: Tea wurde dem Buch hinzugefügt\n  ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34))&#39;, &#39;- **pyproject**: Test Prerelease Feature\n  ([`c2748cb`](https://github.com/Codo155/databricks_ci_cd_test/commit/c2748cb9bb65df698816065ec2ce6c58dbad12af))&#39;] |  
+|  [&#34;- **everywhere**: Tea und Prerelease\n  ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))\n  [&#39;BREAKING CHANGES: Test für Prerelease&#39;]&#34;] |  [&#39;- **Lightbringer**: Tea wurde dem Buch hinzugefügt\n  ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34))&#39;, &#39;- **pyproject**: Test Prerelease Feature\n  ([`c2748cb`](https://github.com/Codo155/databricks_ci_cd_test/commit/c2748cb9bb65df698816065ec2ce6c58dbad12af))&#39;] |  
 |  2 |  2 |  
 |  - **everywhere**: Tea und Prerelease
   ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))
-
-[&#39;BREAKING CHANGES: Test für Prerelease&#39;] |  - **everywhere**: Tea und Prerelease
+  [&#39;BREAKING CHANGES: Test für Prerelease&#39;] |  - **everywhere**: Tea und Prerelease
   ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))
-
-[&#39;BREAKING CHANGES: Test für Prerelease&#39;] |  
-  NoneNone|     [&#34;- **everywhere**: Tea und Prerelease\n  ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))\n\n[&#39;BREAKING CHANGES: Test für Prerelease&#39;]&#34;, &#39;- **Lightbringer**: Tea wurde dem Buch hinzugefügt\n  ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34))&#39;] |  [&#34;- **everywhere**: Tea und Prerelease\n  ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))\n\n[&#39;BREAKING CHANGES: Test für Prerelease&#39;]&#34;, &#39;- **Lightbringer**: Tea wurde dem Buch hinzugefügt\n  ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34))&#39;] | 
+  [&#39;BREAKING CHANGES: Test für Prerelease&#39;] |  
+  NoneNone|     [&#34;- **everywhere**: Tea und Prerelease\n  ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))\n  [&#39;BREAKING CHANGES: Test für Prerelease&#39;]&#34;, &#39;- **Lightbringer**: Tea wurde dem Buch hinzugefügt\n  ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34))&#39;] |  [&#34;- **everywhere**: Tea und Prerelease\n  ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))\n  [&#39;BREAKING CHANGES: Test für Prerelease&#39;]&#34;, &#39;- **Lightbringer**: Tea wurde dem Buch hinzugefügt\n  ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34))&#39;] | 
 |     - **everywhere**: Tea und Prerelease
   ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))
-
-[&#39;BREAKING CHANGES: Test für Prerelease&#39;] |  - **Lightbringer**: Tea wurde dem Buch hinzugefügt
+  [&#39;BREAKING CHANGES: Test für Prerelease&#39;] |  - **Lightbringer**: Tea wurde dem Buch hinzugefügt
   ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34)) | 
 NoneNone|     [&#39; &#39;, &#39;- **pyproject**: Test Prerelease Feature\n  ([`c2748cb`](https://github.com/Codo155/databricks_ci_cd_test/commit/c2748cb9bb65df698816065ec2ce6c58dbad12af))&#39;] |  [&#39; &#39;, &#39;- **pyproject**: Test Prerelease Feature\n  ([`c2748cb`](https://github.com/Codo155/databricks_ci_cd_test/commit/c2748cb9bb65df698816065ec2ce6c58dbad12af))&#39;] | 
 |       |  - **pyproject**: Test Prerelease Feature
@@ -1058,17 +1058,15 @@ NoneNone|     [&#39; &#39;, &#39;- **pyproject**: Test Prerelease Feature\n  ([`
 NoneNone
 |  build system |  
 |  --| 
-|  [&#34;- **j2**: Title\n  ([`50ad2dd`](https://github.com/Codo155/databricks_ci_cd_test/commit/50ad2ddede33841a10500f24afe7ff1352f293c1))\n\n[&#39;Body: Boddy Messsage&#39;, &#39;BREAKING CHANGE: text für Breaking change&#39;]&#34;] |  
+|  [&#34;- **j2**: Title\n  ([`50ad2dd`](https://github.com/Codo155/databricks_ci_cd_test/commit/50ad2ddede33841a10500f24afe7ff1352f293c1))\n  [&#39;Body: Boddy Messsage&#39;, &#39;BREAKING CHANGE: text für Breaking change&#39;]&#34;] |  
 |  1 |  
 |  - **j2**: Title
   ([`50ad2dd`](https://github.com/Codo155/databricks_ci_cd_test/commit/50ad2ddede33841a10500f24afe7ff1352f293c1))
-
-[&#39;Body: Boddy Messsage&#39;, &#39;BREAKING CHANGE: text für Breaking change&#39;] |  
-  None|     [&#34;- **j2**: Title\n  ([`50ad2dd`](https://github.com/Codo155/databricks_ci_cd_test/commit/50ad2ddede33841a10500f24afe7ff1352f293c1))\n\n[&#39;Body: Boddy Messsage&#39;, &#39;BREAKING CHANGE: text für Breaking change&#39;]&#34;] | 
+  [&#39;Body: Boddy Messsage&#39;, &#39;BREAKING CHANGE: text für Breaking change&#39;] |  
+  None|     [&#34;- **j2**: Title\n  ([`50ad2dd`](https://github.com/Codo155/databricks_ci_cd_test/commit/50ad2ddede33841a10500f24afe7ff1352f293c1))\n  [&#39;Body: Boddy Messsage&#39;, &#39;BREAKING CHANGE: text für Breaking change&#39;]&#34;] | 
 |     - **j2**: Title
   ([`50ad2dd`](https://github.com/Codo155/databricks_ci_cd_test/commit/50ad2ddede33841a10500f24afe7ff1352f293c1))
-
-[&#39;Body: Boddy Messsage&#39;, &#39;BREAKING CHANGE: text für Breaking change&#39;] | 
+  [&#39;Body: Boddy Messsage&#39;, &#39;BREAKING CHANGE: text für Breaking change&#39;] | 
 
 ### BREAKING CHANGES
 
@@ -1079,17 +1077,15 @@ NoneNone
 NoneNone
 |  build system |  
 |  --| 
-|  [&#34;- **changelog**: New Changelog.md.j2\n  ([`726b310`](https://github.com/Codo155/databricks_ci_cd_test/commit/726b3104cf0e12cb9a11a77b6634e0d1c9722a78))\n\n[&#39;Body:&#39;, &#39;BREAKING CHANGE: New Changelog format for verioning&#39;]&#34;] |  
+|  [&#34;- **changelog**: New Changelog.md.j2\n  ([`726b310`](https://github.com/Codo155/databricks_ci_cd_test/commit/726b3104cf0e12cb9a11a77b6634e0d1c9722a78))\n  [&#39;Body:&#39;, &#39;BREAKING CHANGE: New Changelog format for verioning&#39;]&#34;] |  
 |  1 |  
 |  - **changelog**: New Changelog.md.j2
   ([`726b310`](https://github.com/Codo155/databricks_ci_cd_test/commit/726b3104cf0e12cb9a11a77b6634e0d1c9722a78))
-
-[&#39;Body:&#39;, &#39;BREAKING CHANGE: New Changelog format for verioning&#39;] |  
-  None|     [&#34;- **changelog**: New Changelog.md.j2\n  ([`726b310`](https://github.com/Codo155/databricks_ci_cd_test/commit/726b3104cf0e12cb9a11a77b6634e0d1c9722a78))\n\n[&#39;Body:&#39;, &#39;BREAKING CHANGE: New Changelog format for verioning&#39;]&#34;] | 
+  [&#39;Body:&#39;, &#39;BREAKING CHANGE: New Changelog format for verioning&#39;] |  
+  None|     [&#34;- **changelog**: New Changelog.md.j2\n  ([`726b310`](https://github.com/Codo155/databricks_ci_cd_test/commit/726b3104cf0e12cb9a11a77b6634e0d1c9722a78))\n  [&#39;Body:&#39;, &#39;BREAKING CHANGE: New Changelog format for verioning&#39;]&#34;] | 
 |     - **changelog**: New Changelog.md.j2
   ([`726b310`](https://github.com/Codo155/databricks_ci_cd_test/commit/726b3104cf0e12cb9a11a77b6634e0d1c9722a78))
-
-[&#39;Body:&#39;, &#39;BREAKING CHANGE: New Changelog format for verioning&#39;] | 
+  [&#39;Body:&#39;, &#39;BREAKING CHANGE: New Changelog format for verioning&#39;] | 
 
 ### BREAKING CHANGES
 
@@ -1100,20 +1096,17 @@ NoneNone
 NoneNoneNoneNone
 |  build system |  features |  
 |  --|  --| 
-|  [&#34;- **pyproject.toml**: Update toml\n  ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))\n\n[&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;]&#34;] |  [&#39;- Ac4ever\n  ([`4725153`](https://github.com/Codo155/databricks_ci_cd_test/commit/472515393814ae53c269e811ce6b79ee1319c620))&#39;, &#39;- Add Yasuke\n  ([`273b927`](https://github.com/Codo155/databricks_ci_cd_test/commit/273b9277d67dac991f39ad8085cc577fd2ca7f78))&#39;, &#39;- Add Yasuke\n  ([`27a9437`](https://github.com/Codo155/databricks_ci_cd_test/commit/27a943780ffcb038cfa4d20759d8ca70e33e7098))&#39;, &#34;- Add Yasuke\n  ([`109f645`](https://github.com/Codo155/databricks_ci_cd_test/commit/109f645b24779b5d43ca38092c38d4cfcb9a11dc))\n\n[&#39;feat: add Yasuke&#39;]&#34;, &#34;- Added Naoe\n  ([`6b25b7f`](https://github.com/Codo155/databricks_ci_cd_test/commit/6b25b7f4d6289ed5fef249f0782f4f0bd05d8d9f))\n\n[&#39;added naoe&#39;]&#34;, &#34;- Schwarzes Prisma\n  ([`f7a6bc1`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7a6bc1d199b84a120e59fe12e6577afb8985afc))\n\n[&#39;Teil 1 der Lichtbringer Serie&#39;]&#34;] |  
+|  [&#34;- **pyproject.toml**: Update toml\n  ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))\n  [&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;]&#34;] |  [&#39;- Ac4ever\n  ([`4725153`](https://github.com/Codo155/databricks_ci_cd_test/commit/472515393814ae53c269e811ce6b79ee1319c620))&#39;, &#39;- Add Yasuke\n  ([`273b927`](https://github.com/Codo155/databricks_ci_cd_test/commit/273b9277d67dac991f39ad8085cc577fd2ca7f78))&#39;, &#39;- Add Yasuke\n  ([`27a9437`](https://github.com/Codo155/databricks_ci_cd_test/commit/27a943780ffcb038cfa4d20759d8ca70e33e7098))&#39;, &#34;- Add Yasuke\n  ([`109f645`](https://github.com/Codo155/databricks_ci_cd_test/commit/109f645b24779b5d43ca38092c38d4cfcb9a11dc))\n  [&#39;feat: add Yasuke&#39;]&#34;, &#34;- Added Naoe\n  ([`6b25b7f`](https://github.com/Codo155/databricks_ci_cd_test/commit/6b25b7f4d6289ed5fef249f0782f4f0bd05d8d9f))\n  [&#39;added naoe&#39;]&#34;, &#34;- Schwarzes Prisma\n  ([`f7a6bc1`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7a6bc1d199b84a120e59fe12e6577afb8985afc))\n  [&#39;Teil 1 der Lichtbringer Serie&#39;]&#34;] |  
 |  2 |  2 |  
 |  - **pyproject.toml**: Update toml
   ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))
-
-[&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;] |  - **pyproject.toml**: Update toml
+  [&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;] |  - **pyproject.toml**: Update toml
   ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))
-
-[&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;] |  
-  NoneNone|     [&#34;- **pyproject.toml**: Update toml\n  ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))\n\n[&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;]&#34;, &#39;- Ac4ever\n  ([`4725153`](https://github.com/Codo155/databricks_ci_cd_test/commit/472515393814ae53c269e811ce6b79ee1319c620))&#39;] |  [&#34;- **pyproject.toml**: Update toml\n  ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))\n\n[&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;]&#34;, &#39;- Ac4ever\n  ([`4725153`](https://github.com/Codo155/databricks_ci_cd_test/commit/472515393814ae53c269e811ce6b79ee1319c620))&#39;] | 
+  [&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;] |  
+  NoneNone|     [&#34;- **pyproject.toml**: Update toml\n  ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))\n  [&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;]&#34;, &#39;- Ac4ever\n  ([`4725153`](https://github.com/Codo155/databricks_ci_cd_test/commit/472515393814ae53c269e811ce6b79ee1319c620))&#39;] |  [&#34;- **pyproject.toml**: Update toml\n  ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))\n  [&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;]&#34;, &#39;- Ac4ever\n  ([`4725153`](https://github.com/Codo155/databricks_ci_cd_test/commit/472515393814ae53c269e811ce6b79ee1319c620))&#39;] | 
 |     - **pyproject.toml**: Update toml
   ([`d3c4d80`](https://github.com/Codo155/databricks_ci_cd_test/commit/d3c4d80f263649fb0fc3843e59e696c5007a13e9))
-
-[&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;] |  - Ac4ever
+  [&#39;Body for message&#39;, &#39;Footer Notice: Notice for changelog&#39;] |  - Ac4ever
   ([`4725153`](https://github.com/Codo155/databricks_ci_cd_test/commit/472515393814ae53c269e811ce6b79ee1319c620)) | 
 NoneNone|     [&#39; &#39;, &#39;- Add Yasuke\n  ([`273b927`](https://github.com/Codo155/databricks_ci_cd_test/commit/273b9277d67dac991f39ad8085cc577fd2ca7f78))&#39;] |  [&#39; &#39;, &#39;- Add Yasuke\n  ([`273b927`](https://github.com/Codo155/databricks_ci_cd_test/commit/273b9277d67dac991f39ad8085cc577fd2ca7f78))&#39;] | 
 |       |  - Add Yasuke
@@ -1121,21 +1114,18 @@ NoneNone|     [&#39; &#39;, &#39;- Add Yasuke\n  ([`273b927`](https://github.com
 NoneNone|     [&#39; &#39;, &#39;- Add Yasuke\n  ([`27a9437`](https://github.com/Codo155/databricks_ci_cd_test/commit/27a943780ffcb038cfa4d20759d8ca70e33e7098))&#39;] |  [&#39; &#39;, &#39;- Add Yasuke\n  ([`27a9437`](https://github.com/Codo155/databricks_ci_cd_test/commit/27a943780ffcb038cfa4d20759d8ca70e33e7098))&#39;] | 
 |       |  - Add Yasuke
   ([`27a9437`](https://github.com/Codo155/databricks_ci_cd_test/commit/27a943780ffcb038cfa4d20759d8ca70e33e7098)) | 
-NoneNone|     [&#39; &#39;, &#34;- Add Yasuke\n  ([`109f645`](https://github.com/Codo155/databricks_ci_cd_test/commit/109f645b24779b5d43ca38092c38d4cfcb9a11dc))\n\n[&#39;feat: add Yasuke&#39;]&#34;] |  [&#39; &#39;, &#34;- Add Yasuke\n  ([`109f645`](https://github.com/Codo155/databricks_ci_cd_test/commit/109f645b24779b5d43ca38092c38d4cfcb9a11dc))\n\n[&#39;feat: add Yasuke&#39;]&#34;] | 
+NoneNone|     [&#39; &#39;, &#34;- Add Yasuke\n  ([`109f645`](https://github.com/Codo155/databricks_ci_cd_test/commit/109f645b24779b5d43ca38092c38d4cfcb9a11dc))\n  [&#39;feat: add Yasuke&#39;]&#34;] |  [&#39; &#39;, &#34;- Add Yasuke\n  ([`109f645`](https://github.com/Codo155/databricks_ci_cd_test/commit/109f645b24779b5d43ca38092c38d4cfcb9a11dc))\n  [&#39;feat: add Yasuke&#39;]&#34;] | 
 |       |  - Add Yasuke
   ([`109f645`](https://github.com/Codo155/databricks_ci_cd_test/commit/109f645b24779b5d43ca38092c38d4cfcb9a11dc))
-
-[&#39;feat: add Yasuke&#39;] | 
-NoneNone|     [&#39; &#39;, &#34;- Added Naoe\n  ([`6b25b7f`](https://github.com/Codo155/databricks_ci_cd_test/commit/6b25b7f4d6289ed5fef249f0782f4f0bd05d8d9f))\n\n[&#39;added naoe&#39;]&#34;] |  [&#39; &#39;, &#34;- Added Naoe\n  ([`6b25b7f`](https://github.com/Codo155/databricks_ci_cd_test/commit/6b25b7f4d6289ed5fef249f0782f4f0bd05d8d9f))\n\n[&#39;added naoe&#39;]&#34;] | 
+  [&#39;feat: add Yasuke&#39;] | 
+NoneNone|     [&#39; &#39;, &#34;- Added Naoe\n  ([`6b25b7f`](https://github.com/Codo155/databricks_ci_cd_test/commit/6b25b7f4d6289ed5fef249f0782f4f0bd05d8d9f))\n  [&#39;added naoe&#39;]&#34;] |  [&#39; &#39;, &#34;- Added Naoe\n  ([`6b25b7f`](https://github.com/Codo155/databricks_ci_cd_test/commit/6b25b7f4d6289ed5fef249f0782f4f0bd05d8d9f))\n  [&#39;added naoe&#39;]&#34;] | 
 |       |  - Added Naoe
   ([`6b25b7f`](https://github.com/Codo155/databricks_ci_cd_test/commit/6b25b7f4d6289ed5fef249f0782f4f0bd05d8d9f))
-
-[&#39;added naoe&#39;] | 
-NoneNone|     [&#39; &#39;, &#34;- Schwarzes Prisma\n  ([`f7a6bc1`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7a6bc1d199b84a120e59fe12e6577afb8985afc))\n\n[&#39;Teil 1 der Lichtbringer Serie&#39;]&#34;] |  [&#39; &#39;, &#34;- Schwarzes Prisma\n  ([`f7a6bc1`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7a6bc1d199b84a120e59fe12e6577afb8985afc))\n\n[&#39;Teil 1 der Lichtbringer Serie&#39;]&#34;] | 
+  [&#39;added naoe&#39;] | 
+NoneNone|     [&#39; &#39;, &#34;- Schwarzes Prisma\n  ([`f7a6bc1`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7a6bc1d199b84a120e59fe12e6577afb8985afc))\n  [&#39;Teil 1 der Lichtbringer Serie&#39;]&#34;] |  [&#39; &#39;, &#34;- Schwarzes Prisma\n  ([`f7a6bc1`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7a6bc1d199b84a120e59fe12e6577afb8985afc))\n  [&#39;Teil 1 der Lichtbringer Serie&#39;]&#34;] | 
 |       |  - Schwarzes Prisma
   ([`f7a6bc1`](https://github.com/Codo155/databricks_ci_cd_test/commit/f7a6bc1d199b84a120e59fe12e6577afb8985afc))
-
-[&#39;Teil 1 der Lichtbringer Serie&#39;] | 
+  [&#39;Teil 1 der Lichtbringer Serie&#39;] | 
 
 
 ## md_0.2.0 (2025-01-29)
