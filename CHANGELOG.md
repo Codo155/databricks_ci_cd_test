@@ -3,13 +3,24 @@
 # CHANGELOG
 
 
+## md_21.6.19 (2025-05-28)
+
+
+| bug fixes |  
+| --| 
+  | - Please come back   ([`5f7bd1a`](https://github.com/Codo155/databricks_ci_cd_test/commit/5f7bd1ac876a167a9bc5b3f9a266436be173128d)) | 
+
+
 ## md_21.6.18 (2025-05-28)
 
-| 
-|
-  
+
+| code style |  
+| --| 
+  | - Formatting   ([`f6ab106`](https://github.com/Codo155/databricks_ci_cd_test/commit/f6ab106366beab1be7b6536b5a4087c79cb2ca24)) | 
+
 
 ## md_21.6.17 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -19,12 +30,14 @@
 
 ## md_21.6.16 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - Remove wrong braces   ([`9e08e9b`](https://github.com/Codo155/databricks_ci_cd_test/commit/9e08e9b6006315c738fe64be1d1453f772c9a706)) | 
 
 
 ## md_21.6.15 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -33,12 +46,14 @@
 
 ## md_21.6.14 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - Ok what now   ([`c2e68a2`](https://github.com/Codo155/databricks_ci_cd_test/commit/c2e68a2e930b69c490cac9eebc73069f5f53d558)) | 
 
 
 ## md_21.6.13 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -47,12 +62,14 @@
 
 ## md_21.6.12 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - No sense   ([`05015e8`](https://github.com/Codo155/databricks_ci_cd_test/commit/05015e835e65a06330932b616c4350f4f2e3de43)) | 
 
 
 ## md_21.6.11 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -61,12 +78,14 @@
 
 ## md_21.6.10 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - Wrong message   ([`35e0364`](https://github.com/Codo155/databricks_ci_cd_test/commit/35e0364672fe163fe7ce18b5696bb8c5120a1222)) | 
 
 
 ## md_21.6.9 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -75,12 +94,14 @@
 
 ## md_21.6.8 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - Persist issues   ([`9cacfc7`](https://github.com/Codo155/databricks_ci_cd_test/commit/9cacfc7625c9802ee663f6476c96374074286dff)) | 
 
 
 ## md_21.6.7 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -89,12 +110,14 @@
 
 ## md_21.6.6 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - Row not working why   ([`29581fa`](https://github.com/Codo155/databricks_ci_cd_test/commit/29581fab218ab62cccfff4cd4e0491c52e47240a)) | 
 
 
 ## md_21.6.5 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -103,12 +126,14 @@
 
 ## md_21.6.4 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - No \n   ([`10de597`](https://github.com/Codo155/databricks_ci_cd_test/commit/10de597875a9dacbe5f57932bd1a2e308de63924)) | 
 
 
 ## md_21.6.3 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -117,12 +142,14 @@
 
 ## md_21.6.2 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - What is going on in these loops   ([`5c6404d`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c6404d3228d03e8fa7ddf5f34662e7b262f9350)) | 
 
 
 ## md_21.6.1 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -138,6 +165,7 @@
 
 ## md_21.6.0 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - Introduce namespace   ([`2c54917`](https://github.com/Codo155/databricks_ci_cd_test/commit/2c54917f040ddaa7b57e3e1b495511c5a3de117a)) | 
@@ -145,12 +173,14 @@
 
 ## md_21.5.5 (2025-05-28)
 
+
 | features |  
 | --| 
   | - Why most lines 0   ([`d834ef7`](https://github.com/Codo155/databricks_ci_cd_test/commit/d834ef7d2d565bd15fec5e04f14e8fa4d21a1dd6)) | 
 
 
 ## md_21.5.4 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -160,12 +190,14 @@
 
 ## md_21.5.3 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - Test output   ([`f9a2271`](https://github.com/Codo155/databricks_ci_cd_test/commit/f9a227108e6d0477c39c798f1ad6cd5f109d3902)) | 
 
 
 ## md_21.5.2 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -174,12 +206,14 @@
 
 ## md_21.5.1 (2025-05-28)
 
+
 | bug fixes |  
 | --| 
   | - Rows   ([`b3d28e4`](https://github.com/Codo155/databricks_ci_cd_test/commit/b3d28e47a96c76361f60ca7186d79f65f3ed9c76)) | 
 
 
 ## md_21.5.0 (2025-05-28)
+
 
 | bug fixes |  
 | --| 
@@ -195,6 +229,7 @@
 
 ## md_21.4.0 (2025-05-27)
 
+
 | features |  
 | --| 
   | - New changelog   ([`6322bb5`](https://github.com/Codo155/databricks_ci_cd_test/commit/6322bb5d61e8c92dfb1ceb77789770f76061af23)) | 
@@ -202,12 +237,14 @@
 
 ## md_21.3.1 (2025-05-27)
 
+
 | bug fixes |  features |  
 | --|  --| 
   | - Endfor   ([`f1dda0e`](https://github.com/Codo155/databricks_ci_cd_test/commit/f1dda0ecb476472b3bebf44391c23c08c3829d8d)) |  - Back to first version   ([`4d1cf8b`](https://github.com/Codo155/databricks_ci_cd_test/commit/4d1cf8b121870bf9e080c2f9c424d27067c5cb00)) | 
 
 
 ## md_21.3.0 (2025-05-27)
+
 
 | bug fixes |  features |  
 | --|  --| 
@@ -218,12 +255,14 @@
 
 ## md_21.2.1 (2025-05-27)
 
+
 | features |  
 | --| 
   | - Update sturcture   ([`0d99082`](https://github.com/Codo155/databricks_ci_cd_test/commit/0d99082f499ee29d5f2df8fe7a77642429b63658)) | 
 
 
 ## md_21.2.0 (2025-05-27)
+
 
 | bug fixes |  features |  
 | --|  --| 
@@ -237,6 +276,7 @@
 
 ## md_21.1.1 (2025-05-27)
 
+
 | bug fixes |  
 | --| 
   | - Permissions   ([`21e5325`](https://github.com/Codo155/databricks_ci_cd_test/commit/21e53259f52fec9bb9b5735e640a29d100f91f54)) | 
@@ -244,12 +284,14 @@
 
 ## md_21.1.0 (2025-05-27)
 
+
 | features |  
 | --| 
   | - Maybe feat   ([`b307a83`](https://github.com/Codo155/databricks_ci_cd_test/commit/b307a8359b39e08270db072777e333bda3958b59)) | 
 
 
 ## md_21.0.6 (2025-05-27)
+
 
 | bug fixes |  
 | --| 
@@ -259,6 +301,7 @@
 
 ## md_21.0.5 (2025-05-27)
 
+
 | bug fixes |  
 | --| 
   | - Different run   ([`07b9cbe`](https://github.com/Codo155/databricks_ci_cd_test/commit/07b9cbe61615d2720bd7b7b2b3101db8b15ac5be)) | 
@@ -267,6 +310,7 @@
 
 ## md_21.0.4 (2025-05-27)
 
+
 | bug fixes |  
 | --| 
   | - Test workflow   ([`bb547ae`](https://github.com/Codo155/databricks_ci_cd_test/commit/bb547ae7ff7a18edeaf261a70e0de654aa61d936)) | 
@@ -274,12 +318,14 @@
 
 ## md_21.0.3 (2025-05-27)
 
+
 | bug fixes |  
 | --| 
   | - Whitespaces in workflow   ([`01e5370`](https://github.com/Codo155/databricks_ci_cd_test/commit/01e5370c1097966c64632ac41889e95ef667d311)) | 
 
 
 ## md_21.0.2 (2025-05-26)
+
 
 | bug fixes |  
 | --| 
@@ -290,6 +336,7 @@
 
 ## md_21.0.1 (2025-05-26)
 
+
 | bug fixes |  
 | --| 
   | - No warnings   ([`0f86b73`](https://github.com/Codo155/databricks_ci_cd_test/commit/0f86b733684b14661bb84348a82d9a815535c798)) | 
@@ -297,12 +344,14 @@
 
 ## md_20.7.11 (2025-05-26)
 
+
 | bug fixes |  
 | --| 
   | - Square 1   ([`9808a79`](https://github.com/Codo155/databricks_ci_cd_test/commit/9808a795db6ee50b2155e78e7485440a8a506275)) | 
 
 
 ## md_20.7.10 (2025-05-26)
+
 
 | bug fixes |  
 | --| 
@@ -312,12 +361,14 @@
 
 ## md_20.7.9 (2025-05-26)
 
+
 | bug fixes |  
 | --| 
   | - Change   ([`64728ef`](https://github.com/Codo155/databricks_ci_cd_test/commit/64728ef5ff28e4c94ea4349c65bb64e55ae09caf)) | 
 
 
 ## md_20.7.8 (2025-05-26)
+
 
 | bug fixes |  continuous integration |  
 | --|  --| 
@@ -326,12 +377,14 @@
 
 ## md_20.7.7 (2025-05-26)
 
+
 | bug fixes |  
 | --| 
   | - Does it still not create?   ([`483e26e`](https://github.com/Codo155/databricks_ci_cd_test/commit/483e26e8f15309550a09b084e4d49758737fe680)) | 
 
 
 ## md_20.7.6 (2025-05-26)
+
 
 | bug fixes |  
 | --| 
@@ -343,12 +396,14 @@
 
 ## md_20.7.5 (2025-05-26)
 
+
 | bug fixes |  
 | --| 
   | - Maybe v3?   ([`e101896`](https://github.com/Codo155/databricks_ci_cd_test/commit/e1018963822ab1e11fa9eb9fdc8719077efa2311)) | 
 
 
 ## md_20.7.4 (2025-05-26)
+
 
 | bug fixes |  
 | --| 
@@ -357,12 +412,14 @@
 
 ## md_20.7.3 (2025-05-26)
 
+
 | bug fixes |  
 | --| 
   | - Praxing   ([`006bc74`](https://github.com/Codo155/databricks_ci_cd_test/commit/006bc7487ae6afd3c88b733f09d184619c7587a5)) | 
 
 
 ## md_20.7.2 (2025-05-26)
+
 
 | bug fixes |  
 | --| 
@@ -371,6 +428,7 @@
 
 ## md_20.7.1 (2025-05-26)
 
+
 | bug fixes |  refactoring |  
 | --|  --| 
   | - Rollback again   ([`0b4605c`](https://github.com/Codo155/databricks_ci_cd_test/commit/0b4605c25d28dc1116d6f884cd7a2eb365e8623d)) |  - Back to first version   ([`7185568`](https://github.com/Codo155/databricks_ci_cd_test/commit/7185568ef13289deeacab082628d91c1c62cbdab)) | 
@@ -378,12 +436,14 @@
 
 ## md_20.7.0 (2025-05-26)
 
+
 | features |  
 | --| 
   | - Verbose output not possible   ([`f243867`](https://github.com/Codo155/databricks_ci_cd_test/commit/f24386755cddc45905e6e45a3b5da7fb571b262f)) | 
 
 
 ## md_20.6.0 (2025-05-26)
+
 
 | bug fixes |  code style |  features |  
 | --|  --|  --| 
@@ -397,6 +457,7 @@
 
 ## md_20.5.1 (2025-05-23)
 
+
 | bug fixes |  code style |  
 | --|  --| 
   | - Does this msg work?   ([`9733a6b`](https://github.com/Codo155/databricks_ci_cd_test/commit/9733a6b282653f2d3cec9fec45872b68218d1d34)) |  - Wrong commit msg   ([`ca2ecbe`](https://github.com/Codo155/databricks_ci_cd_test/commit/ca2ecbe73d894dd77c95bbde9bc391b971f96c52)) | 
@@ -407,12 +468,14 @@
 
 ## md_20.5.0 (2025-05-23)
 
+
 | features |  
 | --| 
   | - Why no work   ([`ce0dbb9`](https://github.com/Codo155/databricks_ci_cd_test/commit/ce0dbb9dd69b97088ebfbab62cb863299a5525e6)) | 
 
 
 ## md_20.4.2 (2025-05-22)
+
 
 | bug fixes |  
 | --| 
@@ -421,12 +484,14 @@
 
 ## md_20.4.1 (2025-05-22)
 
+
 | bug fixes |  continuous integration |  
 | --|  --| 
   | - Proper message   ([`16e40be`](https://github.com/Codo155/databricks_ci_cd_test/commit/16e40be1fb76f2aa6a9d27df647632a7a3970b03)) |  - Using var for databricks.yml   ([`ecaf006`](https://github.com/Codo155/databricks_ci_cd_test/commit/ecaf006b381e5db3dc89e4f562357f0fdda59cf6)) | 
 
 
 ## md_20.4.0 (2025-04-22)
+
 
 | features |  
 | --| 
@@ -435,6 +500,7 @@
 
 
 ## md_20.3.0 (2025-04-22)
+
 
 | features |  
 | --| 
@@ -445,6 +511,7 @@
 
 ## md_20.2.0 (2025-04-21)
 
+
 | bug fixes |  features |  
 | --|  --| 
   | - **pyproject.toml**: Delete parser options   ([`839dd19`](https://github.com/Codo155/databricks_ci_cd_test/commit/839dd19170799f7b5ac02b84bcee96463a4700bc)) |  - Add sand.py   ([`1ca9dfe`](https://github.com/Codo155/databricks_ci_cd_test/commit/1ca9dfe48f7a413dde144e48daedf22d4e5646dd)) | 
@@ -453,6 +520,7 @@
 
 ## md_20.1.0 (2025-04-21)
 
+
 | features |  
 | --| 
   | - Add iron.py   ([`5a61635`](https://github.com/Codo155/databricks_ci_cd_test/commit/5a61635a83221c582d142b4df44dcbaf7a73290b)) | 
@@ -460,17 +528,14 @@
 
 ## md_20.0.0 (2025-04-21)
 
-| 
-|
-  
+
 
 ## md_19.3.0 (2025-04-20)
 
-| 
-|
-  
+
 
 ## md_19.2.0 (2025-04-20)
+
 
 | features |  
 | --| 
@@ -481,11 +546,10 @@
 
 ## md_19.1.0 (2025-04-20)
 
-| 
-|
-  
+
 
 ## md_18.0.1 (2025-03-11)
+
 
 | features |  
 | --| 
@@ -493,6 +557,7 @@
 
 
 ## md_19.0.0 (2025-04-16)
+
 
 | bug fixes |  continuous integration |  
 | --|  --| 
@@ -502,11 +567,10 @@
 
 ## md_18.0.0 (2025-03-06)
 
-| 
-|
-  
+
 
 ## md_16.1.0 (2025-03-06)
+
 
 | features |  
 | --| 
@@ -516,11 +580,10 @@
 
 ## md_16.0.0 (2025-03-06)
 
-| 
-|
-  
+
 
 ## md_15.1.0 (2025-03-06)
+
 
 | features |  
 | --| 
@@ -529,11 +592,10 @@
 
 ## md_15.0.0 (2025-03-04)
 
-| 
-|
-  
+
 
 ## md_14.0.0 (2025-03-04)
+
 
 | continuous integration |  
 | --| 
@@ -542,11 +604,10 @@
 
 ## md_12.0.0 (2025-03-04)
 
-| 
-|
-  
+
 
 ## md_11.3.0 (2025-03-04)
+
 
 | features |  
 | --| 
@@ -557,12 +618,14 @@
 
 ## md_11.2.0 (2025-03-04)
 
+
 | features |  
 | --| 
   | - Add Augustiner   ([`1532276`](https://github.com/Codo155/databricks_ci_cd_test/commit/1532276f2d2a21caae29fa79222314bdab8d9adb)) | 
 
 
 ## md_11.1.0 (2025-02-05)
+
 
 | features |  
 | --| 
@@ -572,17 +635,14 @@
 
 ## md_11.0.0 (2025-02-05)
 
-| 
-|
-  
+
 
 ## md_10.0.0 (2025-02-05)
 
-| 
-|
-  
+
 
 ## md_9.0.0 (2025-02-05)
+
 
 | continuous integration |  features |  
 | --|  --| 
@@ -592,6 +652,7 @@
 
 ## md_2.1.0-rc.3 (2025-02-05)
 
+
 | bug fixes |  features |  
 | --|  --| 
   | - **Bier**: Remove Radler becaue it is not a beer   ([`9e45e4f`](https://github.com/Codo155/databricks_ci_cd_test/commit/9e45e4f0f590a15869c13acea2a2a2ab151462ca)) |  - **Bier**: Add Wieselburger   ([`71e9040`](https://github.com/Codo155/databricks_ci_cd_test/commit/71e9040362f8fd6a7cf3144714f65ef9e170af23)) | 
@@ -599,6 +660,7 @@
 
 
 ## md_2.1.0-rc.2 (2025-02-03)
+
 
 | build system |  features |  
 | --|  --| 
@@ -609,6 +671,7 @@
 
 ## md_2.1.0-rc.1 (2025-02-03)
 
+
 | build system |  features |  
 | --|  --| 
   | - **everywhere**: Tea und Prerelease   ([`5c7b469`](https://github.com/Codo155/databricks_ci_cd_test/commit/5c7b469a48412f9a8fdb9733ca00944f06dcd73f))   [&#39;BREAKING CHANGES: Test für Prerelease&#39;] |  - **Lightbringer**: Tea wurde dem Buch hinzugefügt   ([`1e6e94d`](https://github.com/Codo155/databricks_ci_cd_test/commit/1e6e94d18a97a3b3ea96bb3e3d7878d3e6bcad34)) | 
@@ -616,6 +679,7 @@
 
 
 ## md_2.0.0 (2025-02-03)
+
 
 | build system |  
 | --| 
@@ -628,6 +692,7 @@
 
 ## md_1.0.0 (2025-02-03)
 
+
 | build system |  
 | --| 
   | - **changelog**: New Changelog.md.j2   ([`726b310`](https://github.com/Codo155/databricks_ci_cd_test/commit/726b3104cf0e12cb9a11a77b6634e0d1c9722a78))   [&#39;Body:&#39;, &#39;BREAKING CHANGE: New Changelog format for verioning&#39;] | 
@@ -638,6 +703,7 @@
 
 
 ## md_0.3.0 (2025-02-03)
+
 
 | build system |  features |  
 | --|  --| 
@@ -651,11 +717,10 @@
 
 ## md_0.2.0 (2025-01-29)
 
-| 
-|
-  
+
 
 ## md_0.1.0 (2025-01-29)
+
 
 | continuous integration |  features |  
 | --|  --| 
