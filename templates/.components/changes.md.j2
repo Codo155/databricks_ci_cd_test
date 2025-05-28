@@ -59,7 +59,7 @@ EXAMPLE:
 %}{#
   #   # PRINT SECTION (header & commits)
 #}{{  "\n"
-}}{{  "| %s |\n" | format(list(commit_types.keys()) | join(" | "))
+}}{{  "| %s |\n" | format(commit_types.keys() | list | join(" | "))
 }}{%  for i in range(most_lines)
 %}{%    set row = []
 %}{%    for type_, commit_descriptions in commit_types.items()
