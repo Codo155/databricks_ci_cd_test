@@ -27,6 +27,8 @@ EXAMPLE:
 
 #}{%  set max_line_width = max_line_width | default(100)
 %}{%  set hanging_indent = hanging_indent | default(2)
+%}{%  set commit_types = {}
+%}{%  set most_lines = 0
 %}{#
 #}{%  for type_, commits in commit_objects if type_ != "unknown"
 %}{#    PREPROCESS COMMITS (order by description & format description line)
@@ -48,13 +50,21 @@ EXAMPLE:
 %}{%      endif
 %}{%      set description = description | autofit_text_width(max_line_width, hanging_indent)
 %}{{      commit_descriptions.append(description) | default("", true)
+%}{%      if commit_descriptions | length > most_lines
+%}{%        set most_lines = commit_descriptions | length
 }}{%    endfor
+%}{%    set commit_types[type_] = commit_descriptions
+%}{%  endfor
 %}{#
-   #    # PRINT SECTION (header & commits)
-#}{{    "\n"
-}}{{    "### %s\n" | format(type_ | title)
-}}{{    "\n"
-}}{{    "%s\n" | format(commit_descriptions | unique | join("\n\n"))
+  #   # PRINT SECTION (header & commits)
+#}{{  "\n"
+}}{{  "| %s |\n" | format(list(commit_types.keys()) | join(" | "))
+}}{%  for i in range(most_lines)
+%}{%    set row = []
+%}{%    for type_, commit_descriptions in commit_types.items()
+%}{%      set row.append(commit_descriptions[i] | default(" ", true))
+%}{%    endfor
+%}{{    "| %s |\n" | format(row | join(" | "))
 }}{%  endfor
 %}{#
       # Determine if there are any breaking change commits by filtering the list by breaking descriptions
