@@ -52,8 +52,8 @@ EXAMPLE:
 %}{%      set description = description | autofit_text_width(max_line_width, hanging_indent)
 %}{{      commit_descriptions.append(description) | default("", true)
 }}{%      if commit_descriptions | length > most_lines
-{{commit_descriptions | length}}
-%}{%        set most_lines = commit_descriptions | length
+%}{{commit_descriptions | length}}
+{%        set most_lines = commit_descriptions | length
 %}{%      endif
 %}{%    endfor
 %}{{    all_types.append(type_)
