@@ -57,7 +57,6 @@ EXAMPLE:
 %}{%      endif
 %}{%    endfor
 %}{{    var.most_lines
-}}{%set dict = %}{{
 }}{{    all_types.append(type_)
 }}{{    all_decritptions.append(commit_descriptions) | default("", true)
 }}{%  endfor
@@ -66,9 +65,9 @@ EXAMPLE:
 #}
 | {% for type in all_types %} {{ type }} | {% endfor %} 
 | {% for type in all_types %} --| {% endfor %}
-| {% for type in all_types %} {{ most_lines }} | {% endfor %} 
+| {% for type in all_types %} {{ var.most_lines }} | {% endfor %} 
 | {% for desc in all_decritptions %} {{ desc }} | {% endfor %} 
-  {%  for i in range(most_lines)
+  {%  for i in range(var.most_lines)
 %}{%    set row = []
 %}{%    for j in all_types | length
 %}{{      row.append(all_decritptions[j][i] | default(" ", true))
