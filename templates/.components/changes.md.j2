@@ -57,6 +57,7 @@ EXAMPLE:
 %}{%      endif
 %}{%    endfor
 %}{{    var.most_lines
+}}{%set dict = %}{{
 }}{{    all_types.append(type_)
 }}{{    all_decritptions.append(commit_descriptions) | default("", true)
 }}{%  endfor
