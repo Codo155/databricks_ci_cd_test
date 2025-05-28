@@ -67,8 +67,10 @@ EXAMPLE:
   {%  for i in range(var.most_lines)
 %}{%    set var.row = []
 %}{%    for j in range(all_descritptions | length)
-%}{{      var.row.append(all_descritptions[j][i] | default(" ", true) | replace("\n", " "))
-}}{%    endfor
+%}{%      if i < all_descritptions[j] | length
+%}{{        var.row.append(all_descritptions[j][i] | replace("\n", " "))
+}}{%      endif
+%}{%    endfor
 %}
 |    {% for commit in var.row %} {{ commit }} | {% endfor %}
 {%  endfor
