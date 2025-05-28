@@ -54,7 +54,7 @@ EXAMPLE:
 %}{%        set most_lines = commit_descriptions | length
 %}{%      endif
 %}{%    endfor
-%}{%    set commit_types[type_] = commit_descriptions
+%}{%    do commit_types.update({type_: commit_descriptions})
 %}{%  endfor
 %}{#
   #   # PRINT SECTION (header & commits)
