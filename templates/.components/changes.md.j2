@@ -46,7 +46,7 @@ EXAMPLE:
           # of squash commits (until parse support is added)
 #}{%      set description = "- %s" | format(format_commit_summary_line(commit))
 %}{%      if commit.descriptions | length > 1
-%}{%        set description = "%s\n\n%s" | format(
+%}{%        set description = "%s %s" | format(
               description, commit.descriptions[1:]
             )
 %}{%      endif
