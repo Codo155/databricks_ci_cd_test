@@ -27,7 +27,7 @@ EXAMPLE:
 
 #}{%  set max_line_width = max_line_width | default(100)
 %}{%  set hanging_indent = hanging_indent | default(2)
-%}{%  set all_types = []
+%}{%  set all_types = ["bug fixes", "features", "build system", "continuous integration", "code style"]
 %}{%  set all_descritptions = []
 %}{%  set var = namespace()
 %}{%  set var.most_lines = 0
@@ -56,7 +56,9 @@ EXAMPLE:
 %}{%        set var.most_lines = commit_descriptions | length
 %}{%      endif
 %}{%    endfor
-%}{%    set _ = all_types.append(type_)
+%}{%    if type_ not in all_types
+%}{%      set _ = all_types.append(type_)
+%}{%    endif
 %}{%    set _ = all_descritptions.append(commit_descriptions)
 %}{%  endfor
 %}{#
